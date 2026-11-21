@@ -19,18 +19,28 @@ export interface PaletteItem {
 export function searchPalette<T extends PaletteItem>(items: readonly T[], query: string, limit = 50): T[] {
   const terms = searchTerms(query);
   if (!terms.length) return items.slice(0, limit);
-  const q = normalizeText(query).trim();
   const scored: { item: T; score: number; i: number }[] = [];
   items.forEach((item, i) => {
-    const title = normalizeText(item.title);
-    const hay = normalizeText([item.title, item.description, item.keywords].join(' '));
-    if (!matchesTerms(hay, terms)) return;
-    let score = 3;
-    if (title.startsWith(q)) score = 0;
-    else if (title.includes(q)) score = 1;
-    else if (title.split(/[\s\-/()]+/).some((w) => w.startsWith(terms[0]))) score = 2;
-    scored.push({ item, score, i });
+    const score = scorePaletteItem(item, query);
+    if (score !== null) scored.push({ item, score, i });
   });
   scored.sort((a, b) => a.score - b.score || a.i - b.i);
   return scored.slice(0, limit).map((s) => s.item);
+}
+
+/**
+ * Punteggio di una voce per la ricerca (più basso = prima), o `null` se non corrisponde: titolo che inizia con la ricerca (0),
+ * che la contiene (1), parola del titolo che inizia con la prima parola (2), altrimenti (3). Serve anche alla palette come filtro.
+ */
+export function scorePaletteItem(item: PaletteItem, query: string): number | null {
+  const terms = searchTerms(query);
+  if (!terms.length) return 0;
+  const q = normalizeText(query).trim();
+  const title = normalizeText(item.title);
+  const hay = normalizeText([item.title, item.description, item.keywords].join(' '));
+  if (!matchesTerms(hay, terms)) return null;
+  if (title.startsWith(q)) return 0;
+  if (title.includes(q)) return 1;
+  if (title.split(/[\s\-/()]+/).some((w) => w.startsWith(terms[0]))) return 2;
+  return 3;
 }

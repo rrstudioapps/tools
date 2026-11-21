@@ -460,6 +460,45 @@ select option {
 .print-only {
   display: none;
 }
+// Palette Ctrl/⌘+K (@rrstudioapps/ngx-command-palette): aspetto della palette di sempre, solo con le variabili del pacchetto
+.rr-cp {
+  --rr-cp-bg: var(--surface);
+  --rr-cp-fg: var(--ink);
+  --rr-cp-muted: var(--ink-2);
+  --rr-cp-border: var(--line);
+  --rr-cp-accent: var(--ink);
+  --rr-cp-radius: var(--radius-sm);
+  --rr-cp-item-radius: var(--radius-sm);
+  --rr-cp-font: inherit;
+  --rr-cp-font-size: 1rem;
+  --rr-cp-width: 38rem;
+  --rr-cp-max-height: min(50vh, 24rem);
+  --rr-cp-shadow: none;
+  --rr-cp-backdrop: rgb(0 0 0 / 45%);
+  --rr-cp-duration: 0ms;
+  --rr-cp-search-gap: 24px;
+  --rr-cp-search-padding: var(--space-3) var(--space-4);
+  --rr-cp-input-height: 41px;
+  --rr-cp-input-font-size: 1.05rem;
+  --rr-cp-list-padding: var(--space-2);
+  --rr-cp-item-padding: calc(var(--space-2) + 2px) var(--space-3);
+  --rr-cp-label-weight: 600;
+  --rr-cp-description-size: var(--fs-xs);
+  --rr-cp-description-color: currentColor; // `inherit` in una variabile non funziona
+  --rr-cp-description-opacity: 0.8;
+  --rr-cp-item-active-bg: var(--ink);
+  --rr-cp-item-active-fg: var(--bg);
+  --rr-cp-item-active-shadow: none;
+  --rr-cp-status-padding: 0 var(--space-4) var(--space-3);
+  --rr-cp-status-size: var(--fs-xs);
+  --rr-cp-status-border: 0;
+}
+@media print {
+  .rr-cp {
+    display: none;
+  }
+}
+
 @media print {
   body:has(app-tool-frame) {
     --bg: #fff;
