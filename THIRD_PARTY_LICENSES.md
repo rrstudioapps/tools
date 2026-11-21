@@ -22,6 +22,7 @@ rrstudio tools usa i componenti open source elencati qui sotto, ognuno con la su
 | **@angular/ssr** | 22.2.7 | MIT | https://github.com/angular/angular-cli |
 | **@fontsource-variable/inter-tight** | 5.3.0 | OFL-1.1 | https://github.com/fontsource/font-files |
 | **@fontsource/jetbrains-mono** | 5.3.0 | OFL-1.1 | https://github.com/fontsource/font-files |
+| **@rrstudioapps/ngx-command-palette** | 0.8.0 | MIT | https://github.com/rrstudioapps/ngx-command-palette |
 | **@zxcvbn-ts/core** | 4.2.0 | MIT | https://github.com/zxcvbn-ts/zxcvbn |
 | **@zxcvbn-ts/language-common** | 4.1.3 | MIT | https://github.com/zxcvbn-ts/zxcvbn |
 | **@zxcvbn-ts/language-en** | 4.1.1 | MIT | https://github.com/zxcvbn-ts/zxcvbn |
