@@ -207,6 +207,16 @@
       <p class="muted small-note">{{ i18n.t('fav.share.note') }}</p>
     </section>
 
+    <!-- Recenti della ricerca Ctrl/⌘+K -->
+    <section class="sec" aria-labelledby="fav-recent-h">
+      <div class="sec-head"><h2 id="fav-recent-h">{{ i18n.t('palette.recent') }}</h2></div>
+      <label class="check">
+        <input type="checkbox" data-testid="recent-toggle" [checked]="prefs.recentEnabled()" (change)="prefs.setRecent($any($event.target).checked)" />
+        {{ i18n.t('fav.recent.label') }}
+      </label>
+      <p class="muted small-note">{{ i18n.t('fav.recent.note') }}</p>
+    </section>
+
     <!-- Cancella tutto -->
     <section class="sec danger">
       @if (confirmClear()) {

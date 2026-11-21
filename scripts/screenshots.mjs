@@ -3033,23 +3033,23 @@ try {
     await page.keyboard.press('Control+k');
     const dlg = page.getByRole('dialog', { name: 'Cerca uno strumento' });
     await dlg.waitFor();
-    await page.getByRole('combobox', { name: 'Cerca tra gli strumenti' }).fill('uuid');
+    await page.getByRole('combobox', { name: /Cerca uno strumento/ }).fill('uuid');
     await dlg.getByRole('option').first().waitFor();
     must((await dlg.getByRole('option').first().innerText()).includes('UUID'), 'palette: primo risultato inatteso');
     await page.keyboard.press('Enter');
     await page.waitForURL('**/uuid-generator');
-    must((await page.getByRole('dialog').count()) === 0, 'palette ancora aperta');
+    must((await page.locator('.rr-cp').count()) === 0, 'palette ancora aperta');
     // dentro un campo di testo Ctrl+K resta al browser
     await page.goto(base + '/json-formatter/');
     await page.fill('#json-in', 'x');
     await page.keyboard.press('Control+k');
-    must((await page.locator('dialog[open]').count()) === 0, 'palette aperta da dentro un campo');
+    must((await page.locator('.rr-cp').count()) === 0, 'palette aperta da dentro un campo');
     // il pulsante dell'header apre la palette e Esc la chiude riportando il focus
     const open = page.getByRole('button', { name: /^Cerca uno strumento/ });
     await open.click();
     await page.getByRole('dialog', { name: 'Cerca uno strumento' }).waitFor();
     await page.keyboard.press('Escape');
-    await page.waitForFunction(() => !document.querySelector('dialog[open]'));
+    await page.waitForFunction(() => !document.querySelector('.rr-cp'));
     must(await open.evaluate((el) => el === document.activeElement), 'palette: il focus non torna sul pulsante');
   });
   // Catene: creare, salvare, avviare e passare al passo successivo con «Invia a…»

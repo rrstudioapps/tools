@@ -46,10 +46,18 @@
         <code>rrtools.chains</code>: le catene di strumenti che hai salvato, solo se le usi. Contiene soltanto un nome
         e gli identificativi degli strumenti, nient'altro.
       </li>
+      <li>
+        <code>rrtools.recentOn</code> e <code>rrtools.recent</code>: gli ultimi strumenti aperti dalla ricerca
+        (Ctrl/⌘+K), solo se accendi tu l'interruttore nella pagina
+        <a [routerLink]="i18n.link('preferiti')">Preferiti</a>, che è spento di default. Contengono soltanto
+        l'identificativo di al massimo 5 strumenti, nient'altro: non salvano né le parole che cerchi né i dati inseriti
+        negli strumenti. Spegnere l'interruttore li cancella.
+      </li>
     </ul>
     <p>
       Per cancellarli usa il pulsante «Cancella bozza» (per la bozza), il pulsante «Cancella preferiti e menu» nella
-      pagina <a [routerLink]="i18n.link('preferiti')">Preferiti</a> (per i preferiti) oppure cancella i dati del sito
+      pagina <a [routerLink]="i18n.link('preferiti')">Preferiti</a> (per i preferiti), lo stesso interruttore (per gli
+      ultimi strumenti) oppure cancella i dati del sito
       dalle impostazioni del browser.
     </p>
     <p>
@@ -198,11 +206,17 @@
         <code>rrtools.chains</code>: the tool chains you saved, only if you use them. It contains only a name and the
         tool identifiers, nothing else.
       </li>
+      <li>
+        <code>rrtools.recentOn</code> and <code>rrtools.recent</code>: the last tools opened from search (Ctrl/⌘+K),
+        only if you turn the switch on in the <a [routerLink]="i18n.link('favorites')">Favorites</a> page, which is off
+        by default. They contain only the identifier of at most 5 tools, nothing else: they save neither the words you
+        search for nor the data you enter in the tools. Turning the switch off deletes them.
+      </li>
     </ul>
     <p>
       To remove them use the "Clear draft" button (for the draft), the "Delete favorites and menus" button on the
-      <a [routerLink]="i18n.link('favorites')">Favorites</a> page (for favorites) or clear the site data from your
-      browser settings.
+      <a [routerLink]="i18n.link('favorites')">Favorites</a> page (for favorites), the same switch (for the last tools)
+      or clear the site data from your browser settings.
     </p>
     <p>
       The favorites share link carries its data after the <code>#</code> symbol: browsers never send that part of the

@@ -6,6 +6,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import * as L from '../core/favorites/favorites.logic';
 import { FavoritesService } from '../core/favorites/favorites.service';
+import { PalettePrefsService } from '../core/palette/palette-prefs.service';
 import { FAVORITES_SLUG } from '../core/i18n/lang-routing';
 import { I18nService } from '../core/i18n/i18n.service';
 import { CopyButton } from '../shared/copy-button';
@@ -40,6 +41,7 @@ interface Pending {
 export class FavoritesPage {
   protected readonly i18n = inject(I18nService);
   protected readonly fav = inject(FavoritesService);
+  protected readonly prefs = inject(PalettePrefsService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly router = inject(Router);
   /** Dati di un link appena letti: il router può rimettere il fragment al termine della navigazione, va tolto di nuovo. */
