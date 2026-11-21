@@ -180,6 +180,7 @@ try {
   for (const p of all) {
     for (const width of WIDTHS) {
       checks++;
+      if (checks % 25 === 0 || checks === 1) console.log(`  avanzamento: ${checks}/${all.length * WIDTHS.length}`);
       const ctx = await browser.newContext({ viewport: { width, height: 800 }, locale: p.startsWith('/en/') ? 'en-GB' : 'it-IT' });
       const page = await ctx.newPage();
       page.setDefaultTimeout(20000);

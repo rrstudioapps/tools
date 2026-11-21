@@ -6,8 +6,9 @@
 // dà errori in console, fa richieste esterne o un'interazione fallisce.
 import { chromium } from 'playwright-core';
 import { spawn } from 'node:child_process';
-import { mkdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, mkdirSync, readdirSync, readFileSync } from 'node:fs';
+import { join, resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { PDFDocument, PDFName, StandardFonts, decodePDFRawStream, rgb, PDFRawStream } from 'pdf-lib';
 
 const HOST = process.env.HOST ?? '127.0.0.1';
@@ -3353,6 +3354,14 @@ try {
   await handoffCase('pagina di ricezione dopo un POST senza service worker', '/condividi/?retry=1', async (page) => {
     await page.getByText(/Non sono riuscito a ricevere il contenuto/).waitFor();
   });
+  // Scenari dei nuovi strumenti: un file per strumento in scripts/shots/<id>.mjs (vedi _template.mjs), così non serve
+  // più modificare questo file. I file che iniziano con «_» sono ignorati.
+  if (existsSync('scripts/shots')) {
+    for (const f of readdirSync('scripts/shots').filter((n) => n.endsWith('.mjs') && !n.startsWith('_')).sort()) {
+      const mod = await import(pathToFileURL(resolve('scripts/shots', f)).href);
+      await mod.default({ shot, handoffCase, expectValue, must, base, errors, CHECK, browser });
+    }
+  }
 } finally {
   clearTimeout(watchdog);
   await browser.close();
