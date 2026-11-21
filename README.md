@@ -51,6 +51,10 @@ Write, compare, sort and clean up text.
 | [**Unicode inspector**](https://tools.rr-dev.eu/unicode-inspector) | Every character of a text (by grapheme) with U+ code point, category, block, UTF-8/UTF-16 bytes, HTML entity and JS/CSS escapes. Flags invisible characters (zero-width, bidi, odd spaces), common Cyrillic/Greek homoglyphs and mixed scripts; removes invisibles and normalises to NFC/NFKC. Names only where derivable without big tables (ASCII, invisibles, CJK, Hangul). |
 | [**Morse code translator**](https://tools.rr-dev.eu/morse-code) | Text to Morse and back (letters, numbers, punctuation, accented letters), configurable symbols and separators, audio with Web Audio (WPM and pitch) and an optional visual flash that respects `prefers-reduced-motion`. |
 | [**Classic ciphers**](https://tools.rr-dev.eu/classic-ciphers) | ROT13, ROT47, Caesar (with brute force over the 25 shifts), Atbash and Vigenère, with a warning that they are not secure. |
+| [**Text cleaner**](https://tools.rr-dev.eu/text-cleaner) | Tidy text copied from PDFs, emails or Word: broken lines, double spaces, smart quotes, invisible characters and HTML tags. |
+| [**List compare**](https://tools.rr-dev.eu/list-compare) | Compare two lists, one item per line: union, items in common, only in one or the other, and duplicates, with counts. |
+| [**Text extractor**](https://tools.rr-dev.eu/text-extractor) | Paste a text and get the list of emails, links, IPs, dates, phone numbers, IBANs, hashtags and more, with counts, without duplicates and ready to copy. |
+| [**List ↔ line**](https://tools.rr-dev.eu/list-converter) | Turn a list into a single line with separators and quotes (SQL IN, JSON array, CSV, URL, shell) and a line back into a list, with correct escaping. |
 
 ### Data
 
@@ -68,6 +72,14 @@ Tables and structured formats.
 | [**SQL formatter**](https://tools.rr-dev.eu/sql-formatter) | Format or minify SQL (`sql-formatter`) for standard SQL, PostgreSQL, MySQL, MariaDB, SQLite, T-SQL, BigQuery, PL/SQL and more, keyword case and indentation; the minifier never touches strings, quoted names or hints. |
 | [**Fake data generator**](https://tools.rr-dev.eu/fake-data-generator) | 1 to 10,000 rows of made-up test data (names, emails on reserved test domains, Italian phones and addresses, birth dates, UUID, numbers, lorem, colors) with formally valid Italian tax codes, VAT numbers and IBANs (correct check digits, invented bank codes). Optional seed for repeatable output, field order, table preview, CSV (any separator), JSON and SQL `INSERT` export. Chunked generation keeps the page responsive. |
 | [**JSONPath, JSON → TypeScript, JSON Schema**](https://tools.rr-dev.eu/json-query) | A JSONPath playground (RFC 9535 plus Goessner extensions: filters with `&&` `||` `!` `=~`, slices, `..`, `length()`/`count()`/`match()`/`search()`), evaluated without `eval`, with the normalized path of every result and syntax errors with position. Extra tabs turn the same JSON into TypeScript interfaces (union types, optional keys) and a JSON Schema (draft 2020-12). |
+| [**XML editor and viewer**](https://tools.rr-dev.eu/xml-viewer) | Open an XML as a tree: search tags, attributes and text, copy the XPath of nodes and edit them with undo and redo, without the file leaving your browser. |
+| [**XML compare**](https://tools.rr-dev.eu/xml-diff) | Compare two XML documents by structure: added and removed elements, changed attributes and text, with the XPath of each difference and without the noise of indentation and attribute order. |
+| [**XML to table and CSV**](https://tools.rr-dev.eu/xml-to-csv) | Turn an XML into a table: pick the repeating element, flatten attributes and children into columns, preview it and download the CSV. |
+| [**XML ↔ JSON**](https://tools.rr-dev.eu/xml-json-converter) | Convert XML to JSON and JSON to XML with attributes, text and repeated elements: prefix, arrays and types of your choice, in the browser. |
+| [**YAML and TOML viewer and editor**](https://tools.rr-dev.eu/yaml-viewer) | Explore and edit a YAML or TOML file as a tree: search keys and values, copy the path, undo and redo, convert between the two formats. |
+| [**YAML and CSV compare**](https://tools.rr-dev.eu/yaml-csv-diff) | Compare two YAML or two CSV files: differences with their path, lists matched by key, CSV rows matched by the columns you choose. |
+| [**JSON Schema ↔ XSD converter**](https://tools.rr-dev.eu/json-schema-xsd) | Convert a JSON Schema to XSD and an XSD to JSON Schema; anything with no equivalent is listed as a warning. |
+| [**XSD validator**](https://tools.rr-dev.eu/xsd-validator) | Check an XML against an XSD schema: types, facets, element order and count, required attributes and IDs, with the XPath of every problem. |
 
 ### Images, PDF & codes
 
@@ -83,6 +95,16 @@ Images, PDFs, QR codes and barcodes.
 | [**PDF to text**](https://tools.rr-dev.eu/pdf-to-text) | Extract the text of one or more PDFs (password-protected ones too, the password is only used to open the file): lines, paragraphs and simple two-column layouts rebuilt, flowing text or layout kept with spaces, split words joined, repeated headers and footers removed, page range, page separators. Warns when pages have no text layer (scans need OCR, which is not done here). Copy, `.txt`/`.md` (ZIP for several PDFs), or send to another tool. |
 | [**Barcode generator**](https://tools.rr-dev.eu/barcode-generator) | EAN-13, EAN-8, UPC-A, Code 128, Code 39, ITF-14, ITF, Codabar, MSI and Pharmacode with `jsbarcode`: validation, computed check digit, bar width, height, text and colours, SVG or PNG download, and bulk generation from a list into a ZIP. |
 | [**QR code reader**](https://tools.rr-dev.eu/qr-code-reader) | Read QR codes from an uploaded, dropped or pasted image or with the camera (only on request, stopped on exit) using `jsQR`. Recognises URLs, Wi-Fi, vCard, email, phone, SMS, location and text; links are shown as text with warnings and never opened automatically. |
+| [**PDF metadata: view, edit, remove**](https://tools.rr-dev.eu/pdf-metadata) | View and edit a PDF's title, author and dates or remove all metadata (XMP too) before sharing it. |
+| [**PDF page numbers, headers and footers**](https://tools.rr-dev.eu/pdf-page-text) | Add page numbers, a header and a footer to a PDF, with preview, page selection and rotated pages. |
+| [**Compress PDF: make it lighter**](https://tools.rr-dev.eu/pdf-compress) | Make a PDF lighter by recompressing its images or turning pages into images, with the saving shown before you download. |
+| [**Crop and resize PDF**](https://tools.rr-dev.eu/pdf-crop) | Crop a PDF's margins with a preview, change the page scale or fit pages to A4, A5, A3, Letter, Legal. |
+| [**Extract images from PDF**](https://tools.rr-dev.eu/pdf-images) | Extract the images embedded in a PDF at original quality (JPEG or PNG), one by one or all in a ZIP. |
+| [**Fill in and flatten PDF forms**](https://tools.rr-dev.eu/pdf-form) | Fill in a PDF form's fields and download the filled or flattened file, with the values fixed on the page. |
+| [**Black out parts of a PDF**](https://tools.rr-dev.eu/pdf-redact) | Black out names, codes and signatures in a PDF by drawing rectangles or searching for a text: redacted pages become images and the text underneath no longer exists. |
+| [**Protect a PDF with a password**](https://tools.rr-dev.eu/pdf-protect) | Protect a PDF with a password to open it (256-bit AES) and restrict printing, copying and editing, all in your browser. |
+| [**Redact parts of an image**](https://tools.rr-dev.eu/image-redact) | Cover faces, plates and data in screenshots with a solid box, pixelation or blur. All in your browser, no metadata kept. |
+| [**ZIP: create and extract**](https://tools.rr-dev.eu/zip-tool) | Compress several files or a folder into a ZIP, or open a ZIP and download only the files you need. In your browser, with zip bomb protection. |
 
 ### Calculators
 
@@ -96,6 +118,12 @@ Percentages, units, dates, time zones and number bases.
 | [**Date and age calculator**](https://tools.rr-dev.eu/date-calculator) | Difference between two dates in years, months and days (plus total days and weeks, end day optional), add or subtract days, weeks, months and years, and exact age with the days to the next birthday. Month ends (31 January + 1 month) and leap years (29 February) are handled. |
 | [**Time zone converter**](https://tools.rr-dev.eu/timezone-converter) | Convert a time between IANA time zones and compare several at once. Zones and daylight saving come from `Intl` only (no time zone database is shipped); search by city, nonexistent and repeated local times at DST changes are flagged. |
 | [**Number base converter**](https://tools.rr-dev.eu/number-base-converter) | Binary, octal, decimal, hexadecimal and any base from 2 to 36 with BigInt (no size limit), two's complement at 8, 16, 32 and 64 bits with a bit view, and IEEE-754 float32 and float64: decode a bit pattern or encode a number, with the exact stored decimal value. |
+| [**Timer and stopwatch**](https://tools.rr-dev.eu/timer) | Countdown timer, stopwatch with laps and Pomodoro with a sound alert. Time stays exact even with the tab in the background. |
+| [**Scientific calculator**](https://tools.rr-dev.eu/scientific-calculator) | Expressions with brackets, powers, percentages, factorial, logarithms and trigonometry in degrees or radians, with history and a result as you type. |
+| [**Random numbers, dice and draws**](https://tools.rr-dev.eu/random-number-generator) | Random numbers in a range, dice with 2d6+3 notation, draws from a list of names, teams and heads or tails, using the browser's secure generator. |
+| [**Countdown to a date**](https://tools.rr-dev.eu/countdown) | How long until a date: live days, hours, minutes and seconds, with weeks, working days, time zones and shortcuts for Christmas, Easter and other holidays. |
+| [**Split the bill**](https://tools.rr-dev.eu/split-bill) | Split the bill equally with tip and rounding, or by consumption with shared costs and a proportional tip. The shares always add up to the cent. |
+| [**Trip cost calculator**](https://tools.rr-dev.eu/trip-cost-calculator) | Work out what a car trip costs, your average fuel consumption from a fill-up and how far a budget will take you. Km or miles, l/100 km, km/l or mpg. |
 
 ### Developers
 
@@ -122,6 +150,10 @@ Encode, decode and compute.
 | [**Watermark images and PDFs**](https://tools.rr-dev.eu/image-watermark) | Text (font, size, colour, opacity, rotation) or logo watermark on several images and PDFs at once: nine positions with margin or a tiled pattern, live preview, all pages or a page range of each PDF, PNG/JPEG/WebP output (or the original format), single download or ZIP. Images are redrawn from scratch (no metadata). |
 | [**Image color picker and palette**](https://tools.rr-dev.eu/image-color-picker) | Pick the colour of any pixel by click, tap or keyboard (arrow keys move the crosshair) with a magnifier; HEX, RGB, HSL and OKLCH values, session-only history, dominant palette of 5 to 12 colours (median cut plus k-means, deterministic) with percentages, CSS/JSON export and a link to the colour converter. |
 | [**SVG to PNG**](https://tools.rr-dev.eu/svg-to-png) | Paste or load an SVG and export PNG, JPG or WebP at 1x-8x or an exact width/height, transparent or coloured background. Handles SVGs without width/height (viewBox) and warns about external resources, which are never loaded. |
+| [**HTML and DOM viewer**](https://tools.rr-dev.eu/html-dom-viewer) | See an HTML page as a DOM tree, search with CSS selectors or XPath and copy the path of each element, in the browser. |
+| [**Test data generator from a schema**](https://tools.rr-dev.eu/schema-test-data) | Generate test data from a JSON Schema or an XSD: repeatable seed, number of records, export as JSON, XML or CSV. |
+| [**String escape and unescape**](https://tools.rr-dev.eu/string-escape) | Protect the special characters of a text for JSON, JavaScript, Python, regex, shell, SQL, CSV, Java and PHP, or turn a string back to plain text with precise errors. |
+| [**Text ↔ hex, binary, decimal**](https://tools.rr-dev.eu/text-binary-converter) | Converts text to its bytes (UTF-8, UTF-16, Latin-1, Windows-1252, ASCII) as hex, binary, decimal, octal or Base64, and back, with precise decoding errors. |
 
 ### Web & design
 
@@ -137,6 +169,7 @@ Colors, CSS, SVG and icons.
 | [**CSS generator**](https://tools.rr-dev.eu/css-generator) | Linear, radial and conic gradients (draggable or numeric color stops with opacity, angle, center, repeating) and multi-layer `box-shadow` (inset, offset, blur, spread, color with alpha), with a live preview and copyable CSS. |
 | [**SVG optimizer**](https://tools.rr-dev.eu/svg-optimizer) | Shrink SVGs with SVGO (safe default preset): precision, viewBox kept by default, metadata and comments, before/after sizes, side-by-side preview as an image (SVG is never injected into the page), many files at once with a ZIP download. |
 | [**Favicon generator**](https://tools.rr-dev.eu/favicon-generator) | From an image (PNG, JPG, SVG) or a letter or emoji, with colors, shape, padding and crop: `favicon.ico` (16, 32, 48 PNG-in-ICO), PNGs at 16, 32, 180 (apple-touch-icon), 192 and 512, `site.webmanifest` and the HTML snippet, all in a ZIP. |
+| [**UTM link builder**](https://tools.rr-dev.eu/utm-link-builder) | Build links with UTM parameters for Google Analytics: one source at a time or many at once, with warnings about case and spaces and a .csv file. |
 
 ### Security
 
