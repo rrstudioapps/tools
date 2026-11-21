@@ -66,8 +66,8 @@ const BY_ID = new Map(TOOLS.map((t) => [t.id, t] as const));
       text-decoration: none;
     }
     li.cur a {
-      background: var(--primary);
-      color: var(--on-primary);
+      background: var(--ink);
+      color: var(--bg);
       font-weight: 600;
     }
     li.done a {

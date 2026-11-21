@@ -50,8 +50,8 @@ import { PwaStatus } from './shared/pwa-status';
       left: -999px;
       top: 0.5rem;
       z-index: 50;
-      background: var(--primary);
-      color: var(--on-primary);
+      background: var(--ink);
+      color: var(--bg);
       padding: 0.5rem 1rem;
       border-radius: var(--radius-sm);
       &:focus {
