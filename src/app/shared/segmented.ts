@@ -37,7 +37,7 @@ export interface SegmentOption<T extends string> {
       flex-wrap: wrap;
       max-width: 100%;
       border: 1px solid var(--line);
-      border-radius: var(--radius-pill);
+      border-radius: 20px; /* come una capsula su una riga, angoli contenuti quando va a capo su due */
       padding: 2px;
     }
     .seg-btn {
