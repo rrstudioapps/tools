@@ -382,7 +382,7 @@ export const it = {
 
   'tool.pw.title': 'Generatore di password',
   'tool.pw.desc':
-    'Password casuali e passphrase facili da ricordare, con entropia e tempo stimato per indovinarle. Generate nel tuo browser, mai salvate.',
+    'Password casuali e passphrase facili da ricordare, con entropia e tempo stimato per indovinarle. Create nel tuo browser, mai salvate.',
   'seo.pw.title': 'Generatore di password sicure online | rrstudio tools',
   'seo.pw.desc':
     'Genera password casuali e passphrase con la crittografia del browser: lunghezza, caratteri, entropia in bit e tempo per indovinarle. Nulla viene salvato.',
