@@ -111,6 +111,11 @@ Images, PDFs, QR codes and barcodes.
 | [**Watermark images and PDFs**](https://tools.rr-dev.eu/image-watermark) | Text (font, size, colour, opacity, rotation) or logo watermark on several images and PDFs at once: nine positions with margin or a tiled pattern, live preview, all pages or a page range of each PDF, PNG/JPEG/WebP output (or the original format), single download or ZIP. Images are redrawn from scratch (no metadata). |
 | [**Image color picker and palette**](https://tools.rr-dev.eu/image-color-picker) | Pick the colour of any pixel by click, tap or keyboard (arrow keys move the crosshair) with a magnifier; HEX, RGB, HSL and OKLCH values, session-only history, dominant palette of 5 to 12 colours (median cut plus k-means, deterministic) with percentages, CSS/JSON export and a link to the colour converter. |
 | [**SVG to PNG**](https://tools.rr-dev.eu/svg-to-png) | Paste or load an SVG and export PNG, JPG or WebP at 1x-8x or an exact width/height, transparent or coloured background. Handles SVGs without width/height (viewBox) and warns about external resources, which are never loaded. |
+| [**Merge front and back scans**](https://tools.rr-dev.eu/pdf-interleave) | Merges the fronts PDF and the backs PDF into one with alternating pages, even with the backs in reverse order. |
+| [**Split double pages**](https://tools.rr-dev.eu/pdf-split-spreads) | Splits each double page of a PDF into two single pages, in half or with an adjustable cut line, left to right or reversed. |
+| [**PDF pages per sheet and booklet**](https://tools.rr-dev.eu/pdf-nup) | Put 2, 4, 6 or 9 pages of a PDF on each A4 or Letter sheet, or prepare a booklet to print double-sided and fold in half. |
+| [**PDF inspector**](https://tools.rr-dev.eu/pdf-inspector) | Look inside a PDF: version, pages and sizes, fonts, encryption and permissions, metadata, annotations, forms and attachments. JSON report. |
+| [**Remove blank pages**](https://tools.rr-dev.eu/pdf-blank-pages) | Find the blank pages of a PDF, scans included, check them as thumbnails and download the file without them. |
 
 ### Calculators
 
