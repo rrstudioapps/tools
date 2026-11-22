@@ -131,6 +131,9 @@ export class Home {
       const param = snap.queryParamMap.get('categoria') ?? snap.queryParamMap.get('category');
       const slugUrl = '/?' + (param ? 'categoria=' + param : '') + (snap.fragment ? '#' + snap.fragment : '');
       this.urlCategory.set(homeFilterFromUrl(slugUrl));
+      // ?q=testo: ricerca precompilata (è l'indirizzo dichiarato dalla SearchAction dei dati strutturati)
+      const q = snap.queryParamMap.get('q');
+      if (q) this.query.set(q.slice(0, 100));
       this.ready.set(true);
       if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) this.modKey.set('⌘');
       // scorciatoie: "/" e Ctrl/⌘+K portano il focus sulla ricerca (non se si sta già scrivendo in un campo)

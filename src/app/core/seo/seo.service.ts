@@ -96,7 +96,7 @@ export class SeoService {
     });
   }
 
-  /** JSON-LD WebSite della home: nome, indirizzo, lingua ed editore. */
+  /** JSON-LD WebSite della home: nome, indirizzo, lingua, editore e ricerca (SearchAction). */
   private siteData(lang: Lang): object {
     return {
       '@context': 'https://schema.org',
@@ -105,6 +105,12 @@ export class SeoService {
       url: publicUrl('', lang),
       inLanguage: lang,
       publisher: { '@type': 'Organization', name: 'rrstudio', url: SITE_URL },
+      // la home legge ?q= e filtra gli strumenti (nel browser, senza richieste di rete)
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: `${publicUrl('', lang)}?q={search_term_string}` },
+        'query-input': 'required name=search_term_string',
+      },
     };
   }
 
