@@ -29,6 +29,12 @@ export const CHANGELOG: readonly ChangelogVersion[] = [
     entries: [
       {
         kind: 'new-tool',
+        it: 'Nuovo strumento «Rimuovi pagine vuote»: trova le pagine vuote di un PDF, anche nelle scansioni, le mostra in miniatura e scarica il file senza quelle che confermi.',
+        en: 'New tool "Remove blank pages": finds the blank pages of a PDF, scans included, shows them as thumbnails and downloads the file without the ones you confirm.',
+        toolIds: ['pdf-blank-pages'],
+      },
+      {
+        kind: 'new-tool',
         it: 'Nuovo strumento: ispettore PDF, per vedere versione, misure delle pagine, font, cifratura, permessi e metadati di un file e scaricare il report in JSON.',
         en: 'New tool: PDF inspector, to see a file\'s version, page sizes, fonts, encryption, permissions and metadata and download the report as JSON.',
         toolIds: ['pdf-inspector'],

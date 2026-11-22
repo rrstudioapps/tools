@@ -1956,4 +1956,19 @@ export const TOOLS: readonly ToolDefinition[] = [
     seo: { titleKey: 'seo.pin.title', descriptionKey: 'seo.pin.desc' },
     loadComponent: () => import('./pdf-inspector/pdf-inspector.page').then((m) => m.PdfInspectorPage),
   },
+  {
+    id: 'pdf-blank-pages',
+    path: 'pdf-blank-pages',
+    icon: 'trash',
+    category: 'media',
+    added: '2026-11-22',
+    keywords: {
+      it: 'pdf pagine vuote bianche rimuovi elimina togli scansione scanner bordi neri documento',
+      en: 'pdf blank empty pages remove delete scan scanner black borders document',
+    },
+    titleKey: 'tool.pbl.title',
+    descriptionKey: 'tool.pbl.desc',
+    seo: { titleKey: 'seo.pbl.title', descriptionKey: 'seo.pbl.desc' },
+    loadComponent: () => import('./pdf-blank-pages/pdf-blank-pages.page').then((m) => m.PdfBlankPagesPage),
+  },
 ];

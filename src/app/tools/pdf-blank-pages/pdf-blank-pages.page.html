@@ -1,0 +1,88 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio Tools -->
+<div class="container tool-page">
+  <header class="tool-intro">
+    <h1>{{ i18n.t('tool.pbl.title') }}</h1>
+    <p class="tool-lead">{{ i18n.t('pbl.lead') }}</p>
+  </header>
+
+  <app-privacy-note />
+  <app-share-link toolId="pdf-blank-pages" [schema]="shareSchema" [state]="shareState" (restored)="restoreShared($event)" />
+
+  <app-pdf-source toolId="pdf-blank-pages" (loaded)="onLoaded($event)" (cleared)="onCleared()">
+    @if (pdf(); as p) {
+      <section class="panel" [attr.aria-label]="i18n.t('pbl.settings')">
+        <h2 class="eyebrow">{{ i18n.t('pbl.settings') }}</h2>
+        <div class="opts">
+          <label class="fld" for="pbl-thr">
+            <span>{{ i18n.t('pbl.threshold') }}: {{ threshold().toLocaleString(i18n.locale()) }}%</span>
+            <input id="pbl-thr" data-testid="pbl-threshold" type="range" min="0" max="2" step="0.05" [value]="threshold()" (input)="setNumber('threshold', $event)" />
+          </label>
+          <label class="fld" for="pbl-margin">
+            <span>{{ i18n.t('pbl.margin') }}: {{ margin() }}%</span>
+            <input id="pbl-margin" data-testid="pbl-margin" type="range" min="0" max="25" step="1" [value]="margin()" (input)="setNumber('margin', $event)" />
+          </label>
+          <label class="fld" for="pbl-noise">
+            <span>{{ i18n.t('pbl.noise') }}</span>
+            <select id="pbl-noise" data-testid="pbl-noise" (change)="setNumber('noise', $event)">
+              @for (n of noiseLevels; track n) {
+                <option [value]="n" [selected]="noise() === n">{{ i18n.t('pbl.noise.' + n) }}</option>
+              }
+            </select>
+          </label>
+        </div>
+        <p class="hint">{{ i18n.t('pbl.settings.hint') }}</p>
+        <div class="row">
+          <button type="button" class="btn primary" data-shortcut="run" data-testid="pbl-go" [disabled]="!canAnalyze()" (click)="analyze()">
+            {{ busy() ? progress() || i18n.t('pc.working') : cards().length ? i18n.t('pbl.again') : i18n.t('pbl.go') }}
+          </button>
+        </div>
+      </section>
+
+      @if (cards().length) {
+        <section class="panel" [attr.aria-label]="i18n.t('pbl.result')">
+          <h2 class="eyebrow">{{ i18n.t('pbl.result') }}</h2>
+          <div aria-live="polite">
+            <p class="summary" data-testid="pbl-summary">{{ i18n.t('pbl.summary', { blank: blankCount(), total: cards().length, remove: removeIdx().length }) }}</p>
+            @if (removeIdx().length > 0 && removeIdx().length === cards().length) {
+              <p class="tool-warn" role="note">{{ i18n.t('pbl.err.all') }}</p>
+            }
+          </div>
+          <ul class="grid" [attr.aria-label]="i18n.t('pbl.pages')">
+            @for (c of cards(); track c.number) {
+              <li class="card" [class.blank]="isRemoved(c)" [attr.data-testid]="'pbl-card-' + c.number">
+                <label [for]="'pbl-p' + c.number">
+                  @if (c.url) {
+                    <img [src]="c.url" [width]="c.width" [height]="c.height" [alt]="i18n.t('pbl.thumb', { n: c.number })" />
+                  }
+                  <span class="meta">
+                    <input type="checkbox" [id]="'pbl-p' + c.number" [attr.data-testid]="'pbl-check-' + c.number" [checked]="isRemoved(c)" (change)="toggle(c)" />
+                    <span>{{ i18n.t('pbl.page', { n: c.number }) }}</span>
+                  </span>
+                  <span class="tag" [class.on]="c.blank">{{ c.blank ? i18n.t('pbl.blank') : i18n.t('pbl.content') }} · {{ pct(c.ink) }}%</span>
+                  <span class="act">{{ isRemoved(c) ? i18n.t('pbl.willRemove') : i18n.t('pbl.willKeep') }}</span>
+                </label>
+              </li>
+            }
+          </ul>
+          <div class="row">
+            <button type="button" class="btn primary" data-shortcut="download" data-testid="pbl-download" [disabled]="!canDownload()" (click)="download()">
+              <app-icon name="download" /> {{ i18n.t('pc.download') }}
+            </button>
+            <app-copy-button shortcut="copy" [text]="removedList()" [label]="i18n.t('pbl.copy')" [disabled]="!removedList()" />
+            <button type="button" class="btn small" data-testid="pbl-reset" (click)="resetChoices()">{{ i18n.t('pbl.reset') }}</button>
+          </div>
+          @if (removedList()) {
+            <p class="hint" data-testid="pbl-list">{{ i18n.t('pbl.list', { list: removedList() }) }}</p>
+          }
+        </section>
+      }
+    }
+    <div class="tool-status" role="status" aria-live="polite">
+      @if (error()) {
+        <p class="tool-error" role="alert" data-testid="pbl-error">{{ error() }}</p>
+      } @else if (done()) {
+        <p class="tool-ok" data-testid="pbl-done">{{ done() }}</p>
+      }
+    </div>
+  </app-pdf-source>
+</div>

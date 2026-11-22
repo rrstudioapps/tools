@@ -1376,6 +1376,38 @@ try {
         await page.waitForTimeout(200);
       },
     });
+  await shot('pdf-blank-pages.png', {
+      width: 1280,
+      dark: false,
+      path: '/pdf-blank-pages/',
+      setup: async (page) => {
+        // 5 pagine: la 2 è bianca, la 4 ha solo un bordo nero di scansione e un puntino isolato
+        const doc = await PDFDocument.create();
+        const font = await doc.embedFont(StandardFonts.Helvetica);
+        for (let n = 1; n <= 5; n++) {
+          const p = doc.addPage([595, 842]);
+          if (n === 4) {
+            p.drawRectangle({ x: 0, y: 0, width: 5, height: 842, color: rgb(0, 0, 0) });
+            p.drawRectangle({ x: 300, y: 400, width: 1, height: 1, color: rgb(0, 0, 0) });
+          } else if (n !== 2) {
+            p.drawText(`Capitolo ${n}`, { x: 60, y: 760, size: 30, font, color: rgb(0.1, 0.1, 0.12) });
+            for (let k = 0; k < 30; k++) p.drawText('Testo di esempio del documento, riga di prova per la pagina.', { x: 60, y: 700 - k * 20, size: 12, font, color: rgb(0.1, 0.1, 0.12) });
+          }
+        }
+        await loadPdfIn(page, Buffer.from(await doc.save()), 'relazione.pdf');
+        await page.getByTestId('pbl-go').click();
+        await page.getByTestId('pbl-card-5').waitFor({ timeout: 30000 });
+        await page.waitForFunction(() => /2 pagine vuote su 5/.test(document.querySelector('[data-testid=pbl-summary]')?.textContent ?? ''), null, { timeout: 10000 });
+        await page.getByTestId('pbl-check-2').uncheck();
+        await page.waitForFunction(() => /1 da rimuovere/.test(document.querySelector('[data-testid=pbl-summary]')?.textContent ?? ''), null, { timeout: 5000 });
+        await page.getByTestId('pbl-check-2').check();
+        const out = await downloadBuffer(page, () => page.getByTestId('pbl-download').click());
+        need((await PDFDocument.load(out.buffer)).getPageCount() === 3, 'pagine rimaste: attese 3');
+        need(/-senza-vuote\.pdf$/.test(out.name), 'nome file: ' + out.name);
+        const list = (await page.getByTestId('pbl-list').textContent()) ?? '';
+        need(/2, 4/.test(list), 'elenco pagine rimosse: ' + list);
+      },
+    });
   await shot('roman-numerals.png', {
     width: 1280,
     dark: false,
