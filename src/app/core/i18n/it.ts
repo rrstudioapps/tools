@@ -432,9 +432,9 @@ export const it = {
   'tool.p2t.title': 'Estrai testo da PDF',
   'tool.p2t.desc':
     'Estrai il testo da uno o più PDF, anche protetti da password: righe e paragrafi ricostruiti, colonne, trattini a capo uniti, intestazioni e piè di pagina ripetuti tolti. Copia o scarica in .txt e .md.',
-  'seo.p2t.title': 'Estrai testo da PDF online: da PDF a testo (TXT), senza caricare il file | rrstudio tools',
+  'seo.p2t.title': 'Estrai testo da PDF online, senza upload | rrstudio tools',
   'seo.p2t.desc':
-    'Copia il testo di un PDF o trasformalo in TXT o Markdown: ricostruisce righe, paragrafi e colonne, unisce le parole spezzate, toglie intestazioni e piè di pagina. Avvisa se il PDF è una scansione (serve l\'OCR). Nel browser, senza upload.',
+    'Copia il testo di un PDF o salvalo in TXT o Markdown: ricostruisce righe e paragrafi, toglie intestazioni e piè di pagina. Nel browser, senza upload.',
 
   'tool.exif.title': 'Metadati foto (EXIF): visualizza e rimuovi',
   'tool.exif.desc':
@@ -468,7 +468,7 @@ export const it = {
     'Confronta due JSON (o YAML) per struttura: differenze con percorso, valore vecchio e nuovo, array per indice, come insiemi o per chiave, albero unito ed esportazione come JSON Patch.',
   'seo.jd.title': 'Confronto JSON online (diff strutturale) | rrstudio tools',
   'seo.jd.desc':
-    'Confronta due JSON e vedi le differenze: aggiunte, rimozioni e modifiche con il percorso esatto, ordine delle chiavi ignorato, array per chiave id, esporta in JSON Patch. Nel browser, nessun upload.',
+    'Confronta due JSON e vedi aggiunte, rimozioni e modifiche con il percorso esatto. Ignora l\'ordine delle chiavi, esporta in JSON Patch. Nel browser, senza upload.',
 
   'tool.md.title': 'Editor Markdown',
   'tool.md.desc':
@@ -524,7 +524,7 @@ export const it = {
     'Firma un PDF nel browser: disegna, scrivi o carica la tua firma, posizionala sulle pagine con una data e scarica il PDF firmato. Firma grafica, senza caricare nulla.',
   'seo.sign.title': 'Firma PDF online gratis, senza caricare il file | rrstudio tools',
   'seo.sign.desc':
-    'Firma un PDF online: disegna la firma con mouse o dito, digitala o caricala da un\'immagine, posizionala su più pagine con la data. Il file resta nel tuo browser. Firma grafica, non digitale.',
+    'Firma un PDF online: disegna la firma, digitala o caricala da un\'immagine e posizionala su più pagine con la data. Il file resta nel browser. Firma grafica.',
   'tool.pm.title': 'Metadati PDF: guarda, modifica, rimuovi',
   'tool.pm.desc':
     'Guarda e modifica titolo, autore e date di un PDF oppure togli tutti i metadati (anche XMP) prima di condividerlo.',
@@ -578,58 +578,58 @@ export const it = {
     'Ritaglia una foto con proporzioni fisse (anche tessera 35×45), ruota, rifletti, ridimensiona ed esporta in PNG, JPEG o WebP, senza caricare nulla.',
   'seo.crop.title': 'Ritaglia, ruota e ridimensiona immagini online | rrstudio tools',
   'seo.crop.desc':
-    'Ritaglia foto online con proporzioni 1:1, 4:3, 16:9 o foto tessera 35×45, ruota di 90° o di un angolo libero, rifletti, ridimensiona ed esporta in PNG, JPEG o WebP. Nel browser, senza metadati.',
+    'Ritaglia foto online in 1:1, 4:3, 16:9 o formato tessera, ruota, rifletti e ridimensiona, ed esporta in PNG, JPEG o WebP. Nel browser, senza metadati.',
   'tool.meta.title': 'Anteprima meta tag e Open Graph',
   'tool.meta.desc':
     'Incolla l\'HTML di una pagina e vedi l\'anteprima su Google, Facebook, LinkedIn, X e WhatsApp, con controlli su title, description, Open Graph e Twitter Card.',
-  'seo.meta.title': 'Anteprima meta tag, Open Graph e Twitter Card online | rrstudio tools',
+  'seo.meta.title': 'Anteprima meta tag, Open Graph e Twitter Card | rrstudio tools',
   'seo.meta.desc':
-    'Controlla title, description, canonical, Open Graph e Twitter Card di una pagina: anteprime di Google, Facebook, LinkedIn, X e WhatsApp, avvisi sulle lunghezze e snippet HTML. Senza richieste di rete.',
+    'Controlla title, description, canonical, Open Graph e Twitter Card: anteprime di Google, Facebook, LinkedIn, X e WhatsApp e snippet HTML. Senza richieste di rete.',
 
   'tool.fake.title': 'Generatore di dati finti',
   'tool.fake.desc':
     'Dati di prova finti e realistici: nomi, e-mail, indirizzi, codice fiscale, partita IVA e IBAN formalmente validi. Da 1 a 10.000 righe, con seme riproducibile, in CSV, JSON o SQL.',
   'seo.fake.title': 'Generatore di dati finti online: CSV, JSON e SQL | rrstudio tools',
   'seo.fake.desc':
-    'Genera dati di prova italiani finti: nome, cognome, e-mail su domini di test, telefono, indirizzo, codice fiscale, partita IVA e IBAN validi nel formato. Con seme, fino a 10.000 righe. Tutto nel browser.',
+    'Genera dati di prova italiani finti: nome, e-mail di test, telefono, indirizzo, codice fiscale, partita IVA e IBAN validi nel formato. Fino a 10.000 righe, nel browser.',
 
   'tool.jq.title': 'JSONPath, JSON → TypeScript e JSON Schema',
   'tool.jq.desc':
     'Interroga un JSON con espressioni JSONPath (filtri, slice, ricerca ricorsiva) e ricavane interfacce TypeScript e JSON Schema.',
-  'seo.jq.title': 'JSONPath online, JSON in TypeScript e JSON Schema | rrstudio tools',
+  'seo.jq.title': 'JSONPath, JSON in TypeScript e JSON Schema | rrstudio tools',
   'seo.jq.desc':
     'Prova espressioni JSONPath su un JSON con filtri, slice e percorsi dei risultati, e genera interfacce TypeScript o uno JSON Schema (draft 2020-12). Tutto nel browser.',
 
   'tool.wm.title': 'Filigrana su immagini e PDF',
   'tool.wm.desc':
     'Aggiungi una filigrana di testo o un logo a più immagini e PDF insieme: posizione, mosaico, rotazione e opacità, con anteprima dal vivo e senza caricare nulla.',
-  'seo.wm.title': 'Filigrana su immagini e PDF online, senza caricare i file | rrstudio tools',
+  'seo.wm.title': 'Filigrana su immagini e PDF, senza caricare file | rrstudio tools',
   'seo.wm.desc':
-    'Metti una filigrana di testo o un logo su foto e PDF: nove posizioni o mosaico, rotazione, opacità, colore, tutte le pagine o solo alcune. Più file insieme in ZIP, direttamente nel browser.',
+    'Metti una filigrana di testo o un logo su foto e PDF: posizione, rotazione, opacità e colore, tutte le pagine o solo alcune. Più file in ZIP, nel browser.',
   'tool.cpk.title': 'Contagocce e palette da immagine',
   'tool.cpk.desc':
     'Leggi il colore di un pixel con un clic, un tocco o la tastiera (HEX, RGB, HSL, OKLCH) con lente d\'ingrandimento, e ricava la palette dei colori dominanti da un\'immagine.',
-  'seo.cpk.title': 'Contagocce colore e palette da un\'immagine online | rrstudio tools',
+  'seo.cpk.title': 'Contagocce colore e palette da immagine online | rrstudio tools',
   'seo.cpk.desc':
-    'Carica una foto e preleva il colore di qualsiasi pixel in HEX, RGB, HSL e OKLCH, con lente e storico. Calcola la palette dei colori dominanti con le percentuali ed esportala in CSS o JSON. Nel browser.',
+    'Carica una foto e preleva il colore di un pixel in HEX, RGB, HSL e OKLCH, con lente e storico. Calcola la palette dominante ed esportala in CSS o JSON.',
   'tool.s2p.title': 'SVG in PNG',
   'tool.s2p.desc':
     'Converti un SVG in PNG, JPG o WebP: scala da 1x a 8x o dimensione precisa, sfondo trasparente o colorato, anche se l\'SVG non ha width e height. Nel browser.',
-  'seo.s2p.title': 'Converti SVG in PNG, JPG o WebP online, senza caricare il file | rrstudio tools',
+  'seo.s2p.title': 'Converti SVG in PNG, JPG o WebP senza caricarlo | rrstudio tools',
   'seo.s2p.desc':
-    'Trasforma un SVG in immagine PNG, JPG o WebP alla risoluzione che vuoi (1x-8x o larghezza e altezza), con sfondo trasparente o colorato. Gestisce i viewBox e avvisa sulle risorse esterne. Tutto nel browser.',
+    'Trasforma un SVG in PNG, JPG o WebP alla risoluzione che vuoi (1x-8x), con sfondo trasparente o colorato. Avvisa sulle risorse esterne. Tutto nel browser.',
   'tool.icv.title': 'Convertitore formato immagini',
   'tool.icv.desc':
     'Converti immagini in PNG, JPG, WebP o AVIF nel browser, con qualità e ridimensionamento a scelta. Più file insieme, download singolo o in ZIP.',
-  'seo.icv.title': 'Convertitore di immagini online: PNG, JPG, WebP, AVIF | rrstudio tools',
+  'seo.icv.title': 'Converti immagini online: PNG, JPG, WebP, AVIF | rrstudio tools',
   'seo.icv.desc':
-    'Converti più immagini in PNG, JPG, WebP o AVIF, regola la qualità, ridimensiona mantenendo le proporzioni e scarica tutto in ZIP. Nel browser, senza caricare nulla e senza EXIF.',
+    'Converti più immagini in PNG, JPG, WebP o AVIF, regola la qualità, ridimensiona e scarica tutto in ZIP. Nel browser, senza caricare nulla e senza EXIF.',
   'tool.colc.title': 'Convertitore colori',
   'tool.colc.desc':
     'Converti un colore tra HEX, RGB, HSL, HWB, OKLCH, OKLAB e CMYK, genera la scala di tinte 50-950 e le armonie, ed esporta variabili CSS e JSON.',
-  'seo.colc.title': 'Convertitore colori online: HEX, RGB, HSL, OKLCH e palette | rrstudio tools',
+  'seo.colc.title': 'Convertitore colori online: HEX, RGB, HSL, OKLCH | rrstudio tools',
   'seo.colc.desc':
-    'Converti colori tra HEX, RGB, HSL, HWB, OKLCH, OKLAB e CMYK, con gamut sRGB indicato. Scala di tinte 50-950, complementari, analoghi e triadici, esportabili come variabili CSS o JSON.',
+    'Converti colori tra HEX, RGB, HSL, HWB, OKLCH, OKLAB e CMYK. Scala di tinte 50-950, complementari e triadici, esportabili come variabili CSS o JSON.',
 
   'tool.yj.title': 'Convertitore YAML, JSON e TOML',
   'tool.yj.desc':
@@ -659,7 +659,7 @@ export const it = {
   'tool.hd.title': 'Visualizzatore HTML e DOM',
   'tool.hd.desc':
     'Guarda una pagina HTML come albero DOM, cerca con selettori CSS o XPath e copia il percorso di ogni elemento, nel browser.',
-  'seo.hd.title': 'Visualizzatore HTML e DOM online con query CSS e XPath | rrstudio tools',
+  'seo.hd.title': 'Visualizzatore HTML e DOM con query CSS e XPath | rrstudio tools',
   'seo.hd.desc':
     'Visualizza un documento HTML come albero DOM online: query con selettori CSS e XPath, percorso di ogni nodo, nessuno script eseguito e nessun dato inviato.',
   'tool.yv.title': 'Editor e visualizzatore YAML e TOML',
@@ -667,7 +667,7 @@ export const it = {
     'Esplora e modifica un file YAML o TOML come albero: cerca tra chiavi e valori, copia il percorso, annulla e ripeti, converti tra i due formati.',
   'seo.yv.title': 'Editor e visualizzatore YAML e TOML ad albero | rrstudio tools',
   'seo.yv.desc':
-    'Visualizza e modifica YAML e TOML come albero online: ricerca, percorso di ogni nodo, modifica di chiavi e valori, annulla e ripeti, conversione tra i formati. Nessun upload.',
+    'Visualizza e modifica YAML e TOML come albero: ricerca, percorso di ogni nodo, modifica di chiavi e valori, annulla e ripeti, conversione. Nessun upload.',
   'tool.yc.title': 'Confronto YAML e CSV',
   'tool.yc.desc':
     'Confronta due YAML o due CSV: differenze con il percorso, liste per chiave, righe dei CSV abbinate per le colonne che scegli.',
@@ -679,7 +679,7 @@ export const it = {
     'Converti uno schema JSON in XSD e un XSD in JSON Schema; ciò che non ha un equivalente è elencato come avviso.',
   'seo.sx.title': 'Convertitore JSON Schema e XSD online | rrstudio tools',
   'seo.sx.desc':
-    'Converti JSON Schema in XSD e XSD in JSON Schema online: elementi, attributi, tipi, restrizioni e occorrenze, con l\'elenco di ciò che non si può convertire. Nessun upload.',
+    'Converti JSON Schema in XSD e XSD in JSON Schema: elementi, attributi, tipi e restrizioni, con l\'elenco di ciò che non si può convertire. Nessun upload.',
   'tool.st.title': 'Generatore di dati di prova da schema',
   'tool.st.desc':
     'Genera dati di prova da un JSON Schema o da un XSD: seme ripetibile, numero di record, esportazione in JSON, XML o CSV.',
@@ -708,7 +708,7 @@ export const it = {
   'tool.sql.title': 'Formattatore SQL',
   'tool.sql.desc':
     'Formatta o minifica una query SQL scegliendo dialetto (PostgreSQL, MySQL, SQLite, SQL Server, BigQuery…), maiuscole e indentazione.',
-  'seo.sql.title': 'Formattatore SQL online (PostgreSQL, MySQL, SQLite) | rrstudio tools',
+  'seo.sql.title': 'Formatta SQL online (PostgreSQL, MySQL, SQLite) | rrstudio tools',
   'seo.sql.desc':
     'Formatta e minifica query SQL per PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, BigQuery e altri dialetti, con maiuscole e indentazione a scelta. Nel browser.',
 
@@ -722,7 +722,7 @@ export const it = {
   'tool.case.title': 'Convertitore maiuscole e minuscole',
   'tool.case.desc':
     'Converti un testo in camelCase, snake_case, kebab-case, Title Case (italiano e inglese), maiuscolo, minuscolo e altre forme, anche riga per riga.',
-  'seo.case.title': 'Convertitore camelCase, snake_case, Title Case e maiuscole | rrstudio tools',
+  'seo.case.title': 'Convertitore camelCase, snake_case, Title Case | rrstudio tools',
   'seo.case.desc':
     'Converti testo in camelCase, PascalCase, snake_case, kebab-case, Title Case con regole italiane e inglesi, maiuscolo e minuscolo, riga per riga. Nel browser.',
 
@@ -801,7 +801,7 @@ export const it = {
     'Differenza tra due date in anni, mesi e giorni, aggiungi o togli giorni, settimane, mesi e anni, calcola l\'età esatta e i giorni al compleanno.',
   'seo.dc.title': 'Calcolo differenza tra date, età e giorni | rrstudio tools',
   'seo.dc.desc':
-    'Calcola la differenza tra due date, aggiungi o togli giorni, mesi e anni a una data e scopri l\'età esatta e quanti giorni mancano al compleanno. Gestisce fine mese e anni bisestili.',
+    'Calcola la differenza tra due date, aggiungi o togli giorni, mesi e anni e scopri l\'età esatta e i giorni al compleanno. Gestisce fine mese e anni bisestili.',
 
   'tool.tz.title': 'Convertitore di fusi orari',
   'tool.tz.desc':
@@ -876,7 +876,7 @@ export const it = {
   'tool.qrr.title': 'Lettore di codici QR',
   'tool.qrr.desc':
     'Leggi un QR da un\'immagine o con la fotocamera e vedi cosa contiene (link, Wi-Fi, contatto…) senza aprire nulla.',
-  'seo.qrr.title': 'Lettore di codici QR online da immagine e fotocamera | rrstudio tools',
+  'seo.qrr.title': 'Lettore QR online da immagine e fotocamera | rrstudio tools',
   'seo.qrr.desc':
     'Leggi un codice QR da un\'immagine o dalla fotocamera: riconosce indirizzi, Wi-Fi, vCard e testo e li mostra in sicurezza, con avvisi sui link sospetti.',
 
@@ -885,21 +885,21 @@ export const it = {
     'Ordina un elenco in ordine alfabetico, naturale o per lunghezza; rimuovi duplicati e righe vuote, conta le occorrenze e numera.',
   'seo.sl.title': 'Ordina righe di testo e rimuovi duplicati online | rrstudio tools',
   'seo.sl.desc':
-    'Ordina righe alfabeticamente (italiano e inglese), in modo naturale, per lunghezza o a caso; rimuovi duplicati e righe vuote, conta le occorrenze, aggiungi prefisso e numerazione.',
+    'Ordina righe in ordine alfabetico, naturale, per lunghezza o a caso; rimuovi duplicati e righe vuote, conta le occorrenze, aggiungi prefisso e numerazione.',
 
   'tool.fr.title': 'Trova e sostituisci',
   'tool.fr.desc':
     'Cerca e sostituisci nel testo con testo semplice o regex, più regole in sequenza e anteprima delle corrispondenze.',
   'seo.fr.title': 'Trova e sostituisci online con regex | rrstudio tools',
   'seo.fr.desc':
-    'Trova e sostituisci in un testo in modalità semplice o con regex (flag g, i, m, s, u e gruppi), con più regole in sequenza, anteprima evidenziata e protezione dalle regex lente.',
+    'Trova e sostituisci in un testo, in modo semplice o con regex (flag e gruppi), con più regole in sequenza, anteprima evidenziata e protezione dalle regex lente.',
 
   'tool.tts.title': 'Sintesi vocale',
   'tool.tts.desc':
     'Fai leggere un testo ad alta voce con le voci installate sul tuo dispositivo: scegli voce, velocità e tono. Solo voci locali.',
-  'seo.tts.title': 'Sintesi vocale online: leggi un testo ad alta voce | rrstudio tools',
+  'seo.tts.title': 'Sintesi vocale: leggi un testo ad alta voce | rrstudio tools',
   'seo.tts.desc':
-    'Leggi un testo ad alta voce con la sintesi vocale del browser: voce, lingua, velocità, tono, volume, pausa e frase evidenziata. Usa solo voci locali: nessun testo va a server esterni.',
+    'Leggi un testo ad alta voce con la sintesi vocale del browser: voce, lingua, velocità, tono e volume. Usa solo voci locali: nessun testo va a server esterni.',
 
   'tool.chmod.title': 'Calcolatore chmod',
   'tool.chmod.desc':
@@ -932,7 +932,7 @@ export const it = {
   'tool.fav.title': 'Generatore di favicon',
   'tool.fav.desc':
     'Da un\'immagine o da una lettera o emoji ottieni favicon.ico, PNG 16, 32, 180, 192 e 512, site.webmanifest e le righe HTML, in un unico ZIP.',
-  'seo.fav.title': 'Generatore di favicon online: ICO, PNG e manifest | rrstudio tools',
+  'seo.fav.title': 'Generatore di favicon: ICO, PNG e manifest | rrstudio tools',
   'seo.fav.desc':
     'Crea favicon.ico, apple-touch-icon, icone Android e site.webmanifest da un\'immagine PNG, JPG o SVG, o da testo ed emoji. Tutto nel browser, scarichi uno ZIP.',
 
@@ -1040,29 +1040,29 @@ export const it = {
 
   'tool.curl.title': 'Convertitore cURL',
   'tool.curl.desc': 'Trasforma un comando curl, anche copiato da Chrome o Firefox, in codice JavaScript, Python, PHP o Go, con avvisi su ciò che non si traduce.',
-  'seo.curl.title': 'Convertitore cURL in fetch, axios, Python, PHP e Go online | rrstudio tools',
-  'seo.curl.desc': 'Incolla un comando curl (anche "Copia come cURL" di Chrome e Firefox) e ottieni il codice per fetch, axios, Node.js, Python requests, PHP e Go. Intestazioni, JSON, moduli, autenticazione. Tutto nel browser, senza eseguire nulla.',
+  'seo.curl.title': 'Converti cURL in fetch, axios, Python, PHP e Go | rrstudio tools',
+  'seo.curl.desc': 'Incolla un comando curl (anche "Copia come cURL" di Chrome e Firefox) e ottieni il codice per fetch, axios, Python, PHP e Go. Tutto nel browser, senza eseguire nulla.',
   'tool.urlp.title': 'Analizzatore URL',
   'tool.urlp.desc': 'Scomponi un URL in protocollo, host, dominio, porta, percorso, parametri e frammento; modifica i parametri e togli quelli di tracciamento.',
-  'seo.urlp.title': 'Analizzatore URL online: parametri, dominio e tracciamento | rrstudio tools',
-  'seo.urlp.desc': 'Analizza un URL: protocollo, utente, host, sottodominio, porta, percorso, query e frammento, con percent-encoding e punycode decodificati. Tabella dei parametri modificabile e rimozione di utm_*, fbclid e gclid.',
+  'seo.urlp.title': 'Analizza URL online: parametri e tracciamento | rrstudio tools',
+  'seo.urlp.desc': 'Analizza un URL: protocollo, host, porta, percorso, query e frammento, con percent-encoding e punycode decodificati. Rimuovi utm_*, fbclid e gclid dai parametri.',
   'tool.ci.title': 'Calcolo interesse composto',
   'tool.ci.desc': 'Calcola il montante di un capitale con interesse composto e versamenti periodici: interessi, valore reale con l\'inflazione, tabella anno per anno e grafico.',
-  'seo.ci.title': 'Calcolo interesse composto con versamenti periodici online | rrstudio tools',
-  'seo.ci.desc': 'Calcola l\'interesse composto: capitale iniziale, versamenti mensili o annuali, tasso, capitalizzazione e durata. Montante, totale versato, interessi, valore reale con inflazione, tabella e grafico.',
+  'seo.ci.title': 'Interesse composto con versamenti periodici | rrstudio tools',
+  'seo.ci.desc': 'Calcola l\'interesse composto: capitale iniziale, versamenti mensili o annuali, tasso e durata. Montante, interessi, valore reale con inflazione, tabella e grafico.',
   'tool.stat.title': 'Calcolatrice statistica',
   'tool.stat.desc': 'Incolla dei numeri o una colonna CSV: media, mediana, moda, varianza, deviazione standard, quartili, percentili, outlier e istogramma.',
-  'seo.stat.title': 'Calcolatrice statistica online: media, mediana, deviazione standard | rrstudio tools',
-  'seo.stat.desc': 'Calcola media, mediana, moda, varianza e deviazione standard (campione e popolazione), quartili, IQR, percentili, outlier e istogramma da numeri incollati o da una colonna CSV.',
+  'seo.stat.title': 'Calcolatrice statistica: media, mediana, moda | rrstudio tools',
+  'seo.stat.desc': 'Calcola media, mediana, moda, varianza e deviazione standard, quartili, percentili, outlier e istogramma da numeri incollati o da una colonna CSV.',
 
   'tool.ar.title': 'Calcolo proporzioni (aspect ratio)',
   'tool.ar.desc': 'Ricava il rapporto da larghezza e altezza, calcola il lato che manca, ridimensiona in proporzione e copia il CSS aspect-ratio.',
-  'seo.ar.title': 'Calcolo proporzioni e aspect ratio online: 16:9, 4:3, ridimensiona | rrstudio tools',
-  'seo.ar.desc': 'Calcola il rapporto d\'aspetto (16:9, 4:3, 21:9, A4…) da larghezza e altezza, trova il lato mancante, ridimensiona in proporzione con arrotondamento a pari o multipli di 8 e copia il CSS aspect-ratio.',
+  'seo.ar.title': 'Proporzioni e aspect ratio online: 16:9, 4:3 | rrstudio tools',
+  'seo.ar.desc': 'Calcola il rapporto d\'aspetto (16:9, 4:3, 21:9, A4…) da larghezza e altezza, trova il lato mancante, ridimensiona in proporzione e copia il CSS aspect-ratio.',
 
   'tool.rom.title': 'Numeri romani',
   'tool.rom.desc': 'Converti numeri in numeri romani e viceversa, da 1 a 3.999 (o fino a 3.999.999 con la linea sopra), con controllo della forma canonica.',
-  'seo.rom.title': 'Numeri romani: convertitore da numeri a romani e viceversa | rrstudio tools',
+  'seo.rom.title': 'Numeri romani: converti in entrambe le direzioni | rrstudio tools',
   'seo.rom.desc': 'Converti un numero in numeri romani e viceversa. Controlla la forma canonica e spiega gli errori (IIII, VX, IC), con anni rapidi e vinculum fino a 3.999.999.',
   'tool.tm.title': 'Timer e cronometro',
   'tool.tm.desc': 'Conto alla rovescia, cronometro con giri e pomodoro con avviso sonoro. Il tempo resta esatto anche con la scheda in secondo piano.',
@@ -1070,35 +1070,35 @@ export const it = {
   'seo.tm.desc': 'Timer e conto alla rovescia, cronometro con giri e timer pomodoro gratuiti, con avviso sonoro. Funzionano nel browser e il tempo resta esatto anche in secondo piano.',
   'tool.sci.title': 'Calcolatrice scientifica',
   'tool.sci.desc': 'Espressioni con parentesi, potenze, percentuali, fattoriale, logaritmi e trigonometria in gradi o radianti, con cronologia e risultato mentre scrivi.',
-  'seo.sci.title': 'Calcolatrice scientifica online: funzioni, percentuali e trigonometria | rrstudio tools',
-  'seo.sci.desc': 'Calcolatrice scientifica gratuita: parentesi, potenze, radici, logaritmi, fattoriale, percentuali e trigonometria in gradi o radianti, con cronologia e risultato in tempo reale.',
+  'seo.sci.title': 'Calcolatrice scientifica con trigonometria | rrstudio tools',
+  'seo.sci.desc': 'Calcolatrice scientifica gratuita: potenze, radici, logaritmi, fattoriale, percentuali e trigonometria in gradi o radianti, con cronologia e risultato in tempo reale.',
   'tool.rnd.title': 'Numeri casuali, dadi e sorteggi',
   'tool.rnd.desc': 'Numeri casuali in un intervallo, dadi con notazione 2d6+3, estrazioni da un elenco di nomi, squadre e testa o croce, con il generatore sicuro del browser.',
   'seo.rnd.title': 'Generatore di numeri casuali, dadi e sorteggi | rrstudio tools',
-  'seo.rnd.desc': 'Genera numeri casuali, tira i dadi (2d6+3), estrai nomi da un elenco, forma squadre equilibrate e lancia la moneta. Casualità sicura del browser, tutto sul tuo dispositivo.',
+  'seo.rnd.desc': 'Genera numeri casuali, tira i dadi (2d6+3), estrai nomi da un elenco, forma squadre e lancia la moneta. Casualità sicura del browser, sul tuo dispositivo.',
   'tool.utm.title': 'Costruttore di link UTM',
   'tool.utm.desc': 'Crea link con parametri UTM per Google Analytics: una sorgente alla volta o molte insieme, con avvisi su maiuscole e spazi e file .csv.',
   'seo.utm.title': 'Costruttore di link UTM per Google Analytics | rrstudio tools',
   'seo.utm.desc': 'Costruisci link UTM per campagne e newsletter: parametri codificati bene, avvisi su maiuscole e spazi, più sorgenti insieme e download .csv. Nel browser, gratis.',
   'tool.trip.title': 'Costo del viaggio',
   'tool.trip.desc': 'Calcola quanto costa un viaggio in auto, il consumo medio da un rifornimento e quanti km fai con un budget. Km o miglia, l/100 km, km/l o mpg.',
-  'seo.trip.title': 'Calcolatore costo del viaggio e consumo carburante | rrstudio tools',
+  'seo.trip.title': 'Costo del viaggio e consumo carburante | rrstudio tools',
   'seo.trip.desc': 'Calcola il costo del viaggio in auto, il consumo medio (l/100 km, km/l, mpg), le emissioni di CO2 e i km con un budget. Gratis, nel browser, senza invio di dati.',
   'tool.lco.title': 'Elenco ↔ riga',
   'tool.lco.desc': 'Trasforma un elenco in una sola riga con separatori e apici (SQL IN, array JSON, CSV, URL, shell) e una riga in un elenco, con escape corretti.',
-  'seo.lco.title': 'Da elenco a riga e da riga a elenco: SQL IN, JSON, CSV | rrstudio tools',
-  'seo.lco.desc': 'Converti un elenco (una voce per riga) in una riga con separatore, apici, prefisso e suffisso: valori SQL per IN, array JSON o JavaScript, CSV, parametri URL. E viceversa.',
+  'seo.lco.title': 'Da elenco a riga e viceversa: SQL IN, JSON, CSV | rrstudio tools',
+  'seo.lco.desc': 'Converti un elenco (una voce per riga) in una riga con separatore, apici e prefisso: valori SQL per IN, array JSON o JavaScript, CSV, URL. E viceversa.',
   'tool.ext.title': 'Estrai dal testo',
   'tool.ext.desc': 'Incolla un testo e ottieni l\'elenco di email, link, IP, date, telefoni, IBAN, hashtag e altro, con conteggi, senza doppioni e da copiare.',
   'seo.ext.title': 'Estrai email, link, IP, date e IBAN da un testo | rrstudio tools',
   'seo.ext.desc': 'Estrai da un testo email, URL, indirizzi IP, date valide, telefoni, IBAN, hashtag, menzioni e importi in euro: senza doppioni, ordinati, copia e scarica in .txt o .csv.',
   'tool.tbin.title': 'Testo ↔ esadecimale, binario, decimale',
   'tool.tbin.desc': 'Converte un testo nei suoi byte (UTF-8, UTF-16, Latin-1, Windows-1252, ASCII) in esadecimale, binario, decimale, ottale o Base64, e viceversa, con errori di decodifica precisi.',
-  'seo.tbin.title': 'Testo in esadecimale, binario e decimale (UTF-8, UTF-16) | rrstudio tools',
+  'seo.tbin.title': 'Testo in esadecimale, binario e decimale (UTF-8) | rrstudio tools',
   'seo.tbin.desc': 'Converti testo in byte (esadecimale, binario, decimale, ottale, Base64) e viceversa con UTF-8, UTF-16, Latin-1, Windows-1252. Hex dump, nel browser.',
   'tool.esc.title': 'Escape e unescape di stringhe',
   'tool.esc.desc': 'Proteggi i caratteri speciali di un testo per JSON, JavaScript, Python, regex, shell, SQL, CSV, Java e PHP, o riporta una stringa alla forma normale con errori precisi.',
-  'seo.esc.title': 'Escape e unescape stringhe: JSON, JavaScript, Python, regex, SQL | rrstudio tools',
+  'seo.esc.title': 'Escape e unescape: JSON, JS, Python, regex, SQL | rrstudio tools',
   'seo.esc.desc': 'Escape e unescape di stringhe online per JSON, JavaScript, Python, regex, shell, SQL, CSV, Java e PHP: emoji, \\u, errori con posizione. Tutto nel browser.',
   'tool.zip.title': 'ZIP: crea ed estrai',
   'tool.zip.desc': 'Comprimi più file o una cartella in un archivio ZIP, oppure apri uno ZIP e scarica solo i file che ti servono. Nel browser, con protezione dalle zip bomb.',
@@ -1118,61 +1118,61 @@ export const it = {
   'seo.cdt.desc': 'Conto alla rovescia online a una data: giorni, ore, minuti e secondi, settimane e giorni lavorativi, fusi orari, Pasqua e Natale. Scarica l\'evento in .ics.',
   'tool.lcmp.title': 'Confronta elenchi',
   'tool.lcmp.desc': 'Confronta due elenchi, una voce per riga: unione, voci in comune, solo in uno o nell\'altro e doppioni, con conteggi.',
-  'seo.lcmp.title': 'Confronta due elenchi online: in comune, differenze, doppioni | rrstudio tools',
+  'seo.lcmp.title': 'Confronta due elenchi: in comune, differenze | rrstudio tools',
   'seo.lcmp.desc': 'Confronta due elenchi di testo, una voce per riga: unione, intersezione, solo in A, solo in B e doppioni, anche ignorando maiuscole e spazi. Nel browser.',
   'tool.tcl.title': 'Pulisci testo',
   'tool.tcl.desc': 'Ripulisci un testo copiato da PDF, email o Word: righe spezzate, spazi doppi, virgolette tipografiche, caratteri invisibili e tag HTML.',
-  'seo.tcl.title': 'Pulisci testo online: a capo, spazi doppi, caratteri invisibili | rrstudio tools',
+  'seo.tcl.title': 'Pulisci testo: a capo, spazi doppi, invisibili | rrstudio tools',
   'seo.tcl.desc': 'Pulisci il testo copiato da PDF, email o Word: unisci le righe spezzate, togli spazi doppi, virgolette tipografiche, caratteri invisibili e tag HTML. Nel browser.',
 
   'tool.uni.title': 'Ispettore Unicode',
   'tool.uni.desc': 'Vedi ogni carattere con code point, categoria, byte UTF-8 e UTF-16, entità HTML ed escape; trova invisibili, omoglifi e alfabeti mescolati.',
-  'seo.uni.title': 'Ispettore Unicode: caratteri invisibili, omoglifi, code point, UTF-8 | rrstudio tools',
-  'seo.uni.desc': 'Analizza un testo carattere per carattere: code point U+XXXX, categoria, UTF-8/UTF-16, entità HTML, escape JavaScript e CSS. Rimuove i caratteri invisibili, segnala omoglifi e normalizza in NFC o NFKC.',
+  'seo.uni.title': 'Ispettore Unicode: invisibili, omoglifi, UTF-8 | rrstudio tools',
+  'seo.uni.desc': 'Analizza un testo carattere per carattere: code point, categoria, UTF-8/UTF-16, entità HTML ed escape. Rimuove i caratteri invisibili, segnala omoglifi e normalizza.',
 
   'tool.morse.title': 'Codice Morse',
   'tool.morse.desc': 'Traduci testo in codice Morse e viceversa, ascoltalo con Web Audio o guardalo lampeggiare, con velocità e frequenza regolabili.',
-  'seo.morse.title': 'Traduttore codice Morse: testo, audio e lampeggio | rrstudio tools',
-  'seo.morse.desc': 'Traduci testo in codice Morse e codice Morse in testo, con numeri, punteggiatura e lettere accentate. Riproduci l\'audio (parole al minuto e frequenza regolabili) e scegli simboli e separatori.',
+  'seo.morse.title': 'Traduttore Morse: testo, audio e lampeggio | rrstudio tools',
+  'seo.morse.desc': 'Traduci testo in codice Morse e viceversa, con numeri, punteggiatura e lettere accentate. Riproduci l\'audio (velocità e frequenza regolabili) e scegli i simboli.',
 
   'tool.cph.title': 'Cifrari classici',
   'tool.cph.desc': 'ROT13, ROT47, Cesare, Atbash e Vigenère per cifrare e decifrare, con forza bruta su Cesare. Giochi e studio, non sicuri.',
-  'seo.cph.title': 'Cifrari classici online: ROT13, Cesare, Atbash, Vigenère | rrstudio tools',
+  'seo.cph.title': 'Cifrari classici: ROT13, Cesare, Vigenère | rrstudio tools',
   'seo.cph.desc': 'Cifra e decifra con ROT13, ROT47, cifrario di Cesare (con tutti i 25 spostamenti in forza bruta), Atbash e Vigenère. Cifrari storici non sicuri, per gioco e per imparare.',
 
   'tool.lire.title': 'Convertitore lire euro',
   'tool.lire.desc': 'Converti lire in euro e euro in lire con il cambio fisso 1 € = 1936,27 lire, con arrotondamento e tabella dei tagli storici.',
-  'seo.lire.title': 'Convertitore lire euro: cambio 1936,27, banconote e monete | rrstudio tools',
-  'seo.lire.desc': 'Converti lire in euro e euro in lire con il cambio irrevocabile 1 euro = 1936,27 lire (Reg. CE 2866/98), arrotondando al centesimo o alla lira, con la tabella dei tagli storici di banconote e monete.',
+  'seo.lire.title': 'Convertitore lire euro: cambio 1936,27 | rrstudio tools',
+  'seo.lire.desc': 'Converti lire in euro e euro in lire con il cambio irrevocabile 1 euro = 1936,27 lire (Reg. CE 2866/98), con la tabella dei tagli storici di banconote e monete.',
 
   'tool.subnet.title': 'Calcolatore subnet IP (CIDR)',
   'tool.subnet.desc': 'Calcola rete, broadcast, host, maschera e wildcard di indirizzi IPv4 e IPv6, dividi in sottoreti con VLSM e verifica se un indirizzo appartiene a una rete.',
-  'seo.subnet.title': 'Calcolatore subnet IP (CIDR) online: IPv4, IPv6, VLSM | rrstudio tools',
-  'seo.subnet.desc': 'Calcolatore subnet IPv4 e IPv6 con notazione CIDR: rete, broadcast, primo e ultimo host, maschera, wildcard, binario, divisione in sottoreti (VLSM) e verifica di appartenenza. Tutto nel browser.',
+  'seo.subnet.title': 'Calcolatore subnet IP (CIDR): IPv4, IPv6, VLSM | rrstudio tools',
+  'seo.subnet.desc': 'Calcolatore subnet IPv4 e IPv6 con notazione CIDR: rete, broadcast, primo e ultimo host, maschera, wildcard, sottoreti (VLSM) e appartenenza. Nel browser.',
 
   'tool.docker.title': 'Da docker run a docker-compose',
   'tool.docker.desc': 'Incolla uno o più comandi docker run e ottieni un docker-compose.yml con servizi, volumi e reti, con gli avvisi sulle opzioni non traducibili.',
-  'seo.docker.title': 'Da docker run a docker-compose: convertitore online | rrstudio tools',
-  'seo.docker.desc': 'Converti comandi docker run in un file docker-compose.yml: porte, volumi, variabili, reti, healthcheck, limiti e altre opzioni. Più comandi diventano più servizi. Nel browser, senza eseguire nulla.',
+  'seo.docker.title': 'Da docker run a docker-compose online | rrstudio tools',
+  'seo.docker.desc': 'Converti comandi docker run in un docker-compose.yml: porte, volumi, variabili, reti, healthcheck e limiti. Più comandi diventano più servizi. Nel browser.',
 
   'tool.clamp.title': 'Generatore CSS clamp() per tipografia fluida',
   'tool.clamp.desc': 'Genera il clamp() CSS per testo fluido tra due viewport, con anteprima, scala tipografica in variabili CSS e controllo WCAG 1.4.4.',
   'seo.clamp.title': 'Generatore CSS clamp() per tipografia fluida | rrstudio tools',
-  'seo.clamp.desc': 'Calcola il clamp() CSS per una tipografia fluida in rem: dimensione minima e massima tra due viewport, scala tipografica da -2 a +5 in variabili CSS, anteprima con slider e avviso di accessibilità WCAG 1.4.4.',
+  'seo.clamp.desc': 'Calcola il clamp() CSS per una tipografia fluida in rem tra due viewport, con scala tipografica in variabili CSS, anteprima con slider e avviso WCAG 1.4.4.',
 
   'tool.time.title': 'Calcolatrice ore e minuti',
   'tool.time.desc': 'Somma e sottrai durate (1:30, 1h 30m, 90m), compila un foglio ore con pause e straordinario, converti ore decimali e ore:minuti e calcola l\'importo con la tariffa oraria.',
-  'seo.time.title': 'Calcolatrice ore e minuti: somma durate e foglio ore | rrstudio tools',
-  'seo.time.desc': 'Calcolatrice per ore e minuti: somma e sottrazione di durate in formati misti, foglio ore con pausa, turni di notte e straordinario, conversione ore decimali e importo con tariffa oraria. Nel browser.',
+  'seo.time.title': 'Calcolatrice ore e minuti: somma durate | rrstudio tools',
+  'seo.time.desc': 'Calcolatrice per ore e minuti: somma e sottrazione di durate, foglio ore con pausa, turni di notte e straordinario, ore decimali e importo con tariffa oraria.',
 
   'tool.scad.title': 'Calcolo scadenze fatture',
   'tool.scad.desc': 'Calcola le scadenze di pagamento: 30, 60, 90 o 120 giorni, data fattura o fine mese (D.F.F.M.), rate multiple, spostamento al giorno lavorativo ed esportazione CSV e .ics.',
-  'seo.scad.title': 'Calcolo scadenze fatture: D.F.F.M., rate e giorni lavorativi | rrstudio tools',
-  'seo.scad.desc': 'Calcola le scadenze di pagamento di una fattura: termini a 30, 60, 90, 120 giorni o personalizzati, data fattura o fine mese (D.F.F.M.), rate con importo diviso, spostamento al primo giorno lavorativo ed esportazione in CSV e calendario .ics.',
+  'seo.scad.title': 'Scadenze fatture: D.F.F.M. e giorni lavorativi | rrstudio tools',
+  'seo.scad.desc': 'Calcola le scadenze di pagamento di una fattura: 30, 60, 90, 120 giorni o personalizzati, D.F.F.M., rate, primo giorno lavorativo ed esportazione in CSV e .ics.',
   'tool.gcf.title': 'Generatore codice fiscale e partita IVA',
   'tool.gcf.desc': 'Genera codici fiscali e partite IVA di prova, validi ma inventati: filtri per sesso, data e comune di nascita, omocodia, ufficio provinciale, seme ripetibile, copia singola, CSV e JSON.',
-  'seo.gcf.title': 'Generatore codice fiscale e partita IVA casuali di prova | rrstudio tools',
-  'seo.gcf.desc': 'Genera codici fiscali casuali e partite IVA di prova formalmente validi ma finti: scegli quanti, sesso, data e comune di nascita, omocodia e ufficio provinciale. Seme per risultati ripetibili, esporta in CSV e JSON. Nel browser, solo per test.',
+  'seo.gcf.title': 'Codice fiscale e partita IVA casuali di prova | rrstudio tools',
+  'seo.gcf.desc': 'Genera codici fiscali casuali e partite IVA di prova, formalmente validi ma finti: sesso, data e comune di nascita, omocodia. Esporta in CSV e JSON. Solo per test.',
 };
 
 export type Dict = typeof it;
