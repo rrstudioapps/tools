@@ -90,7 +90,7 @@
         }
       </h3>
       <p>{{ i18n.t(tool.descriptionKey) }}</p>
-      <span class="open">{{ i18n.t('home.open') }} <span class="arrow" aria-hidden="true">→</span></span>
+      <span class="open">{{ i18n.t('home.open') }}<span class="visually-hidden">: {{ i18n.t(tool.titleKey) }}</span> <span class="arrow" aria-hidden="true">→</span></span>
     </a>
     <app-favorite-button class="fav" [toolId]="tool.id" [toolTitle]="i18n.t(tool.titleKey)" />
   </div>
