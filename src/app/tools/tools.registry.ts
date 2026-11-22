@@ -1896,4 +1896,19 @@ export const TOOLS: readonly ToolDefinition[] = [
     seo: { titleKey: 'seo.utm.title', descriptionKey: 'seo.utm.desc' },
     loadComponent: () => import('./utm-link-builder/utm-link-builder.page').then((m) => m.UtmLinkBuilderPage),
   },
+  {
+    id: 'pdf-interleave',
+    path: 'pdf-interleave',
+    icon: 'swap',
+    category: 'media',
+    added: '2026-11-22',
+    keywords: {
+      it: 'pdf scansione fronte retro unire alternare pagine fronti retri scanner alimentatore fronte-retro duplex ordine inverso',
+      en: 'pdf scan front back merge interleave alternate pages fronts backs sheet-fed scanner duplex reverse order',
+    },
+    titleKey: 'tool.pil.title',
+    descriptionKey: 'tool.pil.desc',
+    seo: { titleKey: 'seo.pil.title', descriptionKey: 'seo.pil.desc' },
+    loadComponent: () => import('./pdf-interleave/pdf-interleave.page').then((m) => m.PdfInterleavePage),
+  },
 ];

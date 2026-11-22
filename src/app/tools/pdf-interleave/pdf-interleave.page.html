@@ -1,0 +1,65 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio Tools -->
+<div class="container tool-page">
+  <header class="tool-intro">
+    <h1>{{ i18n.t('tool.pil.title') }}</h1>
+    <p class="tool-lead">{{ i18n.t('pil.lead') }}</p>
+  </header>
+
+  <app-privacy-note />
+
+  <div class="sources">
+    <section class="src" [attr.aria-label]="i18n.t('pil.front')">
+      <h2 class="eyebrow">{{ i18n.t('pil.front') }}</h2>
+      <app-pdf-source toolId="pdf-interleave" (loaded)="onLoaded('front', $event)" (cleared)="onCleared('front')" />
+    </section>
+    <section class="src" [attr.aria-label]="i18n.t('pil.back')">
+      <h2 class="eyebrow">{{ i18n.t('pil.back') }}</h2>
+      <app-pdf-source toolId="pdf-interleave-back" (loaded)="onLoaded('back', $event)" (cleared)="onCleared('back')" />
+    </section>
+  </div>
+
+  @if (front() && back()) {
+    <section class="panel" [attr.aria-label]="i18n.t('pil.options')">
+      <h2 class="eyebrow">{{ i18n.t('pil.options') }}</h2>
+      <label class="check" for="pil-reverse">
+        <input id="pil-reverse" type="checkbox" data-testid="pil-reverse" [checked]="reverse()" (change)="reverse.set($any($event.target).checked); done.set('')" />
+        {{ i18n.t('pil.reverse') }}
+      </label>
+      <p class="hint">{{ i18n.t('pil.reverse.hint') }}</p>
+      @if (mismatch()) {
+        <p class="tool-warn" role="note" data-testid="pil-mismatch">{{ i18n.t('pil.mismatch', { front: counts().front, back: counts().back }) }}</p>
+        <app-segmented [label]="i18n.t('pil.extra')" [options]="extraOptions()" [(value)]="extra" />
+      }
+      <figure class="preview" [attr.aria-label]="i18n.t('pil.preview')">
+        <figcaption class="hint" data-testid="pil-count">{{ i18n.t('pil.preview.count', { n: plan().length }) }}</figcaption>
+        <ol class="cards">
+          @for (c of cards(); track c.key) {
+            <li class="card" [class.blank]="!c.thumb" (appLazyVisible)="loadThumb(c)">
+              <div class="th">
+                @if (c.thumb && thumbs()[c.thumb]; as url) {
+                  <img [src]="url" [alt]="c.label" />
+                }
+              </div>
+              <span class="cap"><b>{{ c.pos }}</b> · {{ c.label }}</span>
+            </li>
+          }
+        </ol>
+        @if (more() > 0) {
+          <p class="hint">{{ i18n.t('pil.preview.more', { n: more() }) }}</p>
+        }
+      </figure>
+      <div class="row">
+        <button type="button" class="btn primary" data-shortcut="download" data-testid="pil-go" [disabled]="busy() || plan().length === 0" (click)="go()">
+          <app-icon name="download" /> {{ i18n.t('pc.download') }}
+        </button>
+      </div>
+    </section>
+  }
+  <div class="tool-status" role="status" aria-live="polite">
+    @if (error()) {
+      <p class="tool-error" role="alert" data-testid="pil-error">{{ error() }}</p>
+    } @else if (done()) {
+      <p class="tool-ok" data-testid="pil-done">{{ done() }}</p>
+    }
+  </div>
+</div>

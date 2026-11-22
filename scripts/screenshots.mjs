@@ -1261,6 +1261,41 @@ try {
       if (links[1] !== 'https://www.esempio.it/offerta?ref=home&utm_source=instagram&utm_medium=social&utm_campaign=saldi%20primavera&utm_content=storia#prezzi') throw new Error('utm: link riga 2 ' + links[1]);
     },
   });
+  await shot('pdf-interleave.png', {
+      width: 1280,
+      dark: false,
+      path: '/pdf-interleave/',
+      setup: async (page) => {
+        const mkPages = async (base, n, size) => {
+        const d = await PDFDocument.create();
+        for (let i = 1; i <= n; i++) d.addPage(size(i, base));
+        return Buffer.from(await d.save());
+      };
+        const widthsOf = async (buf) => (await PDFDocument.load(buf)).getPages().map((p) => Math.round(p.getWidth()));
+        const fronts = await mkPages(0, 3, (i) => [500 + i, 700]);
+        const backs = await mkPages(0, 3, (i) => [600 + i, 700]);
+        await page.setInputFiles('app-file-drop input[type=file] >> nth=0', [{ name: 'fronti.pdf', mimeType: 'application/pdf', buffer: fronts }]);
+        await page.setInputFiles('app-file-drop input[type=file] >> nth=1', [{ name: 'retri.pdf', mimeType: 'application/pdf', buffer: backs }]);
+        await page.getByTestId('pil-go').waitFor();
+        await expectValue(page, '[data-testid=pil-count]', 'Ordine finale: 6 pagine.', 'conteggio');
+        const plain = await downloadBuffer(page, () => page.getByTestId('pil-go').click());
+        need(JSON.stringify(await widthsOf(plain.buffer)) === '[501,601,502,602,503,603]', 'ordine normale: ' + JSON.stringify(await widthsOf(plain.buffer)));
+        await page.getByTestId('pil-reverse').check();
+        const rev = await downloadBuffer(page, () => page.getByTestId('pil-go').click());
+        need(JSON.stringify(await widthsOf(rev.buffer)) === '[501,603,502,602,503,601]', 'ordine inverso: ' + JSON.stringify(await widthsOf(rev.buffer)));
+        // un retro in meno: avviso e scelta
+        await page.setInputFiles('app-file-drop input[type=file] >> nth=1', [{ name: 'retri.pdf', mimeType: 'application/pdf', buffer: await mkPages(0, 2, (i) => [600 + i, 700]) }]);
+        await page.getByTestId('pil-mismatch').waitFor();
+        const padded = await downloadBuffer(page, () => page.getByTestId('pil-go').click());
+        need((await widthsOf(padded.buffer)).length === 6, 'pagine vuote aggiunte: ' + (await widthsOf(padded.buffer)).length);
+        await page.getByRole('button', { name: 'Ignora le pagine in più', exact: true }).click();
+        await expectValue(page, '[data-testid=pil-count]', 'Ordine finale: 4 pagine.', 'conteggio dopo ignora');
+        // stato finale per lo screenshot: file con lo stesso numero di pagine e retri inversi
+        await page.setInputFiles('app-file-drop input[type=file] >> nth=1', [{ name: 'retri.pdf', mimeType: 'application/pdf', buffer: backs }]);
+        await expectValue(page, '[data-testid=pil-count]', 'Ordine finale: 6 pagine.', 'conteggio finale');
+        await page.waitForFunction(() => document.querySelectorAll('.card .th img').length >= 4, null, { timeout: 30000 });
+      },
+    });
   await shot('roman-numerals.png', {
     width: 1280,
     dark: false,

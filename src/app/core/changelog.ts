@@ -24,6 +24,18 @@ export interface ChangelogVersion {
 /** Novità del sito, dalla più recente. Testi per gli utenti, non per gli sviluppatori. */
 export const CHANGELOG: readonly ChangelogVersion[] = [
   {
+    date: '2026-11-22',
+    title: { it: 'Nuovi strumenti PDF', en: 'New PDF tools' },
+    entries: [
+      {
+        kind: 'new-tool',
+        it: 'Nuovo strumento: unisci i PDF di fronti e retri scansionati separatamente in un solo PDF con le pagine alternate, con anteprima dell\'ordine.',
+        en: 'New tool: merge separately scanned fronts and backs PDFs into one PDF with alternating pages, with a preview of the order.',
+        toolIds: ['pdf-interleave'],
+      },
+    ],
+  },
+  {
     date: '2026-11-19',
     title: { it: 'Strumenti XML, ricerca Ctrl+K, catene e impostazioni', en: 'XML tools, Ctrl+K search, chains and settings' },
     entries: [
