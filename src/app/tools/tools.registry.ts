@@ -1926,4 +1926,19 @@ export const TOOLS: readonly ToolDefinition[] = [
     seo: { titleKey: 'seo.psp.title', descriptionKey: 'seo.psp.desc' },
     loadComponent: () => import('./pdf-split-spreads/pdf-split-spreads.page').then((m) => m.PdfSplitSpreadsPage),
   },
+  {
+    id: 'pdf-nup',
+    path: 'pdf-nup',
+    icon: 'layers',
+    category: 'media',
+    added: '2026-11-22',
+    keywords: {
+      it: 'pdf più pagine per foglio libretto booklet fronte retro stampa 2 4 6 9 pagine impaginazione n-up opuscolo piegare a metà',
+      en: 'pdf n-up multiple pages per sheet booklet duplex print 2 4 6 9 pages imposition fold in half handout',
+    },
+    titleKey: 'tool.pnu.title',
+    descriptionKey: 'tool.pnu.desc',
+    seo: { titleKey: 'seo.pnu.title', descriptionKey: 'seo.pnu.desc' },
+    loadComponent: () => import('./pdf-nup/pdf-nup.page').then((m) => m.PdfNupPage),
+  },
 ];

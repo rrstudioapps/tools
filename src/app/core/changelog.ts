@@ -29,6 +29,12 @@ export const CHANGELOG: readonly ChangelogVersion[] = [
     entries: [
       {
         kind: 'new-tool',
+        it: 'Nuovo strumento: più pagine per foglio e libretto PDF, con anteprima, per stampare 2, 4, 6 o 9 pagine su un foglio o fare un libretto da piegare a metà.',
+        en: 'New tool: PDF pages per sheet and booklet, with preview, to print 2, 4, 6 or 9 pages on one sheet or make a booklet to fold in half.',
+        toolIds: ['pdf-nup'],
+      },
+      {
+        kind: 'new-tool',
         it: 'Nuovo strumento: dividi le pagine doppie di un PDF in due pagine singole, con linea di taglio regolabile, ordine anche da destra a sinistra e pagine da escludere.',
         en: 'New tool: split the double pages of a PDF into two single pages, with an adjustable cut line, right-to-left order and pages to exclude.',
         toolIds: ['pdf-split-spreads'],

@@ -1332,6 +1332,27 @@ try {
         await page.waitForTimeout(500);
       },
     });
+  await shot('pdf-nup.png', {
+      width: 1280,
+      dark: false,
+      path: '/pdf-nup/',
+      setup: async (page) => {
+        await loadPdfIn(page, await makePdf('Relazione di esempio', 'Relazione', [[0.18, 0.43, 0.62], [0.7, 0.33, 0.16]], 3));
+        await page.selectOption('#pnu-per', '4');
+        await page.getByTestId('pnu-thumb').first().waitFor();
+        const four = await downloadBuffer(page, () => page.getByTestId('pnu-go').click());
+        const f = await PDFDocument.load(four.buffer);
+        need(f.getPageCount() === 1 && Math.abs(f.getPage(0).getSize().width - 841.89) < 1, 'n-up 4: ' + f.getPageCount());
+        await page.getByRole('button', { name: 'Libretto', exact: true }).click();
+        await expectValue(page, '[data-testid=pnu-preview-note]', 'Fogli prodotti: 2. Qui si vedono i primi 2.', 'anteprima libretto');
+        await page.getByTestId('pnu-border').check();
+        const booklet = await downloadBuffer(page, () => page.getByTestId('pnu-go').click());
+        const b = await PDFDocument.load(booklet.buffer);
+        need(b.getPageCount() === 2, 'libretto: ' + b.getPageCount());
+        await page.waitForFunction(() => document.querySelectorAll('[data-testid=pnu-thumb]').length === 2);
+        await page.waitForTimeout(400);
+      },
+    });
   await shot('roman-numerals.png', {
     width: 1280,
     dark: false,

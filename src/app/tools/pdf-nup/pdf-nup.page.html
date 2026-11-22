@@ -1,0 +1,92 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio tools -->
+<div class="container tool-page">
+  <header class="tool-intro">
+    <h1>{{ i18n.t('tool.pnu.title') }}</h1>
+    <p class="tool-lead">{{ i18n.t('pnu.lead') }}</p>
+  </header>
+
+  <app-privacy-note />
+
+  <app-pdf-source toolId="pdf-nup" (loaded)="onLoaded($event)" (cleared)="onCleared()">
+    @if (pdf()) {
+      <section class="panel" [attr.aria-label]="i18n.t('pnu.mode')">
+        <h2 class="eyebrow">{{ i18n.t('pnu.mode') }}</h2>
+        <app-segmented [label]="i18n.t('pnu.mode')" [options]="modes()" [(value)]="mode" />
+        <p class="hint">{{ i18n.t('pnu.hint.' + mode()) }}</p>
+        <div class="opts">
+          @if (mode() === 'nup') {
+            <label class="fld" for="pnu-per">
+              <span>{{ i18n.t('pnu.per') }}</span>
+              <select id="pnu-per" data-testid="pnu-per" (change)="perSheet.set(+$any($event.target).value)">
+                @for (n of perSheetValues; track n) {
+                  <option [value]="n" [selected]="perSheet() === n">{{ n }}</option>
+                }
+              </select>
+            </label>
+          }
+          <label class="fld" for="pnu-size">
+            <span>{{ i18n.t('pnu.size') }}</span>
+            <select id="pnu-size" data-testid="pnu-size" (change)="size.set($any($event.target).value)">
+              @for (s of sizeNames; track s) {
+                <option [value]="s" [selected]="size() === s">{{ s }}</option>
+              }
+            </select>
+          </label>
+          <label class="fld" for="pnu-margin"><span>{{ i18n.t('pnu.margin') }}</span><input id="pnu-margin" type="number" min="0" max="100" step="1" [value]="margin()" (input)="setNumber(margin, $event)" /></label>
+          <label class="fld" for="pnu-gap"><span>{{ i18n.t('pnu.gap') }}</span><input id="pnu-gap" type="number" min="0" max="100" step="1" [value]="gap()" (input)="setNumber(gap, $event)" /></label>
+        </div>
+        @if (mode() === 'nup') {
+          <div class="opts">
+            <div class="fld">
+              <span>{{ i18n.t('pnu.orientation') }}</span>
+              <app-segmented [label]="i18n.t('pnu.orientation')" [options]="orientations()" [(value)]="orientation" />
+            </div>
+            <div class="fld">
+              <span>{{ i18n.t('pnu.order') }}</span>
+              <app-segmented [label]="i18n.t('pnu.order')" [options]="orders()" [(value)]="order" />
+            </div>
+          </div>
+        } @else {
+          <div class="opts">
+            <div class="fld">
+              <span>{{ i18n.t('pnu.binding') }}</span>
+              <app-segmented [label]="i18n.t('pnu.binding')" [options]="bindings()" [(value)]="binding" />
+            </div>
+          </div>
+        }
+        <label class="check"><input type="checkbox" data-testid="pnu-border" [checked]="border()" (change)="border.set($any($event.target).checked)" /> {{ i18n.t('pnu.border') }}</label>
+        <p class="hint">{{ i18n.t('pnu.links') }}</p>
+
+        <h2 class="eyebrow">{{ i18n.t('pnu.preview') }}</h2>
+        <div role="status" aria-live="polite">
+          @if (previewError()) {
+            <p class="tool-error" role="alert" data-testid="pnu-preview-error">{{ previewError() }}</p>
+          } @else if (previewBusy() && shown() === 0) {
+            <p class="hint">{{ i18n.t('pnu.preview.busy') }}</p>
+          } @else if (shown() > 0) {
+            <p class="hint" data-testid="pnu-preview-note">{{ i18n.t('pnu.preview.note', { total: sheetsTotal(), shown: shown() }) }}</p>
+          }
+        </div>
+        <div class="thumbs" [class.stale]="previewBusy()">
+          @for (u of thumbs(); track u; let i = $index) {
+            <figure class="sheet">
+              <img [src]="u" [alt]="i18n.t('pnu.preview.alt', { n: i + 1 })" data-testid="pnu-thumb" />
+              <figcaption>{{ i18n.t('pnu.sheets', { n: i + 1 }) }}</figcaption>
+            </figure>
+          }
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn primary" data-shortcut="download" data-testid="pnu-go" [disabled]="busy()" (click)="go()"><app-icon name="download" /> {{ i18n.t('pc.download') }}</button>
+        </div>
+      </section>
+    }
+    <div class="tool-status" role="status" aria-live="polite">
+      @if (error()) {
+        <p class="tool-error" role="alert" data-testid="pnu-error">{{ error() }}</p>
+      } @else if (done()) {
+        <p class="tool-ok" data-testid="pnu-done">{{ done() }}</p>
+      }
+    </div>
+  </app-pdf-source>
+</div>
