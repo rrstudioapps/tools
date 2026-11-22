@@ -1,0 +1,73 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// © 2026 rrstudio — rrstudio tools
+.panel,
+.lock {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
+}
+.fld {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 20rem;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  input {
+    min-width: 0;
+    color: var(--ink);
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.sub {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.kv {
+  display: grid;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  > div {
+    display: grid;
+    grid-template-columns: minmax(10rem, 14rem) minmax(0, 1fr);
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    & + div {
+      border-top: 1px solid var(--line);
+    }
+  }
+  dt {
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}
+.table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--line);
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 860px) {
+  .kv > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-1);
+  }
+}

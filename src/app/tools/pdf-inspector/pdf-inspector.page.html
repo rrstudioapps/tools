@@ -1,0 +1,110 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio tools -->
+<div class="container tool-page">
+  <header class="tool-intro">
+    <h1>{{ i18n.t('tool.pin.title') }}</h1>
+    <p class="tool-lead">{{ i18n.t('pin.lead') }}</p>
+  </header>
+
+  <app-privacy-note />
+
+  <app-file-drop [hint]="i18n.t('pin.drop')" accept="application/pdf,.pdf" (fileSelected)="pick($event)">
+    <div class="tool-status" role="status" aria-live="polite">
+      @if (loading()) {
+        <p class="tool-ok">{{ i18n.t('pin.loading') }}</p>
+      } @else if (error()) {
+        <p class="tool-error" role="alert" data-testid="pin-error">{{ error() }}</p>
+      }
+    </div>
+
+    @if (locked(); as l) {
+      <form class="lock" (submit)="$event.preventDefault(); unlock()">
+        <p class="hint" data-testid="pin-locked">{{ i18n.t('pin.locked') }}</p>
+        <label class="fld" for="pin-password">
+          <span>{{ i18n.t('pin.password') }}</span>
+          <input id="pin-password" type="password" autocomplete="off" data-testid="pin-password" [attr.aria-invalid]="l.incorrect ? 'true' : null" [attr.aria-describedby]="l.incorrect ? 'pin-wrong' : null" [value]="password()" (input)="password.set($any($event.target).value)" />
+        </label>
+        @if (l.incorrect) {
+          <p class="tool-error" id="pin-wrong" role="alert">{{ i18n.t('pin.wrong') }}</p>
+        }
+        <div class="row">
+          <button type="submit" class="btn primary" data-shortcut="run" data-testid="pin-open" [disabled]="loading()">{{ i18n.t('pin.open') }}</button>
+        </div>
+      </form>
+    }
+
+    <div aria-live="polite" data-testid="pin-result">
+      @if (report()) {
+        <section class="panel" [attr.aria-label]="i18n.t('pin.report')">
+          <div class="row">
+            <app-copy-button shortcut="copy" [label]="i18n.t('pin.copyLabel')" [text]="json()" />
+            <button type="button" class="btn small" data-shortcut="download" data-testid="pin-download" (click)="download()"><app-icon name="download" /> {{ i18n.t('pin.download') }}</button>
+          </div>
+
+          <h2 class="eyebrow">{{ i18n.t('pin.sec.general') }}</h2>
+          <dl class="kv" data-testid="pin-general">
+            @for (r of general(); track r.k) {
+              <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+            }
+          </dl>
+
+          @if (pageRows().length) {
+            <h2 class="eyebrow">{{ i18n.t('pin.sec.pages') }}</h2>
+            <dl class="kv" data-testid="pin-pages">
+              @for (r of pageRows(); track r.k) {
+                <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+              }
+            </dl>
+          }
+
+          <h2 class="eyebrow">{{ i18n.t('pin.sec.encryption') }}</h2>
+          <dl class="kv" data-testid="pin-encryption">
+            @for (r of encryption(); track r.k) {
+              <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+            }
+          </dl>
+          @if (permissions().length) {
+            <h3 class="sub">{{ i18n.t('pin.k.perms') }}</h3>
+            <dl class="kv" data-testid="pin-perms">
+              @for (p of permissions(); track p.label) {
+                <div><dt>{{ p.label }}</dt><dd>{{ p.allowed ? i18n.t('pin.perm.allowed') : i18n.t('pin.perm.denied') }}</dd></div>
+              }
+            </dl>
+          } @else if (permsUnknown()) {
+            <p class="hint">{{ i18n.t('pin.perm.unknown') }}</p>
+          }
+
+          @if (meta().length) {
+            <h2 class="eyebrow">{{ i18n.t('pin.sec.meta') }}</h2>
+            <dl class="kv" data-testid="pin-meta">
+              @for (r of meta(); track r.k) {
+                <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+              }
+            </dl>
+          }
+
+          <h2 class="eyebrow">{{ i18n.t('pin.sec.fonts') }}</h2>
+          @if (fonts(); as f) {
+            @if (f.length === 0) {
+              <p class="hint">{{ i18n.t('pin.fonts.none') }}</p>
+            } @else {
+              <div class="table-wrap">
+                <table data-testid="pin-fonts">
+                  <thead>
+                    <tr><th scope="col">{{ i18n.t('pin.fonts.col.name') }}</th><th scope="col">{{ i18n.t('pin.fonts.col.type') }}</th><th scope="col">{{ i18n.t('pin.fonts.col.emb') }}</th></tr>
+                  </thead>
+                  <tbody>
+                    @for (x of f; track x.name + x.type + x.emb) {
+                      <tr><td>{{ x.name }}</td><td>{{ x.type }}</td><td>{{ x.emb }}</td></tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+            }
+          } @else {
+            <p class="hint">{{ i18n.t('pin.fonts.na') }}</p>
+          }
+        </section>
+      }
+    </div>
+  </app-file-drop>
+</div>

@@ -1353,6 +1353,29 @@ try {
         await page.waitForTimeout(400);
       },
     });
+  await shot('pdf-inspector.png', {
+      width: 1280,
+      dark: false,
+      path: '/pdf-inspector/',
+      setup: async (page) => {
+        const doc = await PDFDocument.load(await makePdf('Relazione di esempio', 'Relazione', [[0.18, 0.43, 0.62], [0.7, 0.33, 0.16]], 3), { updateMetadata: false });
+        doc.setAuthor('rrstudio');
+        doc.setProducer('rrstudio tools');
+        doc.setCreationDate(new Date('2026-01-15T09:00:00Z'));
+        doc.setModificationDate(new Date('2026-01-15T09:00:00Z'));
+        const buffer = Buffer.from(await doc.save({ updateMetadata: false }));
+        await page.setInputFiles('app-file-drop input[type=file]', [{ name: 'relazione.pdf', mimeType: 'application/pdf', buffer }]);
+        await page.getByTestId('pin-general').waitFor();
+        const has = (sel, re, what) => page.waitForFunction(([s, r]) => new RegExp(r).test(document.querySelector(s)?.textContent ?? ''), [sel, re], { timeout: 5000 }).catch(() => need(false, what));
+        await has('[data-testid=pin-pages]', 'A4', 'formato A4');
+        await has('[data-testid=pin-fonts]', 'Helvetica-Bold', 'font');
+        await has('[data-testid=pin-meta]', 'rrstudio', 'metadati');
+        const json = await downloadBuffer(page, () => page.getByTestId('pin-download').click());
+        const rep = JSON.parse(json.buffer.toString('utf8'));
+        need(rep.pages === 3 && rep.groups.length === 2 && rep.encryption === null, 'report JSON: ' + JSON.stringify(rep.groups));
+        await page.waitForTimeout(200);
+      },
+    });
   await shot('roman-numerals.png', {
     width: 1280,
     dark: false,

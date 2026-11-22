@@ -29,6 +29,12 @@ export const CHANGELOG: readonly ChangelogVersion[] = [
     entries: [
       {
         kind: 'new-tool',
+        it: 'Nuovo strumento: ispettore PDF, per vedere versione, misure delle pagine, font, cifratura, permessi e metadati di un file e scaricare il report in JSON.',
+        en: 'New tool: PDF inspector, to see a file\'s version, page sizes, fonts, encryption, permissions and metadata and download the report as JSON.',
+        toolIds: ['pdf-inspector'],
+      },
+      {
+        kind: 'new-tool',
         it: 'Nuovo strumento: più pagine per foglio e libretto PDF, con anteprima, per stampare 2, 4, 6 o 9 pagine su un foglio o fare un libretto da piegare a metà.',
         en: 'New tool: PDF pages per sheet and booklet, with preview, to print 2, 4, 6 or 9 pages on one sheet or make a booklet to fold in half.',
         toolIds: ['pdf-nup'],

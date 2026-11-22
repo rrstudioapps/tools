@@ -1941,4 +1941,19 @@ export const TOOLS: readonly ToolDefinition[] = [
     seo: { titleKey: 'seo.pnu.title', descriptionKey: 'seo.pnu.desc' },
     loadComponent: () => import('./pdf-nup/pdf-nup.page').then((m) => m.PdfNupPage),
   },
+  {
+    id: 'pdf-inspector',
+    path: 'pdf-inspector',
+    icon: 'search',
+    category: 'media',
+    added: '2026-11-22',
+    keywords: {
+      it: 'pdf ispettore ispezione analisi versione formato font incorporati cifratura permessi metadati annotazioni moduli allegati segnalibri dimensione pagine report json',
+      en: 'pdf inspector analyze version format fonts embedded encryption permissions metadata annotations forms attachments bookmarks page size report json',
+    },
+    titleKey: 'tool.pin.title',
+    descriptionKey: 'tool.pin.desc',
+    seo: { titleKey: 'seo.pin.title', descriptionKey: 'seo.pin.desc' },
+    loadComponent: () => import('./pdf-inspector/pdf-inspector.page').then((m) => m.PdfInspectorPage),
+  },
 ];
