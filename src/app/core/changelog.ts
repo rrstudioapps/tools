@@ -29,6 +29,12 @@ export const CHANGELOG: readonly ChangelogVersion[] = [
     entries: [
       {
         kind: 'new-tool',
+        it: 'Nuovo strumento: dividi le pagine doppie di un PDF in due pagine singole, con linea di taglio regolabile, ordine anche da destra a sinistra e pagine da escludere.',
+        en: 'New tool: split the double pages of a PDF into two single pages, with an adjustable cut line, right-to-left order and pages to exclude.',
+        toolIds: ['pdf-split-spreads'],
+      },
+      {
+        kind: 'new-tool',
         it: 'Nuovo strumento: unisci i PDF di fronti e retri scansionati separatamente in un solo PDF con le pagine alternate, con anteprima dell\'ordine.',
         en: 'New tool: merge separately scanned fronts and backs PDFs into one PDF with alternating pages, with a preview of the order.',
         toolIds: ['pdf-interleave'],

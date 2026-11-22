@@ -1296,6 +1296,42 @@ try {
         await page.waitForFunction(() => document.querySelectorAll('.card .th img').length >= 4, null, { timeout: 30000 });
       },
     });
+  await shot('pdf-split-spreads.png', {
+      width: 1280,
+      dark: false,
+      path: '/pdf-split-spreads/',
+      setup: async (page) => {
+        const d = await PDFDocument.create();
+        const f = await d.embedFont(StandardFonts.HelveticaBold);
+        for (let i = 1; i <= 3; i++) {
+          const p = d.addPage(i === 1 ? [420, 595] : [842, 595]);
+          const { width, height } = p.getSize();
+          if (i > 1) p.drawRectangle({ x: width / 2, y: 0, width: width / 2, height, color: rgb(0.9, 0.93, 0.97) });
+          p.drawText(i === 1 ? 'Copertina' : 'Sinistra ' + i, { x: 30, y: height - 80, size: 36, font: f });
+          if (i > 1) p.drawText('Destra ' + i, { x: width / 2 + 30, y: height - 80, size: 36, font: f });
+        }
+        await loadPdfIn(page, Buffer.from(await d.save()), 'libro.pdf');
+        await page.getByTestId('psp-thumb').waitFor();
+        await page.getByTestId('psp-line').waitFor();
+        await page.fill('#psp-ex', '1');
+        await expectValue(page, '[data-testid=psp-count]', 'Il risultato avrà 5 pagine (2 pagine divise in due).', 'conteggio');
+        await page.fill('#psp-ex', '9');
+        await page.getByTestId('psp-go').click();
+        await page.getByTestId('psp-error').waitFor();
+        await page.fill('#psp-ex', '1');
+        const plain = await downloadBuffer(page, () => page.getByTestId('psp-go').click());
+        const w1 = (await PDFDocument.load(plain.buffer)).getPages().map((p) => Math.round(p.getWidth()));
+        need(JSON.stringify(w1) === '[420,421,421,421,421]', 'divisione a metà: ' + JSON.stringify(w1));
+        await page.getByRole('button', { name: 'Prima la destra (manga, arabo)' }).click();
+        await page.fill('#psp-cut', '40');
+        const rtl = await downloadBuffer(page, () => page.getByTestId('psp-go').click());
+        const w2 = (await PDFDocument.load(rtl.buffer)).getPages().map((p) => Math.round(p.getWidth()));
+        need(JSON.stringify(w2) === '[420,505,337,505,337]', 'destra prima al 40%: ' + JSON.stringify(w2));
+        await page.fill('#psp-prev', '2');
+        await page.locator('#psp-prev').dispatchEvent('change');
+        await page.waitForTimeout(500);
+      },
+    });
   await shot('roman-numerals.png', {
     width: 1280,
     dark: false,

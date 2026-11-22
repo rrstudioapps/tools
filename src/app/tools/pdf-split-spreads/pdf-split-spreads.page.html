@@ -1,0 +1,74 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio Tools -->
+<div class="container tool-page">
+  <header class="tool-intro">
+    <h1>{{ i18n.t('tool.psp.title') }}</h1>
+    <p class="tool-lead">{{ i18n.t('psp.lead') }}</p>
+  </header>
+
+  <app-privacy-note />
+
+  <app-pdf-source toolId="pdf-split-spreads" (loaded)="onLoaded($event)" (cleared)="onCleared()">
+    @if (pdf(); as p) {
+      <section class="panel" [attr.aria-label]="i18n.t('psp.options')">
+        <h2 class="eyebrow">{{ i18n.t('psp.options') }}</h2>
+        <div class="grid">
+          <div class="ctl">
+            <app-segmented [label]="i18n.t('psp.layout')" [options]="layouts()" [(value)]="layout" />
+            <div class="cutrow">
+              <label class="fld" for="psp-cut"><span>{{ i18n.t('psp.cut') }}</span>
+                <input id="psp-cut" type="number" data-testid="psp-cut" [min]="cutMin" [max]="cutMax" step="0.5" [value]="cut()" (input)="setCut($event)" />
+              </label>
+              <input type="range" class="range" [attr.aria-label]="i18n.t('psp.cut')" [min]="cutMin" [max]="cutMax" step="0.5" [value]="cut()" (input)="setCut($event)" />
+            </div>
+            <p class="hint">{{ i18n.t('psp.cut.hint') }}</p>
+            <div class="fld">
+              <span>{{ i18n.t('psp.order') }}</span>
+              <app-segmented [label]="i18n.t('psp.order')" [options]="orders()" [(value)]="order" />
+            </div>
+            <label class="fld" for="psp-ex">
+              <span>{{ i18n.t('psp.exclude') }}</span>
+              <input id="psp-ex" type="text" class="pages" autocomplete="off" spellcheck="false" data-testid="psp-ex" [placeholder]="i18n.t('psp.exclude.ph')" [value]="exclude()" (input)="exclude.set($any($event.target).value); done.set('')" />
+            </label>
+            <p class="hint">{{ i18n.t('psp.exclude.hint') }}</p>
+            <label class="fld" for="psp-prev">
+              <span>{{ i18n.t('psp.prev') }}</span>
+              <input id="psp-prev" type="number" min="1" [max]="p.pages" step="1" [value]="previewPage()" (change)="setPreviewPage($event)" />
+            </label>
+          </div>
+          <figure class="view" [attr.aria-label]="i18n.t('psp.preview')">
+            @if (thumb(); as url) {
+              <div class="stage">
+                <img [src]="url" [alt]="i18n.t('psp.preview.alt', { n: previewPage() })" data-testid="psp-thumb" />
+                @if (!previewExcluded()) {
+                  <div class="cutline" data-testid="psp-line" [class.v]="layout() === 'side'" [class.h]="layout() === 'stacked'" [style.left.%]="layout() === 'side' ? cut() : null" [style.top.%]="layout() === 'stacked' ? cut() : null"></div>
+                  <span class="badge" [style.left.%]="badges().first.left" [style.top.%]="badges().first.top">{{ badges().first.n }}</span>
+                  <span class="badge" [style.left.%]="badges().second.left" [style.top.%]="badges().second.top">{{ badges().second.n }}</span>
+                }
+              </div>
+            }
+            @if (previewExcluded()) {
+              <figcaption class="hint">{{ i18n.t('psp.preview.excluded') }}</figcaption>
+            } @else {
+              <figcaption class="hint">{{ i18n.t('psp.preview.cap') }}</figcaption>
+            }
+          </figure>
+        </div>
+        @if (outPages(); as o) {
+          <p class="hint" data-testid="psp-count">{{ i18n.t('psp.count', { total: o.total, split: o.split }) }}</p>
+        }
+        <div class="row">
+          <button type="button" class="btn primary" data-shortcut="download" data-testid="psp-go" [disabled]="busy()" (click)="go()">
+            <app-icon name="download" /> {{ i18n.t('pc.download') }}
+          </button>
+        </div>
+      </section>
+    }
+    <div class="tool-status" role="status" aria-live="polite">
+      @if (error()) {
+        <p class="tool-error" role="alert" data-testid="psp-error">{{ error() }}</p>
+      } @else if (done()) {
+        <p class="tool-ok" data-testid="psp-done">{{ done() }}</p>
+      }
+    </div>
+  </app-pdf-source>
+</div>

@@ -1911,4 +1911,19 @@ export const TOOLS: readonly ToolDefinition[] = [
     seo: { titleKey: 'seo.pil.title', descriptionKey: 'seo.pil.desc' },
     loadComponent: () => import('./pdf-interleave/pdf-interleave.page').then((m) => m.PdfInterleavePage),
   },
+  {
+    id: 'pdf-split-spreads',
+    path: 'pdf-split-spreads',
+    icon: 'columns',
+    category: 'media',
+    added: '2026-11-22',
+    keywords: {
+      it: 'pdf dividere pagine doppie affiancate libro scansione metà taglio manga destra sinistra copertina spread',
+      en: 'pdf split double pages spreads book scan half cut manga right to left cover two-page',
+    },
+    titleKey: 'tool.psp.title',
+    descriptionKey: 'tool.psp.desc',
+    seo: { titleKey: 'seo.psp.title', descriptionKey: 'seo.psp.desc' },
+    loadComponent: () => import('./pdf-split-spreads/pdf-split-spreads.page').then((m) => m.PdfSplitSpreadsPage),
+  },
 ];
