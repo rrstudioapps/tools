@@ -44,6 +44,8 @@ export interface ToolDefinition {
   italyOnly?: boolean;
   /** Un tool sta in una sola categoria. */
   category: ToolCategoryId;
+  /** Giorno di uscita AAAA-MM-GG: per 30 giorni lo strumento mostra il badge «Nuovo» (vedi newToolIds). */
+  added: string;
   /** Parole chiave extra per la ricerca in home (non mostrate). */
   keywords?: { it: string; en: string };
   titleKey: DictKey;
@@ -62,6 +64,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'csv-dashboard',
     icon: 'chart',
     category: 'data',
+    added: '2026-11-15',
     keywords: { it: 'csv dashboard excel xlsx grafici kpi tabella charts spreadsheet', en: 'csv dashboard excel xlsx charts kpi table spreadsheet' },
     titleKey: 'tool.csv.title',
     descriptionKey: 'tool.csv.desc',
@@ -74,6 +77,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'qr-code-generator',
     icon: 'qr',
     category: 'media',
+    added: '2026-11-16',
     keywords: {
       it: 'qr code generatore codice qr wifi vcard biglietto da visita contatto url link sms email geo posizione logo png svg barcode',
       en: 'qr code generator wifi vcard business card contact url link sms email geo location logo png svg barcode',
@@ -88,6 +92,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'text-diff',
     icon: 'columns',
     category: 'text',
+    added: '2026-11-16',
     keywords: {
       it: 'diff confronto confronta testi file differenze righe parole patch unified git compare',
       en: 'diff compare text files differences lines words patch unified git',
@@ -102,6 +107,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'markdown-editor',
     icon: 'markdown',
     category: 'text',
+    added: '2026-11-16',
     keywords: {
       it: 'markdown editor anteprima live md html pdf titoli elenchi tabelle codice formatta scrivi documento readme commonmark gfm',
       en: 'markdown editor live preview md html pdf headings lists tables code format write document readme commonmark gfm',
@@ -116,6 +122,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'word-counter',
     icon: 'type',
     category: 'text',
+    added: '2026-11-16',
     keywords: {
       it: 'contatore parole caratteri conta frasi paragrafi righe tempo di lettura parlato densità parole frequenti stopword sms twitter x meta description maiuscolo minuscolo iniziali maiuscole',
       en: 'word counter character count sentences paragraphs lines reading time speaking time keyword density frequent words stopwords sms twitter x meta description uppercase lowercase title case',
@@ -130,6 +137,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'regex-tester',
     icon: 'regex',
     category: 'dev',
+    added: '2026-11-16',
     keywords: {
       it: 'regex espressioni regolari tester prova pattern flag gruppi corrispondenze sostituzione spiega javascript match backtracking',
       en: 'regex regular expressions tester pattern flags groups matches replace explain javascript match backtracking',
@@ -144,6 +152,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'csv-json-converter',
     icon: 'swap',
     category: 'data',
+    added: '2026-11-16',
     keywords: {
       it: 'csv json excel xlsx converti convertitore tsv separatore foglio tabella appiattisci annidati',
       en: 'csv json excel xlsx convert converter tsv delimiter sheet table flatten nested',
@@ -158,6 +167,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'base64',
     icon: 'code',
     category: 'dev',
+    added: '2026-11-15',
     keywords: { it: 'base64 codifica decodifica data url immagine utf-8', en: 'base64 encode decode data url image utf-8' },
     titleKey: 'tool.base64.title',
     descriptionKey: 'tool.base64.desc',
@@ -169,6 +179,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'url-encode',
     icon: 'link',
     category: 'dev',
+    added: '2026-11-15',
     keywords: { it: 'url percent encoding querystring parametri codifica decodifica', en: 'url percent encoding query string parameters encode decode' },
     titleKey: 'tool.url.title',
     descriptionKey: 'tool.url.desc',
@@ -180,6 +191,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'json-formatter',
     icon: 'braces',
     category: 'data',
+    added: '2026-11-15',
     keywords: { it: 'json formatta minifica valida indenta ordina chiavi errori riga colonna', en: 'json format minify validate indent sort keys lint beautify' },
     titleKey: 'tool.json.title',
     descriptionKey: 'tool.json.desc',
@@ -191,6 +203,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'json-diff',
     icon: 'columns',
     category: 'data',
+    added: '2026-11-18',
     keywords: {
       it: 'confronta json confronto json differenze json diff strutturale compare yaml jsonpatch json patch rfc 6902 percorso json pointer array chiave id albero modifiche',
       en: 'json diff json compare compare json differences structural diff yaml json patch rfc 6902 json pointer path array key id tree changes',
@@ -205,6 +218,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'json-viewer',
     icon: 'tree',
     category: 'data',
+    added: '2026-11-16',
     keywords: {
       it: 'json viewer editor albero visualizza modifica percorso jsonpath pointer cerca nodi',
       en: 'json viewer editor tree view edit path jsonpath pointer search nodes',
@@ -219,6 +233,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-compressor',
     icon: 'image',
     category: 'media',
+    added: '2026-11-15',
     keywords: { it: 'immagini foto comprimi converti webp avif jpeg png ridimensiona zip', en: 'images photos compress convert webp avif jpeg png resize zip' },
     titleKey: 'tool.ic.title',
     descriptionKey: 'tool.ic.desc',
@@ -231,6 +246,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-tools',
     icon: 'layers',
     category: 'media',
+    added: '2026-11-15',
     keywords: { it: 'pdf unisci dividi ruota pagine estrai riordina merge split', en: 'pdf merge split rotate pages extract reorder' },
     titleKey: 'tool.pdf.title',
     descriptionKey: 'tool.pdf.desc',
@@ -242,6 +258,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'images-to-pdf',
     icon: 'image',
     category: 'media',
+    added: '2026-11-16',
     keywords: {
       it: 'immagini in pdf jpg png webp foto unisci converti pagina a4 letter margini',
       en: 'images to pdf jpg png webp photos combine convert page a4 letter margins',
@@ -257,6 +274,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-to-images',
     icon: 'file',
     category: 'media',
+    added: '2026-11-16',
     keywords: {
       it: 'pdf in immagini png jpeg jpg converti pagine dpi risoluzione esporta zip',
       en: 'pdf to images png jpeg jpg convert pages dpi resolution export zip',
@@ -272,6 +290,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-to-text',
     icon: 'paragraph',
     category: 'media',
+    added: '2026-11-18',
     keywords: {
       it: 'pdf in testo estrarre testo da pdf copiare testo pdf pdf to txt estrai testo ocr scansione paragrafi colonne password txt markdown',
       en: 'pdf to text extract text from pdf copy text from pdf pdf to txt convert pdf text ocr scan paragraphs columns password txt markdown',
@@ -286,6 +305,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'exif-viewer',
     icon: 'eyeOff',
     category: 'security',
+    added: '2026-11-16',
     keywords: {
       it: 'exif metadati foto gps posizione privacy rimuovi pulisci xmp iptc jpeg png webp fotocamera',
       en: 'exif metadata photo gps location privacy remove strip clean xmp iptc jpeg png webp camera',
@@ -300,6 +320,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'password-generator',
     icon: 'lock',
     category: 'security',
+    added: '2026-11-15',
     keywords: { it: 'password passphrase generatore casuale entropia sicura', en: 'password passphrase generator random entropy secure' },
     titleKey: 'tool.pw.title',
     descriptionKey: 'tool.pw.desc',
@@ -312,6 +333,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'password-strength-checker',
     icon: 'shield',
     category: 'security',
+    added: '2026-11-15',
     keywords: {
       it: 'robustezza password forza controllo verifica sicura zxcvbn entropia tempo per violarla debole forte indovinare brute force dizionario misuratore',
       en: 'password strength checker meter strong weak zxcvbn entropy time to crack guess brute force dictionary test',
@@ -326,6 +348,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'totp-generator',
     icon: 'clock',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'totp otp 2fa autenticazione a due fattori codice monouso google authenticator segreto base32 otpauth qr rfc 6238 hotp verifica codice',
       en: 'totp otp 2fa two factor authentication one time code google authenticator secret base32 otpauth qr rfc 6238 hotp verify code',
@@ -340,6 +363,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'hmac-generator',
     icon: 'hash',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'hmac firma messaggio chiave segreta sha256 sha1 sha512 sha384 webhook autenticazione rfc 2104 rfc 4231 verifica firma hex base64',
       en: 'hmac signature message secret key sha256 sha1 sha512 sha384 webhook authentication rfc 2104 rfc 4231 verify signature hex base64',
@@ -354,6 +378,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'ssh-key-generator',
     icon: 'terminal',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'ssh chiave chiavi coppia ed25519 rsa openssh pubblica privata authorized_keys fingerprint impronta ssh-keygen pem pkcs8 github',
       en: 'ssh key keys pair ed25519 rsa openssh public private authorized_keys fingerprint ssh-keygen pem pkcs8 github',
@@ -368,6 +393,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'csr-generator',
     icon: 'shield',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'csr richiesta certificato firma pkcs10 ssl tls san nomi alternativi soggetto cn csr openssl rsa ecdsa chiave privata',
       en: 'csr certificate signing request pkcs10 ssl tls san subject alternative names cn openssl rsa ecdsa private key',
@@ -382,6 +408,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'shamir-secret-sharing',
     icon: 'layers',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'shamir segreto dividi parti condivisione soglia ricostruisci gf256 frase di recupero password custodia sss',
       en: 'shamir secret sharing split shares threshold combine reconstruct gf256 recovery phrase password custody sss',
@@ -396,6 +423,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'file-encrypt',
     icon: 'lock',
     category: 'security',
+    added: '2026-11-17',
     keywords: {
       it: 'cifra decifra file testo passphrase password aes aes-256 gcm pbkdf2 crittografia cifratura protezione riservato webcrypto',
       en: 'encrypt decrypt file text passphrase password aes aes-256 gcm pbkdf2 cryptography encryption protect private webcrypto',
@@ -410,6 +438,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'hash-generator',
     icon: 'hash',
     category: 'dev',
+    added: '2026-11-15',
     keywords: { it: 'hash checksum sha256 sha1 sha512 md5 file integrita', en: 'hash checksum sha256 sha1 sha512 md5 file integrity' },
     titleKey: 'tool.hash.title',
     descriptionKey: 'tool.hash.desc',
@@ -421,6 +450,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'jwt-decoder',
     icon: 'key',
     category: 'dev',
+    added: '2026-11-16',
     keywords: {
       it: 'jwt json web token decodifica decodificatore bearer header payload claim exp scadenza firma jws jwe oauth',
       en: 'jwt json web token decode decoder bearer header payload claims exp expiry signature jws jwe oauth',
@@ -435,6 +465,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'uuid-generator',
     icon: 'dice',
     category: 'dev',
+    added: '2026-11-16',
     keywords: {
       it: 'uuid guid ulid generatore identificativo univoco v4 v7 casuale validatore versione variante id',
       en: 'uuid guid ulid generator unique identifier v4 v7 random validator version variant id',
@@ -449,6 +480,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'yaml-json-converter',
     icon: 'swap',
     category: 'data',
+    added: '2026-11-15',
     keywords: {
       it: 'yaml yml json toml converti convertitore conversione configurazione config docker compose kubernetes documenti multipli indentazione formatta valida',
       en: 'yaml yml json toml convert converter conversion configuration config docker compose kubernetes multiple documents indentation format validate',
@@ -463,6 +495,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xml-formatter',
     icon: 'markup',
     category: 'data',
+    added: '2026-11-15',
     keywords: {
       it: 'xml formatta formattatore minifica indenta rientri valida buona formazione errori riga colonna cdata commenti converti json svg rss',
       en: 'xml format formatter beautify pretty print minify indent validate well-formed errors line column cdata comments convert json svg rss',
@@ -477,6 +510,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xml-viewer',
     icon: 'tree',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'xml editor visualizzatore albero modifica nodi tag attributi xpath cerca esplora apri file svg rss atom annulla ripeti',
       en: 'xml editor viewer tree edit nodes tags attributes xpath search explore open file svg rss atom undo redo',
@@ -491,6 +525,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xml-diff',
     icon: 'swap',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'xml confronto confronta differenze diff elementi attributi testo xpath struttura aggiunti rimossi',
       en: 'xml compare comparison diff differences elements attributes text xpath structure added removed',
@@ -505,6 +540,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xml-to-csv',
     icon: 'table',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'xml csv tabella converti convertitore record righe colonne appiattisci esporta excel elenco',
       en: 'xml csv table convert converter records rows columns flatten export excel list',
@@ -519,6 +555,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xml-json-converter',
     icon: 'braces',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'xml json converti convertitore da a conversione attributi array testo oggetto parser',
       en: 'xml json convert converter to from conversion attributes array text object parser',
@@ -533,6 +570,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'html-dom-viewer',
     icon: 'tree',
     category: 'dev',
+    added: '2026-11-19',
     keywords: {
       it: 'html dom albero visualizzatore ispeziona selettore css xpath query nodo elemento pagina sorgente',
       en: 'html dom tree viewer inspect selector css xpath query node element page source',
@@ -547,6 +585,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'yaml-viewer',
     icon: 'tree',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'yaml yml toml albero visualizzatore editor modifica configurazione chiavi valori ricerca percorso',
       en: 'yaml yml toml tree viewer editor edit configuration keys values search path',
@@ -561,6 +600,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'yaml-csv-diff',
     icon: 'swap',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'yaml csv confronto confronta differenze diff file righe colonne chiave configurazione tabella',
       en: 'yaml csv compare comparison differences diff file rows columns key configuration table',
@@ -575,6 +615,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'json-schema-xsd',
     icon: 'swap',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'json schema xsd xml schema converti convertitore conversione tipi restrizioni validazione',
       en: 'json schema xsd xml schema convert converter conversion types restrictions validation',
@@ -589,6 +630,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'schema-test-data',
     icon: 'dice',
     category: 'dev',
+    added: '2026-11-19',
     keywords: {
       it: 'dati di prova generatore json schema xsd fake mock finti seme record csv xml json test',
       en: 'test data generator json schema xsd fake mock seed records csv xml json sample',
@@ -603,6 +645,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'xsd-validator',
     icon: 'shield',
     category: 'data',
+    added: '2026-11-19',
     keywords: {
       it: 'xsd xml schema validatore valida validazione convalida controllo conforme tipi restrizioni',
       en: 'xsd xml schema validator validate validation check conforms types restrictions',
@@ -617,6 +660,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'sql-formatter',
     icon: 'database',
     category: 'data',
+    added: '2026-11-15',
     keywords: {
       it: 'sql formatta formattatore query minifica indenta database postgresql postgres mysql mariadb sqlite sql server t-sql bigquery oracle maiuscole parole chiave',
       en: 'sql format formatter beautify query minify indent database postgresql postgres mysql mariadb sqlite sql server t-sql bigquery oracle uppercase keywords',
@@ -631,6 +675,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'html-entities',
     icon: 'ampersand',
     category: 'dev',
+    added: '2026-11-15',
     keywords: {
       it: 'entità html codifica decodifica escape unescape &amp; &nbsp; caratteri speciali accenti stringa javascript json url percent encoding componente unicode',
       en: 'html entities encode decode escape unescape &amp; &nbsp; special characters accents string javascript json url percent encoding component unicode',
@@ -645,6 +690,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'case-converter',
     icon: 'aa',
     category: 'text',
+    added: '2026-11-15',
     keywords: {
       it: 'maiuscole minuscole camelcase pascalcase snake_case kebab-case screaming title case sentence case converti testo maiuscolo minuscolo capitalizza prima lettera alternato iniziali',
       en: 'uppercase lowercase camelcase pascalcase snake_case kebab-case screaming title case sentence case convert text capitalize first letter alternating',
@@ -659,6 +705,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'slug-generator',
     icon: 'slug',
     category: 'web',
+    added: '2026-11-15',
     keywords: {
       it: 'slug generatore url permalink indirizzo amichevole seo titolo accenti traslitterazione trattini parole vuote stop words blocco elenco',
       en: 'slug generator url permalink friendly address seo title accents transliteration hyphens stop words bulk list',
@@ -673,6 +720,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'lorem-ipsum-generator',
     icon: 'paragraph',
     category: 'text',
+    added: '2026-11-15',
     keywords: {
       it: 'lorem ipsum generatore testo segnaposto riempimento finto paragrafi frasi parole html seme mockup placeholder',
       en: 'lorem ipsum generator placeholder dummy filler text paragraphs sentences words html seed mockup',
@@ -687,6 +735,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'cron-expression',
     icon: 'history',
     category: 'dev',
+    added: '2026-11-15',
     keywords: {
       it: 'cron crontab espressione pianificazione schedulazione spiegazione prossime esecuzioni validatore fuso orario utc secondi alias daily vixie job',
       en: 'cron crontab expression schedule scheduler explain explainer next runs executions validator time zone utc seconds alias daily vixie job',
@@ -701,6 +750,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'timestamp-converter',
     icon: 'clock',
     category: 'calc',
+    added: '2026-11-16',
     keywords: {
       it: 'timestamp unix epoch data ora converti convertitore secondi millisecondi fuso orario iso 8601 rfc 2822 ora legale adesso relativo',
       en: 'timestamp unix epoch date time convert converter seconds milliseconds time zone iso 8601 rfc 2822 daylight saving now relative',
@@ -715,6 +765,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'color-contrast-checker',
     icon: 'contrast',
     category: 'web',
+    added: '2026-11-16',
     keywords: {
       it: 'colori contrasto wcag accessibilita aa aaa rapporto testo sfondo hex rgb hsl oklch conversione luminanza a11y',
       en: 'color colour contrast wcag accessibility aa aaa ratio text background hex rgb hsl oklch conversion luminance a11y',
@@ -731,6 +782,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'codice-fiscale',
     icon: 'idcard',
     category: 'italy',
+    added: '2026-11-16',
     keywords: { it: 'codice fiscale cf omocodia calcolo verifica comune nascita', en: 'italian tax code codice fiscale cf calculate check birth place' },
     titleKey: 'tool.cf.title',
     descriptionKey: 'tool.cf.desc',
@@ -743,6 +795,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'iban-partita-iva',
     icon: 'bank',
     category: 'italy',
+    added: '2026-11-16',
     keywords: { it: 'iban partita iva piva banca conto verifica cin abi cab', en: 'iban vat number italian partita iva bank account validate' },
     titleKey: 'tool.iban.title',
     descriptionKey: 'tool.iban.desc',
@@ -755,6 +808,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'fattura-elettronica',
     icon: 'file',
     category: 'italy',
+    added: '2026-11-16',
     keywords: {
       it: 'fattura elettronica xml p7m fatturapa sdi visualizza leggi stampa zip allegati tracciato',
       en: 'italian e-invoice electronic invoice fatturapa xml p7m sdi viewer read print zip attachments',
@@ -771,6 +825,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'calcolo-iva',
     icon: 'calculator',
     category: 'italy',
+    added: '2026-11-16',
     keywords: {
       it: 'iva calcolo scorporo ritenuta acconto rivalsa inps cassa previdenziale bollo forfettario notula fattura professionista netto lordo 22',
       en: 'italian vat calculator extract withholding tax inps surcharge pension fund stamp duty flat rate freelancer invoice net gross',
@@ -786,6 +841,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'calcolo-giorni-lavorativi',
     icon: 'calendar',
     category: 'italy',
+    added: '2026-11-16',
     keywords: {
       it: 'giorni lavorativi calcolo scadenza festività festivi pasqua pasquetta santo patrono weekend sabato domenica aggiungi togli data giorni feriali calendario',
       en: 'italian working days business days calculator deadline public holidays easter patron saint weekend add subtract dates calendar',
@@ -802,6 +858,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'calcolo-ritenuta-acconto',
     icon: 'calculator',
     category: 'italy',
+    added: '2026-11-17',
     keywords: {
       it: 'ritenuta acconto 20 prestazione occasionale parcella professionista lordo netto rivalsa inps 4 cassa previdenziale bollo 2 euro iva calcolo netto a pagare cu f24 notula',
       en: 'italian withholding tax ritenuta acconto 20 percent occasional service freelancer fee gross net inps surcharge pension fund stamp duty vat calculator',
@@ -818,6 +875,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'calcolo-rata-mutuo',
     icon: 'bank',
     category: 'italy',
+    added: '2026-11-17',
     keywords: {
       it: 'mutuo rata calcolo piano ammortamento alla francese tan interessi capitale durata prestito finanziamento mensile trimestrale semestrale csv banca tasso',
       en: 'italian mortgage payment calculator amortization schedule french loan interest principal nominal rate tan term monthly quarterly csv',
@@ -833,6 +891,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'numeri-in-lettere',
     icon: 'type',
     category: 'italy',
+    added: '2026-11-17',
     keywords: {
       it: 'numeri in lettere cifre scrivere importo assegno euro centesimi ventuno centottanta ventitre milleuno milione miliardo ortografia elisioni testo',
       en: 'numbers in words italian spell out cheque amount euro cents ventuno centottanta text converter',
@@ -847,6 +906,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'percentage-calculator',
     icon: 'percent',
     category: 'calc',
+    added: '2026-11-15',
     keywords: {
       it: 'percentuale percentuali calcolo sconto aumento variazione percentuale ricarico inversa scorporo per cento prezzo di partenza',
       en: 'percentage percent calculator discount markup increase decrease change reverse percentage original price',
@@ -862,6 +922,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'unit-converter',
     icon: 'ruler',
     category: 'calc',
+    added: '2026-11-15',
     keywords: {
       it: 'unità di misura convertitore conversione lunghezza peso massa temperatura celsius fahrenheit kelvin area volume velocità tempo byte kb kib pressione bar psi energia kwh kcal miglia pollici libbre litri galloni',
       en: 'unit converter conversion length weight mass temperature celsius fahrenheit kelvin area volume speed time bytes kb kib pressure bar psi energy kwh kcal miles inches pounds litres gallons',
@@ -876,6 +937,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'date-calculator',
     icon: 'calendar',
     category: 'calc',
+    added: '2026-11-15',
     keywords: {
       it: 'date calcolo differenza tra date giorni tra due date aggiungi togli giorni mesi anni settimane età compleanno quanti anni ho bisestile calendario',
       en: 'date calculator difference between dates days between add subtract days months years weeks age birthday how old leap year calendar',
@@ -890,6 +952,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'timezone-converter',
     icon: 'globe',
     category: 'calc',
+    added: '2026-11-15',
     keywords: {
       it: 'fusi orari fuso orario convertitore ora legale orologio mondiale città utc gmt riunione new york tokyo londra roma iana confronta',
       en: 'time zones time zone converter daylight saving world clock city utc gmt meeting planner new york tokyo london rome iana compare',
@@ -904,6 +967,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'number-base-converter',
     icon: 'binary',
     category: 'calc',
+    added: '2026-11-15',
     keywords: {
       it: 'basi numeriche binario ottale esadecimale decimale hex bin convertitore complemento a due bit ieee 754 float32 float64 virgola mobile bigint base 36',
       en: 'number base converter binary octal hexadecimal decimal hex bin twos complement bits ieee 754 float32 float64 floating point bigint base 36',
@@ -919,6 +983,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'barcode-generator',
     icon: 'barcode',
     category: 'media',
+    added: '2026-11-15',
     keywords: {
       it: 'codice a barre barcode ean13 ean-13 ean8 upc code128 code39 itf14 codabar cifra di controllo etichette svg png zip generatore elenco',
       en: 'barcode generator ean13 ean-13 ean8 upc code128 code39 itf14 codabar check digit labels svg png zip bulk list',
@@ -933,6 +998,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'qr-code-reader',
     icon: 'scan',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'lettore qr leggi codice qr scanner fotocamera immagine decodifica wifi vcard url scansione inquadra',
       en: 'qr code reader scanner scan camera image decode wifi vcard url read',
@@ -947,6 +1013,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'sort-lines',
     icon: 'sortLines',
     category: 'text',
+    added: '2026-11-15',
     keywords: {
       it: 'ordina righe elenco alfabetico ordine duplicati rimuovi righe vuote conta occorrenze numera prefisso suffisso casuale naturale lunghezza',
       en: 'sort lines list alphabetical order duplicates remove blank lines count occurrences number prefix suffix random natural length',
@@ -961,6 +1028,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'find-replace',
     icon: 'findReplace',
     category: 'text',
+    added: '2026-11-15',
     keywords: {
       it: 'trova e sostituisci cerca sostituisci testo regex espressioni regolari gruppi più regole massa sostituzione parole intere',
       en: 'find and replace search replace text regex regular expressions groups multiple rules bulk whole words',
@@ -975,6 +1043,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'text-to-speech',
     icon: 'speaker',
     category: 'text',
+    added: '2026-11-15',
     keywords: {
       it: 'sintesi vocale leggi ad alta voce testo in voce tts voce lettura sintetizzatore audio speechsynthesis',
       en: 'text to speech tts read aloud voice synthesis synthesizer audio speechsynthesis reader',
@@ -989,6 +1058,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'chmod-calculator',
     icon: 'terminal',
     category: 'dev',
+    added: '2026-11-15',
     keywords: {
       it: 'chmod permessi unix linux file ottale simbolico rwx 755 644 777 setuid setgid sticky bit calcolatore comando shell cartelle proprietario gruppo altri',
       en: 'chmod permissions unix linux file octal symbolic rwx 755 644 777 setuid setgid sticky bit calculator command shell directories owner group others',
@@ -1003,6 +1073,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'css-unit-converter',
     icon: 'expand',
     category: 'web',
+    added: '2026-11-15',
     keywords: {
       it: 'css unità px rem em pt percentuale vw vh cm mm pollici convertitore pixel dimensione carattere responsive foglio di stile conversione in blocco',
       en: 'css units px rem em pt percent vw vh cm mm inches converter pixels font size responsive stylesheet bulk conversion',
@@ -1017,6 +1088,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'css-generator',
     icon: 'palette',
     category: 'web',
+    added: '2026-11-15',
     keywords: {
       it: 'css generatore gradiente lineare radiale conico sfumatura box-shadow ombra ombre inset colore stop anteprima codice linear-gradient radial-gradient conic-gradient',
       en: 'css generator gradient linear radial conic box-shadow shadow shadows inset color stops preview code linear-gradient radial-gradient conic-gradient',
@@ -1031,6 +1103,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'svg-optimizer',
     icon: 'pen',
     category: 'web',
+    added: '2026-11-15',
     keywords: {
       it: 'svg ottimizzatore ottimizza comprimi riduci peso svgo vettoriale minifica metadati viewbox zip icone',
       en: 'svg optimizer optimize compress minify reduce size svgo vector metadata viewbox zip icons',
@@ -1045,6 +1118,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'favicon-generator',
     icon: 'star',
     category: 'web',
+    added: '2026-11-15',
     keywords: {
       it: 'favicon generatore ico png apple touch icon android chrome manifest webmanifest icona sito emoji lettera immagine logo 16 32 180 192 512 zip',
       en: 'favicon generator ico png apple touch icon android chrome manifest webmanifest site icon emoji letter image logo 16 32 180 192 512 zip',
@@ -1059,6 +1133,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'htpasswd-generator',
     icon: 'users',
     category: 'dev',
+    added: '2026-11-15',
     keywords: {
       it: 'htpasswd generatore apache nginx autenticazione basic bcrypt apr1 md5 sha1 password utenti file htaccess verifica hash',
       en: 'htpasswd generator apache nginx basic authentication bcrypt apr1 md5 sha1 password users htaccess file verify hash',
@@ -1073,6 +1148,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'fake-data-generator',
     icon: 'users',
     category: 'data',
+    added: '2026-11-17',
     keywords: {
       it: 'dati finti fake generatore test prova mock fittizi nomi cognomi email telefono indirizzo codice fiscale partita iva iban uuid csv json sql insert seme database popolare anagrafica',
       en: 'fake data generator test mock dummy sample names surnames email phone address tax code codice fiscale vat iban uuid csv json sql insert seed database populate seed random',
@@ -1087,6 +1163,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'json-query',
     icon: 'braces',
     category: 'data',
+    added: '2026-11-17',
     keywords: {
       it: 'jsonpath json query interroga interrogazione filtro percorso typescript interfacce tipi json schema draft 2020-12 genera playground jq goessner rfc 9535',
       en: 'jsonpath json query filter path typescript interfaces types json schema draft 2020-12 generate playground jq goessner rfc 9535',
@@ -1101,6 +1178,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'certificate-decoder',
     icon: 'award',
     category: 'dev',
+    added: '2026-11-15',
     keywords: {
       it: 'certificato ssl tls x509 x.509 pem der crt cer csr pkcs10 decodifica decoder scadenza san catena impronta https chiave pubblica openssl',
       en: 'certificate ssl tls x509 x.509 pem der crt cer csr pkcs10 decode decoder expiry san chain fingerprint https public key openssl',
@@ -1115,6 +1193,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-sign',
     icon: 'pen',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'firma pdf firmare documento firma grafica disegna scrivi immagine data posiziona modulo contratto sign signature',
       en: 'sign pdf signature draw type upload image date place form contract document esign graphic',
@@ -1129,6 +1208,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-metadata',
     icon: 'file',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf metadati metadata autore titolo proprietà rimuovi privacy xmp info documento',
       en: 'pdf metadata author title properties remove privacy xmp info document',
@@ -1143,6 +1223,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-page-text',
     icon: 'file',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf numeri di pagina numerazione intestazione piè di pagina footer header paginazione stampa',
       en: 'pdf page numbers numbering header footer pagination stamp text',
@@ -1157,6 +1238,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-compress',
     icon: 'file',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf comprimi compressione riduci peso dimensione leggero ottimizza immagini scansione mb',
       en: 'pdf compress compression reduce size weight lighter optimize images scan mb',
@@ -1171,6 +1253,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-crop',
     icon: 'crop',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf ritaglia margini bordi scala ridimensiona adatta formato a4 a5 letter pagina crop resize',
       en: 'pdf crop margins borders scale resize fit page size a4 a5 letter crop resize',
@@ -1185,6 +1268,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-images',
     icon: 'image',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf estrai immagini foto incorporate salva jpg png zip estrattore',
       en: 'pdf extract images photos embedded save jpg png zip extractor',
@@ -1199,6 +1283,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-form',
     icon: 'pencil',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf modulo moduli compila compilare campi appiattisci flatten acroform form casella testo',
       en: 'pdf form forms fill in fields flatten acroform checkbox text dropdown',
@@ -1213,6 +1298,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-redact',
     icon: 'eyeOff',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf oscura oscurare censura nascondi redact redazione privacy nome codice fiscale firma rettangolo nero',
       en: 'pdf redact redaction black out hide censor privacy name tax code signature black rectangle',
@@ -1227,6 +1313,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'pdf-protect',
     icon: 'lock',
     category: 'media',
+    added: '2026-11-19',
     keywords: {
       it: 'pdf password proteggi proteggere cifra cifratura aes blocca permessi stampa copia riservato',
       en: 'pdf password protect encrypt encryption aes lock permissions print copy confidential',
@@ -1241,6 +1328,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-crop',
     icon: 'crop',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'ritaglia immagine foto ritaglio ruota rifletti ridimensiona proporzioni tessera 35x45 passaporto 16:9 quadrata crop png jpeg webp exif',
       en: 'crop image photo rotate flip resize aspect ratio id photo passport 35x45 square 16:9 straighten png jpeg webp exif',
@@ -1255,6 +1343,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'meta-tag-preview',
     icon: 'eye',
     category: 'web',
+    added: '2026-11-17',
     keywords: {
       it: 'meta tag anteprima open graph og twitter card seo title description canonical favicon robots hreflang facebook linkedin whatsapp google snippet condivisione',
       en: 'meta tags preview open graph og twitter card seo title description canonical favicon robots hreflang facebook linkedin whatsapp google snippet sharing',
@@ -1269,6 +1358,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-watermark',
     icon: 'layers',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'filigrana watermark immagini foto pdf logo testo marchio copyright mosaico ripeti opacita rotazione proteggi timbro bozza riservato',
       en: 'watermark images photos pdf logo text stamp copyright tile repeat opacity rotation protect draft confidential brand overlay',
@@ -1283,6 +1373,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-color-picker',
     icon: 'palette',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'contagocce colore immagine foto palette colori dominanti pixel hex rgb hsl oklch lente estrai prendi colore css json median cut',
       en: 'eyedropper color picker image photo palette dominant colors pixel hex rgb hsl oklch magnifier extract css json median cut',
@@ -1297,6 +1388,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'svg-to-png',
     icon: 'image',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'svg in png converti rasterizza esporta immagine jpg webp vettoriale viewbox scala risoluzione sfondo trasparente icona logo',
       en: 'svg to png convert rasterize export image jpg webp vector viewbox scale resolution transparent background icon logo',
@@ -1311,6 +1403,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-converter',
     icon: 'swap',
     category: 'media',
+    added: '2026-11-17',
     keywords: {
       it: 'converti immagini formato png jpg jpeg webp avif gif bmp convertitore qualita ridimensiona zip exif trasparenza sfondo',
       en: 'convert image format png jpg jpeg webp avif gif bmp converter quality resize zip exif transparency background',
@@ -1325,6 +1418,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'color-converter',
     icon: 'palette',
     category: 'web',
+    added: '2026-11-17',
     keywords: {
       it: 'colori convertitore hex rgb hsl hwb oklch oklab cmyk palette tinte ombre sfumature complementari analoghi triadici variabili css json gamut',
       en: 'color colour converter hex rgb hsl hwb oklch oklab cmyk palette shades tints scale complementary analogous triadic css variables json gamut',
@@ -1339,6 +1433,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'curl-converter',
     icon: 'terminal',
     category: 'dev',
+    added: '2026-11-17',
     keywords: {
       it: 'curl converti comando fetch axios javascript node python requests php go golang http api richiesta copia come curl chrome firefox devtools header token',
       en: 'curl convert command fetch axios javascript node python requests php go golang http api request copy as curl chrome firefox devtools header token',
@@ -1353,6 +1448,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'url-parser',
     icon: 'link',
     category: 'web',
+    added: '2026-11-17',
     keywords: {
       it: 'url indirizzo analizza scomponi parametri query string utm fbclid gclid tracciamento dominio sottodominio host porta percorso frammento punycode percent encoding decodifica',
       en: 'url address parse parser split query string parameters utm fbclid gclid tracking domain subdomain host port path fragment hash punycode percent encoding decode',
@@ -1367,6 +1463,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'compound-interest',
     icon: 'chart',
     category: 'calc',
+    added: '2026-11-17',
     keywords: {
       it: 'interesse composto montante capitalizzazione versamenti periodici piano accumulo risparmio investimento rendimento inflazione valore reale capitale tasso',
       en: 'compound interest future value capitalization periodic deposits savings plan investment return inflation real value principal rate calculator',
@@ -1381,6 +1478,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'statistics-calculator',
     icon: 'chart',
     category: 'calc',
+    added: '2026-11-17',
     keywords: {
       it: 'statistica media mediana moda varianza deviazione standard quartili percentili outlier istogramma scarto interquartile dati colonna csv campione popolazione',
       en: 'statistics mean median mode variance standard deviation quartiles percentiles outliers histogram interquartile range data csv column sample population',
@@ -1395,6 +1493,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'aspect-ratio-calculator',
     icon: 'expand',
     category: 'calc',
+    added: '2026-11-17',
     keywords: {
       it: 'proporzioni aspect ratio rapporto larghezza altezza 16:9 4:3 ridimensiona risoluzione schermo video css aspect-ratio mcd',
       en: 'aspect ratio proportions width height 16:9 4:3 resize resolution screen video css aspect-ratio gcd',
@@ -1409,6 +1508,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'roman-numerals',
     icon: 'type',
     category: 'calc',
+    added: '2026-11-17',
     keywords: {
       it: 'numeri romani cifre romane conversione anno data MCMXCIV XIV IV IX vinculum',
       en: 'roman numerals converter year date MCMXCIV XIV IV IX vinculum overline',
@@ -1423,6 +1523,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'unicode-inspector',
     icon: 'search',
     category: 'text',
+    added: '2026-11-17',
     keywords: {
       it: 'unicode code point caratteri invisibili zero width omoglifi utf-8 utf-16 entità html escape normalizza nfc nfkc bidi nbsp cirillico',
       en: 'unicode code point characters invisible zero width homoglyph utf-8 utf-16 html entity escape normalize nfc nfkc bidi nbsp cyrillic',
@@ -1437,6 +1538,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'morse-code',
     icon: 'speaker',
     category: 'text',
+    added: '2026-11-17',
     keywords: {
       it: 'morse codice telegrafo traduttore testo audio sos punti linee wpm lampeggio',
       en: 'morse code telegraph translator text audio sos dots dashes wpm flash',
@@ -1451,6 +1553,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'classic-ciphers',
     icon: 'key',
     category: 'text',
+    added: '2026-11-17',
     keywords: {
       it: 'cifrari classici rot13 rot47 cesare atbash vigenere cifra decifra forza bruta crittografia storica',
       en: 'classic ciphers rot13 rot47 caesar atbash vigenere encrypt decrypt brute force historical cryptography',
@@ -1466,6 +1569,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'convertitore-lire-euro',
     icon: 'bank',
     category: 'italy',
+    added: '2026-11-17',
     keywords: {
       it: 'lire euro convertitore cambio 1936,27 vecchie lire banconote monete conversione valuta storica',
       en: 'lire euro converter exchange rate 1936.27 old lire banknotes coins',
@@ -1480,6 +1584,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'subnet-calculator',
     icon: 'tree',
     category: 'dev',
+    added: '2026-11-18',
     keywords: {
       it: 'subnet cidr ip rete maschera wildcard broadcast host vlsm ipv4 ipv6 sottoreti netmask prefisso indirizzo',
       en: 'subnet cidr ip network mask wildcard broadcast host vlsm ipv4 ipv6 subnets netmask prefix address',
@@ -1494,6 +1599,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'docker-run-to-compose',
     icon: 'layers',
     category: 'dev',
+    added: '2026-11-18',
     keywords: {
       it: 'docker run compose yaml docker-compose convertitore container volumi porte rete servizi podman',
       en: 'docker run compose yaml docker-compose converter container volumes ports network services podman',
@@ -1508,6 +1614,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'css-clamp-calculator',
     icon: 'ruler',
     category: 'web',
+    added: '2026-11-18',
     keywords: {
       it: 'css clamp tipografia fluida font-size rem vw viewport responsive scala tipografica wcag zoom',
       en: 'css clamp fluid typography font-size rem vw viewport responsive type scale wcag zoom',
@@ -1522,6 +1629,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'time-calculator',
     icon: 'clock',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'ore minuti durata somma sottrazione foglio ore timbrature turni notte straordinario tariffa oraria decimali',
       en: 'hours minutes duration add subtract timesheet clock in out night shift overtime hourly rate decimal',
@@ -1537,6 +1645,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'scadenze-fatture',
     icon: 'calendar',
     category: 'italy',
+    added: '2026-11-18',
     keywords: {
       it: 'scadenze fatture pagamento 30 60 90 giorni dffm fine mese rate data fattura giorno lavorativo ics csv 231/2002',
       en: 'invoice due dates payment terms 30 60 90 days end of month installments business day ics csv',
@@ -1552,6 +1661,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'generatore-codice-fiscale',
     icon: 'idcard',
     category: 'italy',
+    added: '2026-11-18',
     keywords: {
       it: 'generatore codice fiscale casuale finto di prova test partita iva casuale generatore partita iva omocodia dati finti fake mock cf codici fiscali p.iva ufficio provinciale seme csv json',
       en: 'random italian tax code generator fake codice fiscale test partita iva vat number generator homocodia mock data seed csv json',
@@ -1566,6 +1676,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'timer',
     icon: 'clock',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'timer cronometro conto alla rovescia countdown pomodoro giri lap sveglia allarme tempo minuti secondi cucina studio',
       en: 'timer stopwatch countdown pomodoro laps alarm minutes seconds kitchen study focus',
@@ -1580,6 +1691,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'scientific-calculator',
     icon: 'calculator',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'calcolatrice scientifica calcolatore espressioni seno coseno tangente logaritmo radice potenza fattoriale percentuale gradi radianti pi greco',
       en: 'scientific calculator expression sine cosine tangent logarithm root power factorial percent degrees radians pi',
@@ -1594,6 +1706,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'random-number-generator',
     icon: 'dice',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'numero casuale random dadi d20 2d6 estrazione sorteggio nomi squadre testa o croce moneta lotto lancio',
       en: 'random number generator dice roller d20 2d6 draw raffle pick names teams coin flip heads tails lottery',
@@ -1608,6 +1721,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'text-cleaner',
     icon: 'paragraph',
     category: 'text',
+    added: '2026-11-18',
     keywords: {
       it: 'pulisci testo ripulire incolla pdf word email a capo righe spezzate spazi doppi virgolette tipografiche caratteri invisibili html elenco puntato maiuscole',
       en: 'clean text tidy paste pdf word email line breaks broken lines double spaces smart quotes invisible characters html bullets sentence case',
@@ -1622,6 +1736,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'list-compare',
     icon: 'columns',
     category: 'text',
+    added: '2026-11-18',
     keywords: {
       it: 'confronta elenchi liste intersezione unione differenza in comune doppioni duplicati righe diff insiemi',
       en: 'compare lists intersection union difference in common duplicates lines sets diff',
@@ -1636,6 +1751,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'countdown',
     icon: 'clock',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'conto alla rovescia countdown data evento giorni mancanti quanti giorni mancano natale pasqua capodanno ferragosto giorni lavorativi settimane ics calendario',
       en: 'countdown days until date event how many days left christmas easter new year working days weeks ics calendar',
@@ -1650,6 +1766,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'split-bill',
     icon: 'users',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'dividi conto ristorante spese alla romana per consumo mancia servizio coperto quota a testa arrotondamento amici cena',
       en: 'split bill restaurant share expenses by consumption tip service cover charge per person rounding friends dinner',
@@ -1664,6 +1781,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'image-redact',
     icon: 'eyeOff',
     category: 'media',
+    added: '2026-11-18',
     keywords: {
       it: 'oscura sfoca pixela censura nascondi volto targa screenshot privacy immagine foto rettangolo',
       en: 'redact blur pixelate censor hide face license plate screenshot privacy image photo rectangle',
@@ -1678,6 +1796,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'zip-tool',
     icon: 'layers',
     category: 'media',
+    added: '2026-11-18',
     keywords: {
       it: 'zip crea estrai comprimi decomprimi archivio cartella unzip scompatta file compressione',
       en: 'zip create extract compress decompress archive folder unzip unpack files compression',
@@ -1692,6 +1811,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'string-escape',
     icon: 'braces',
     category: 'dev',
+    added: '2026-11-18',
     keywords: {
       it: 'escape unescape stringa stringhe caratteri speciali backslash json javascript python regex shell bash sql csv java php virgolette apici protezione',
       en: 'escape unescape string strings special characters backslash json javascript python regex shell bash sql csv java php quotes quoting',
@@ -1706,6 +1826,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'text-binary-converter',
     icon: 'binary',
     category: 'dev',
+    added: '2026-11-18',
     keywords: {
       it: 'testo byte esadecimale binario decimale ottale base64 hex utf-8 utf-16 latin-1 windows-1252 ascii codifica decodifica unicode code point bom hex dump',
       en: 'text bytes hexadecimal binary decimal octal base64 hex utf-8 utf-16 latin-1 windows-1252 ascii encoding decoding unicode code point bom hex dump',
@@ -1720,6 +1841,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'text-extractor',
     icon: 'search',
     category: 'text',
+    added: '2026-11-18',
     keywords: {
       it: 'estrai testo email url link indirizzi ip date telefoni numeri iban uuid hashtag menzioni colori importi euro regex elenco',
       en: 'extract text emails urls links addresses ip dates phone numbers iban uuid hashtags mentions colors amounts euro regex list',
@@ -1734,6 +1856,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'list-converter',
     icon: 'columns',
     category: 'text',
+    added: '2026-11-18',
     keywords: {
       it: 'elenco riga converti separatore virgola apici sql in json array csv lista una riga unisci dividi parametri url shell',
       en: 'list line convert separator comma quotes sql in json array csv join split one line url parameters shell',
@@ -1748,6 +1871,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'trip-cost-calculator',
     icon: 'calculator',
     category: 'calc',
+    added: '2026-11-18',
     keywords: {
       it: 'viaggio costo carburante benzina diesel gpl elettrico consumo litri 100 km mpg miglia pedaggi co2 emissioni budget autonomia rifornimento',
       en: 'trip cost fuel petrol gas diesel lpg electric consumption fuel economy mpg l/100km miles tolls co2 emissions budget range fill-up',
@@ -1762,6 +1886,7 @@ export const TOOLS: readonly ToolDefinition[] = [
     path: 'utm-link-builder',
     icon: 'link',
     category: 'web',
+    added: '2026-11-18',
     keywords: {
       it: 'utm link campagna google analytics parametri tracciamento source medium campaign newsletter social url marketing csv',
       en: 'utm link campaign google analytics parameters tracking source medium campaign newsletter social url marketing csv',

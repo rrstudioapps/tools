@@ -3,6 +3,7 @@
 import { CHANGELOG, ChangeKind, ChangelogVersion } from './changelog';
 import { CHANGELOG_SLUG, Lang, publicUrl } from './i18n/lang-routing';
 import { SITE_NAME, SITE_URL } from './links';
+import { TOOLS } from '../tools/tools.registry';
 
 /** Per quanti giorni uno strumento nuovo mostra il badge «Nuovo». */
 export const NEW_TOOL_DAYS = 30;
@@ -27,21 +28,20 @@ export function isoDay(ms: number): string {
 }
 
 /**
- * Id degli strumenti con voce `new-tool` nell'ULTIMA versione che contiene strumenti nuovi, solo se quella
- * versione è entro `days` giorni da `today` (AAAA-MM-GG). Una versione futura rispetto a `today` non conta.
- * Al massimo `max` id, presi dalle voci più recenti (quelle in cima alla versione).
+ * Id degli strumenti aggiunti negli ultimi `days` giorni, in base al campo `added` (AAAA-MM-GG) del registry.
+ * Una data futura rispetto a `today` non conta. Al massimo `max` id: i più recenti, a parità di data nell'ordine del registry.
  */
-export function newToolIds(today: string, days = NEW_TOOL_DAYS, log: readonly ChangelogVersion[] = CHANGELOG, max = MAX_NEW_BADGES): Set<string> {
-  const ids = new Set<string>();
-  const latest = log.find((v) => v.entries.some((e) => e.kind === 'new-tool'));
-  if (!latest) return ids;
-  const age = daysBetween(latest.date, today);
-  if (age < 0 || age >= days) return ids;
-  for (const e of latest.entries) {
-    if (e.kind !== 'new-tool') continue;
-    for (const id of e.toolIds ?? []) if (ids.size < max) ids.add(id);
-  }
-  return ids;
+export function newToolIds(
+  today: string,
+  days = NEW_TOOL_DAYS,
+  tools: readonly { id: string; added: string }[] = TOOLS,
+  max = MAX_NEW_BADGES,
+): Set<string> {
+  const recent = tools
+    .map((t) => ({ id: t.id, age: daysBetween(t.added, today) }))
+    .filter((t) => t.age >= 0 && t.age < days)
+    .sort((a, b) => a.age - b.age); // sort stabile: a parità di giorno resta l'ordine del registry
+  return new Set(recent.slice(0, max).map((t) => t.id));
 }
 
 /** Data più recente del changelog (riferimento quando non c'è altra data di build). */

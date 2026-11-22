@@ -9,7 +9,7 @@ import { en as enRaw } from './i18n/en';
 const itDict = itRaw as Record<string, string>;
 const enDict = enRaw as Record<string, string>;
 import { CHANGELOG, ChangeKind } from './changelog';
-import { FEED_PATH, FEED_VERSIONS, KIND_ORDER, buildFeed, daysBetween, formatDay, isoDay, newToolIds } from './changelog.logic';
+import { FEED_PATH, FEED_VERSIONS, KIND_ORDER, buildFeed, daysBetween, latestChangelogDay, formatDay, isoDay, newToolIds } from './changelog.logic';
 import { CHANGELOG_SLUG, alternatePath, hasOgImage, hreflangLinks } from './i18n/lang-routing';
 
 describe('dati del changelog', () => {
@@ -57,36 +57,39 @@ describe('dati del changelog', () => {
 });
 
 describe('badge «Nuovo»', () => {
-  const log = [
-    { date: '2026-11-18', title: { it: 'a', en: 'a' }, entries: [{ kind: 'new-tool' as const, it: 'x', en: 'x', toolIds: ['b64'] }, { kind: 'feature' as const, it: 'y', en: 'y', toolIds: ['feat'] }] },
-    { date: '2026-10-20', title: { it: 'c', en: 'c' }, entries: [{ kind: 'new-tool' as const, it: 'x', en: 'x', toolIds: ['edge'] }] },
+  const tools = [
+    { id: 'old', added: '2026-10-01' },
+    { id: 'b64', added: '2026-11-18' },
+    { id: 'edge', added: '2026-10-20' },
+    { id: 'same', added: '2026-11-18' },
+    { id: 'future', added: '2026-12-31' },
   ];
-  it('conta solo i new-tool dell\'ultima versione con strumenti nuovi', () => {
-    expect([...newToolIds('2026-11-18', 30, log)]).toEqual(['b64']);
-  });
-  it('se l\'ultima versione con strumenti nuovi non ne ha, salta quelle senza', () => {
-    const l = [{ date: '2026-11-18', title: { it: 'a', en: 'a' }, entries: [{ kind: 'fix' as const, it: 'x', en: 'x' }] }, log[1]];
-    expect([...newToolIds('2026-11-18', 30, l)]).toEqual(['edge']);
+  it('conta solo gli strumenti aggiunti negli ultimi 30 giorni, i più recenti prima', () => {
+    expect([...newToolIds('2026-11-18', 30, tools)]).toEqual(['b64', 'same', 'edge']);
   });
   it('il 29° giorno è dentro, il 30° fuori', () => {
-    expect(newToolIds('2026-12-17', 30, log).has('b64')).toBe(true);
-    expect(newToolIds('2026-12-18', 30, log).size).toBe(0);
+    expect(newToolIds('2026-12-17', 30, tools).has('b64')).toBe(true);
+    expect(newToolIds('2026-12-18', 30, tools).has('b64')).toBe(false);
+    expect(newToolIds('2026-11-18', 30, tools).has('edge')).toBe(true);
+    expect(newToolIds('2026-11-19', 30, tools).has('edge')).toBe(false);
   });
-  it('una versione futura rispetto alla data di build non conta', () => {
-    expect(newToolIds('2026-11-17', 30, log).size).toBe(0);
+  it('una data futura rispetto alla data di build non conta', () => {
+    expect(newToolIds('2026-11-17', 30, tools).has('b64')).toBe(false);
+    expect(newToolIds('2026-11-18', 30, tools).has('future')).toBe(false);
   });
-  it('senza versioni con strumenti nuovi: vuoto', () => {
+  it('senza strumenti: vuoto', () => {
     expect(newToolIds('2026-11-18', 30, []).size).toBe(0);
   });
-  it('dati reali: oggi ha il badge gli strumenti dell\'ultima versione, il 19/11', () => {
-    expect([...newToolIds('2026-11-19')]).toEqual(['yaml-viewer', 'yaml-csv-diff', 'json-schema-xsd', 'schema-test-data', 'pdf-metadata', 'pdf-page-text', 'pdf-compress', 'pdf-crop', 'pdf-images', 'pdf-form', 'pdf-redact', 'pdf-protect']); // al massimo 12 badge: gli strumenti più recenti stanno in cima alla versione
-    expect(newToolIds('2026-11-18').size).toBe(0); // la versione è più recente di «oggi»
+  it('tetto ai badge: i più recenti, nell\'ordine del registry', () => {
+    expect([...newToolIds('2026-11-18', 30, tools, 2)]).toEqual(['b64', 'same']);
   });
-  it('tetto ai badge: i più recenti, nell\'ordine delle voci', () => {
-    const entries = ['a', 'b', 'c', 'd'].map((id) => ({ kind: 'new-tool' as const, it: id, en: id, toolIds: [id] }));
-    const l = [{ date: '2026-11-18', title: { it: 't', en: 't' }, entries }];
-    expect([...newToolIds('2026-11-18', 30, l, 2)]).toEqual(['a', 'b']);
-    expect(newToolIds('2026-11-18', 30, l).size).toBe(4);
+  it('dati reali: ogni strumento ha una data valida, mai futura e mai prima della prima uscita', () => {
+    for (const t of TOOLS) {
+      expect(t.added, t.id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(t.added >= '2026-11-15' && t.added <= latestChangelogDay(), t.id).toBe(true);
+    }
+    expect(newToolIds('2026-11-19').size).toBeGreaterThan(0);
+    expect(newToolIds('2027-06-01').size).toBe(0);
   });
   it('date: differenza in giorni e giorno UTC', () => {
     expect(daysBetween('2026-10-31', '2026-11-01')).toBe(1);
