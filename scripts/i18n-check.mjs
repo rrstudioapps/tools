@@ -118,7 +118,7 @@ const ALLOWED = /^(rrstudio|Tools|IBAN|BIC|JSON|YAML|XML|CSV|SVG|PDF|PNG|JPEG|We
 const FIXED_ENGLISH = /^(Italian only: no English version|This page is also available in English →|English version|Language|Close)$/;
 
 // pagine con i testi nelle due lingue scritti nel template (@if sulla lingua), non nei dizionari
-const BILINGUAL_TEMPLATES = ['src/app/pages/privacy.html'];
+const BILINGUAL_TEMPLATES = ['src/app/pages/privacy.html', 'src/app/pages/tutorial.html'];
 
 for (const file of walk(src)) {
   const text = readFileSync(file, 'utf8');

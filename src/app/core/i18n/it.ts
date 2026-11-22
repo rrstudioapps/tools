@@ -53,6 +53,7 @@ export const it = {
   'seo.changelog.title': 'Novità | rrstudio tools',
   'seo.changelog.desc': 'Nuovi strumenti, funzioni e miglioramenti di rrstudio tools, con feed per seguire gli aggiornamenti.',
   'footer.privacy': 'Privacy',
+  'footer.tutorial': 'Tutorial',
   'footer.noads': 'Nessuna pubblicità, nessun cookie, nessun tracciamento.',
   'pwa.footer': 'Usa offline',
   'pwa.title': 'Usa offline',
@@ -953,6 +954,9 @@ export const it = {
   'seo.privacy.title': 'Informativa sulla privacy | rrstudio tools',
   'seo.privacy.desc':
     'Come rrstudio tools tratta i dati: gli strumenti lavorano nel browser, nessun cookie né tracciamento, solo log tecnici del server con rotazione automatica.',
+  'seo.tutorial.title': 'Tutorial: cose da sapere | rrstudio tools',
+  'seo.tutorial.desc':
+    'Cosa sapere prima di usare il sito: dati che non si recuperano, ricerca Ctrl+K, preferiti, catene di strumenti, uso offline e casi particolari dei PDF.',
   // preferiti e menu personalizzati
   'fav.menu': 'Preferiti',
   'fav.menu.label': 'Menu dei preferiti',

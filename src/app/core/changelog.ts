@@ -25,7 +25,7 @@ export interface ChangelogVersion {
 export const CHANGELOG: readonly ChangelogVersion[] = [
   {
     date: '2026-11-22',
-    title: { it: 'Nuovi strumenti PDF', en: 'New PDF tools' },
+    title: { it: 'Nuovi strumenti PDF e tutorial', en: 'New PDF tools and tutorial' },
     entries: [
       {
         kind: 'new-tool',
@@ -56,6 +56,11 @@ export const CHANGELOG: readonly ChangelogVersion[] = [
         it: 'Nuovo strumento: unisci i PDF di fronti e retri scansionati separatamente in un solo PDF con le pagine alternate, con anteprima dell\'ordine.',
         en: 'New tool: merge separately scanned fronts and backs PDFs into one PDF with alternating pages, with a preview of the order.',
         toolIds: ['pdf-interleave'],
+      },
+      {
+        kind: 'feature',
+        it: 'Nuova pagina «Tutorial» con le cose da sapere: dati che non si recuperano, ricerca Ctrl/⌘+K, preferiti e link di condivisione, «Invia a…» e catene, uso offline e casi particolari dei PDF.',
+        en: 'New "Tutorial" page with things worth knowing: data that can\'t be recovered, Ctrl/⌘+K search, favorites and share links, "Send to…" and chains, offline use and special cases in the PDF tools.',
       },
     ],
   },

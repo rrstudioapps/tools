@@ -7,6 +7,7 @@
         <a [href]="license" target="_blank" rel="noopener">{{ i18n.t('footer.license') }}</a> ·
         <a [href]="repo" target="_blank" rel="noopener">{{ i18n.t('footer.source') }}</a> ·
         <a [routerLink]="i18n.link('privacy')">{{ i18n.t('footer.privacy') }}</a> ·
+        <a [routerLink]="i18n.link('tutorial')">{{ i18n.t('footer.tutorial') }}</a> ·
         <a [routerLink]="i18n.link(changelogSlug())" data-testid="footer-changelog">{{ i18n.t('footer.changelog') }}</a>
         @if (pwa.supported()) {
           · <button type="button" class="linklike" (click)="offline.open()">{{ i18n.t('pwa.footer') }}</button>

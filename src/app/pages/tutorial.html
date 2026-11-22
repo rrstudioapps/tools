@@ -1,0 +1,220 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio Tools -->
+@if (i18n.lang() === 'it') {
+  <article class="container tutorial rise">
+    <p class="eyebrow">Tutorial</p>
+    <h1>Cose da sapere</h1>
+    <p>
+      Le cose che il sito fa in modo particolare e che conviene sapere, quasi tutte conseguenza di una scelta: i tuoi
+      dati restano nel browser e non vanno mai a un server.
+    </p>
+
+    <h2>I dati non si recuperano</h2>
+    <p>
+      Senza server, nessuno può restituirti ciò che hai inserito: se chiudi la scheda o ricarichi la pagina, testi e file
+      spariscono. Scarica o copia il risultato prima di uscire. L'unica eccezione è la bozza dell'editor Markdown, che il
+      browser tiene finché non la cancelli.
+    </p>
+
+    <h2>Cerca con Ctrl/⌘+K</h2>
+    <ul>
+      <li>La ricerca si apre da qualsiasi pagina con <code>Ctrl+K</code> (<code>⌘+K</code> su Mac).</li>
+      <li>
+        I <strong>recenti</strong> sono spenti di default: si accendono nella pagina
+        <a [routerLink]="i18n.link(favoritesSlug())">Preferiti</a>. Accesi, il browser ricorda solo i nomi interni degli
+        ultimi 5 strumenti aperti dalla ricerca; spegnerli li cancella.
+      </li>
+    </ul>
+
+    <h2>Preferiti e menu personalizzati</h2>
+    <ul>
+      <li>
+        Stella accanto allo strumento per aggiungerlo, poi puoi raggruppare i preferiti in menu tuoi e riordinarli.
+        Si salvano solo su <strong>questo browser</strong>: su un altro dispositivo non ci sono.
+      </li>
+      <li>
+        Per portarli altrove: <strong>Esporta JSON</strong> e poi Importa, oppure <strong>Crea link di condivisione</strong>.
+        I dati stanno nel link dopo il simbolo <code>#</code>, quindi non arrivano al server.
+      </li>
+      <li>
+        Chi apre il link deve confermare prima che si importi qualcosa e può scegliere se unire ai preferiti esistenti o
+        sostituirli. Dati non validi o strumenti sconosciuti vengono ignorati.
+      </li>
+      <li>
+        Nella versione inglese gli strumenti solo italiani sono nascosti nei menu, ma restano salvati e tornano in italiano.
+      </li>
+    </ul>
+
+    <h2>«Invia a…» e catene</h2>
+    <ul>
+      <li>
+        Il risultato di uno strumento può passare a un altro, ma solo tra strumenti compatibili: un JSON va a chi
+        legge JSON o testo, un'immagine a chi legge immagini.
+      </li>
+      <li>
+        Il contenuto viaggia <strong>solo in memoria</strong>, una volta sola: se la pagina di arrivo non lo prende in
+        pochi secondi, o la ricarichi, è perso. È voluto, per la privacy.
+      </li>
+      <li>
+        Una <strong>catena</strong> è un percorso di 2-8 strumenti (per esempio Base64 → JSON → Hash), fino a 20. Salva
+        solo nome e ordine degli strumenti, mai i dati: ad ogni passo il contenuto si passa con «Invia a…».
+      </li>
+    </ul>
+
+    <h2>Incolla in home</h2>
+    <p>
+      Incollando un testo nel campo della home, il sito prova a capire di cosa si tratta (JSON, URL, IBAN, comando
+      curl, colore, cron…) e propone lo strumento. Il riconoscimento è prudente: IBAN, codice fiscale e partita IVA
+      vengono verificati con la loro cifra di controllo, quindi un codice sbagliato di un carattere non viene proposto.
+      Se non compare nulla, scegli lo strumento a mano.
+    </p>
+
+    <h2>Uso offline</h2>
+    <ul>
+      <li>Dal piè di pagina, «Usa offline», puoi salvare tutto il sito nel browser.</li>
+      <li>
+        Si salvano solo pagine, script, stili e font: i dati degli strumenti mai. Senza il download completo, offline
+        funzionano solo le pagine già visitate.
+      </li>
+      <li>Quando esce una versione nuova, i file salvati si aggiornano da soli (il sito te lo segnala).</li>
+    </ul>
+
+    <h2>Casi particolari degli strumenti PDF</h2>
+    <ul>
+      <li>
+        <strong>Libretto:</strong> usa 4 pagine per foglio, quindi un PDF di 10 pagine ha 2 pagine vuote alla fine.
+        Stampa fronte-retro ribaltando sul <em>lato corto</em> e senza ridimensionare, poi piega i fogli a metà.
+      </li>
+      <li>
+        <strong>Pagine di formati diversi:</strong> si riducono in proporzione e si centrano nella cella, senza
+        deformarsi: resta un po' di spazio attorno.
+      </li>
+      <li>
+        <strong>PDF con password o cifrati:</strong> la maggior parte degli strumenti non li apre né li modifica; per ora
+        non c'è uno strumento che tolga la password.
+      </li>
+      <li>
+        <strong>Limiti di dimensione:</strong> alcuni strumenti hanno un tetto (per esempio 100 MB e 300 pagine) per non
+        bloccare il browser.
+      </li>
+    </ul>
+
+    <h2>Altro</h2>
+    <ul>
+      <li>
+        Se il browser è in un'altra lingua, in una pagina italiana appare un suggerimento per la versione inglese
+        (non un reindirizzamento); si chiude e il sito se lo ricorda.
+      </li>
+      <li>
+        Gli strumenti solo italiani (codice fiscale, IBAN e partita IVA…) non hanno la versione inglese.
+      </li>
+    </ul>
+  </article>
+} @else {
+  <article class="container tutorial rise">
+    <p class="eyebrow">Tutorial</p>
+    <h1>Things worth knowing</h1>
+    <p>
+      Things the site does in a particular way that are worth knowing. Almost all of them follow from one choice: your
+      data stays in your browser and never goes to a server.
+    </p>
+
+    <h2>Your data can't be recovered</h2>
+    <p>
+      With no server, nobody can give back what you entered: close the tab or reload the page and texts and files are
+      gone. Download or copy the result before leaving. The only exception is the Markdown editor draft, which the
+      browser keeps until you delete it.
+    </p>
+
+    <h2>Search with Ctrl/⌘+K</h2>
+    <ul>
+      <li>Search opens from any page with <code>Ctrl+K</code> (<code>⌘+K</code> on a Mac).</li>
+      <li>
+        <strong>Recent tools</strong> are off by default: turn them on in the
+        <a [routerLink]="i18n.link(favoritesSlug())">Favorites</a> page. When on, the browser remembers only the internal
+        names of the last 5 tools opened from search; turning them off deletes them.
+      </li>
+    </ul>
+
+    <h2>Favorites and custom menus</h2>
+    <ul>
+      <li>
+        Use the star next to a tool to add it, then group favorites into your own menus and reorder them. They are
+        saved only in <strong>this browser</strong>: another device doesn't have them.
+      </li>
+      <li>
+        To move them: <strong>Export JSON</strong> and then Import, or <strong>Create share link</strong>. The data sits in
+        the link after the <code>#</code> symbol, so it never reaches the server.
+      </li>
+      <li>
+        Whoever opens the link must confirm before anything is imported, and can choose to merge with existing favorites
+        or replace them. Invalid data or unknown tools are ignored.
+      </li>
+      <li>
+        In the English version the Italian-only tools are hidden from menus, but they stay saved and come back in Italian.
+      </li>
+    </ul>
+
+    <h2>"Send to…" and chains</h2>
+    <ul>
+      <li>
+        A tool's result can go to another one, but only between compatible tools: JSON goes to tools that read JSON or
+        text, an image to tools that read images.
+      </li>
+      <li>
+        The content travels <strong>in memory only</strong>, once: if the destination page doesn't take it within a few
+        seconds, or you reload, it is lost. This is on purpose, for privacy.
+      </li>
+      <li>
+        A <strong>chain</strong> is a path of 2-8 tools (for example Base64 → JSON → Hash), up to 20 chains. It saves only
+        the name and order of the tools, never your data: at each step the content is passed with "Send to…".
+      </li>
+    </ul>
+
+    <h2>Pasting on the home page</h2>
+    <p>
+      When you paste text into the home page field, the site tries to work out what it is (JSON, URL, IBAN, curl
+      command, colour, cron…) and suggests a tool. Detection is cautious: IBANs, Italian tax codes and VAT numbers are
+      checked with their check digit, so a code with one wrong character isn't suggested. If nothing shows up, pick the
+      tool by hand.
+    </p>
+
+    <h2>Offline use</h2>
+    <ul>
+      <li>From the footer, "Use offline", you can save the whole site in your browser.</li>
+      <li>
+        Only pages, scripts, styles and fonts are saved, never your data. Without the full download, only pages you have
+        already visited work offline.
+      </li>
+      <li>When a new version is out, saved files update by themselves (the site tells you).</li>
+    </ul>
+
+    <h2>Special cases in the PDF tools</h2>
+    <ul>
+      <li>
+        <strong>Booklet:</strong> it uses 4 pages per sheet, so a 10-page PDF ends with 2 blank pages. Print double-sided
+        flipping on the <em>short edge</em> and without scaling, then fold the sheets in half.
+      </li>
+      <li>
+        <strong>Pages of different sizes:</strong> they are scaled down proportionally and centred in their cell, never
+        stretched: some empty space is left around them.
+      </li>
+      <li>
+        <strong>Password-protected or encrypted PDFs:</strong> most tools can neither open nor modify them; for now there
+        is no tool that removes the password.
+      </li>
+      <li>
+        <strong>Size limits:</strong> some tools have a cap (for example 100 MB and 300 pages) so the browser doesn't
+        freeze.
+      </li>
+    </ul>
+
+    <h2>More</h2>
+    <ul>
+      <li>
+        If your browser is set to another language, an Italian page shows a hint for the English version (not a redirect);
+        close it and the site remembers.
+      </li>
+      <li>Italian-only tools (codice fiscale, IBAN and partita IVA…) have no English version.</li>
+    </ul>
+  </article>
+}

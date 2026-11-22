@@ -34,6 +34,12 @@ const PRIVACY: Route = {
   data: { seo: { titleKey: 'seo.privacy.title', descriptionKey: 'seo.privacy.desc' } },
 };
 
+const TUTORIAL: Route = {
+  path: 'tutorial',
+  loadComponent: () => import('./pages/tutorial').then((m) => m.Tutorial),
+  data: { seo: { titleKey: 'seo.tutorial.title', descriptionKey: 'seo.tutorial.desc' } },
+};
+
 /** Pagina personale dei preferiti: /preferiti e /en/favorites (noindex, fuori dalla sitemap). */
 const favoritesRoute = (lang: 'it' | 'en'): Route => ({
   path: FAVORITES_SLUG[lang],
@@ -63,6 +69,7 @@ export const routes: Routes = [
   HOME,
   ...TOOLS.map(toRoute),
   PRIVACY,
+  TUTORIAL,
   favoritesRoute('it'),
   changelogRoute('it'),
   shareRoute('it'),
@@ -72,6 +79,7 @@ export const routes: Routes = [
       HOME,
       ...TOOLS.filter((t) => !t.italyOnly).map(toRoute),
       PRIVACY,
+  TUTORIAL,
       favoritesRoute('en'),
       changelogRoute('en'),
       shareRoute('en'),

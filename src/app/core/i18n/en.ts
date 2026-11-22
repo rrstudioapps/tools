@@ -54,6 +54,7 @@ export const en: Dict = {
   'seo.changelog.title': "What's new | rrstudio tools",
   'seo.changelog.desc': 'New tools, features and improvements in rrstudio tools, with a feed to follow the updates.',
   'footer.privacy': 'Privacy',
+  'footer.tutorial': 'Tutorial',
   'footer.noads': 'No ads, no cookies, no tracking.',
   'pwa.footer': 'Use offline',
   'pwa.title': 'Use offline',
@@ -954,6 +955,9 @@ export const en: Dict = {
   'seo.privacy.title': 'Privacy notice | rrstudio tools',
   'seo.privacy.desc':
     'How rrstudio tools handles data: the tools run in your browser, no cookies or tracking, only technical server logs with automatic rotation.',
+  'seo.tutorial.title': 'Tutorial: things worth knowing | rrstudio tools',
+  'seo.tutorial.desc':
+    'What to know before using the site: data that can\'t be recovered, Ctrl+K search, favorites, tool chains, offline use and special cases in the PDF tools.',
   // preferiti e menu personalizzati
   'fav.menu': 'Favorites',
   'fav.menu.label': 'Favorites menu',

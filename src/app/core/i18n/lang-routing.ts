@@ -14,7 +14,7 @@ export const LANGS: readonly Lang[] = ['it', 'en'];
 export const EN_PREFIX = 'en';
 
 /** Pagine informative statiche (non sono strumenti): esistono in entrambe le lingue, senza voce nel registry. */
-export const STATIC_PAGES: readonly string[] = ['privacy'];
+export const STATIC_PAGES: readonly string[] = ['privacy', 'tutorial'];
 
 /**
  * Pagina personale dei preferiti: slug diverso per lingua (/preferiti, /en/favorites), noindex,
