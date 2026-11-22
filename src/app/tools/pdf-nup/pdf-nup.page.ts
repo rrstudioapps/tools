@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 // © 2026 rrstudio — rrstudio tools
-import { ChangeDetectionStrategy, Component, DestroyRef, WritableSignal, computed, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, WritableSignal, computed, effect, inject, signal, untracked } from '@angular/core';
 import { I18nService } from '../../core/i18n/i18n.service';
 import { Icon } from '../../shared/icon';
 import { PrivacyNote } from '../../shared/privacy-note';
@@ -31,6 +31,12 @@ export class PdfNupPage {
   protected readonly pdf = signal<LoadedPdf | null>(null);
   protected readonly mode = signal<Mode>('nup');
   protected readonly perSheet = signal<PerSheet>(2);
+
+  /** Il valore del select è una stringa: va riportato ai soli valori ammessi. */
+  protected setPerSheet(value: string): void {
+    const n = Number(value);
+    if ((PER_SHEET as readonly number[]).includes(n)) this.perSheet.set(n as PerSheet);
+  }
   protected readonly size = signal<SheetName>('A4');
   protected readonly orientation = signal<Orientation>('landscape');
   protected readonly margin = signal(10);
@@ -85,15 +91,18 @@ export class PdfNupPage {
     effect(() => {
       const p = this.pdf();
       const o = this.options();
-      this.done.set('');
-      if (this.timer) clearTimeout(this.timer);
-      this.generation++;
-      if (!p) {
-        this.dropThumbs();
-        return;
-      }
-      const gen = this.generation;
-      this.timer = setTimeout(() => void this.preview(p, o, gen), 250);
+      // il resto non deve essere tracciato: dropThumbs() legge e riscrive `thumbs`, e l'effetto si rilancerebbe all'infinito
+      untracked(() => {
+        this.done.set('');
+        if (this.timer) clearTimeout(this.timer);
+        this.generation++;
+        if (!p) {
+          this.dropThumbs();
+          return;
+        }
+        const gen = this.generation;
+        this.timer = setTimeout(() => void this.preview(p, o, gen), 250);
+      });
     });
     inject(DestroyRef).onDestroy(() => {
       if (this.timer) clearTimeout(this.timer);

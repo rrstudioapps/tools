@@ -17,7 +17,7 @@
           @if (mode() === 'nup') {
             <label class="fld" for="pnu-per">
               <span>{{ i18n.t('pnu.per') }}</span>
-              <select id="pnu-per" data-testid="pnu-per" (change)="perSheet.set(+$any($event.target).value)">
+              <select id="pnu-per" data-testid="pnu-per" (change)="setPerSheet($any($event.target).value)">
                 @for (n of perSheetValues; track n) {
                   <option [value]="n" [selected]="perSheet() === n">{{ n }}</option>
                 }
