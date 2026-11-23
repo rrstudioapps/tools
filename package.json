@@ -16,7 +16,8 @@
     "pwa-check": "node scripts/pwa-check.mjs",
     "i18n-check": "node scripts/i18n-check.mjs",
     "licenses": "node scripts/third-party-licenses.mjs",
-    "lighthouse": "node scripts/lighthouse.mjs"
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "cloudflare:prepare": "node scripts/cloudflare-pages.mjs"
   },
   "private": true,
   "packageManager": "npm@11.19.1",
