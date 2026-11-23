@@ -14,9 +14,6 @@
     @if (!fav.persisted()) {
       <p class="note warn" role="alert">{{ i18n.t('fav.nostorage') }}</p>
     }
-    @if (fav.hiddenCount() > 0) {
-      <p class="note">{{ i18n.t('fav.hidden', { n: fav.hiddenCount() }) }}</p>
-    }
     @if (notice(); as n) {
       <p class="note" [class.warn]="n.error" [attr.role]="n.error ? 'alert' : 'status'">{{ n.text }}</p>
     }

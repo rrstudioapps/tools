@@ -151,16 +151,6 @@
   </div>
 </section>
 
-@if (english()) {
-  <p class="container italy-row">
-    {{ i18n.t('home.italy.lead') }}
-    @for (t of italyTools; track t.id) {
-      <a [routerLink]="'/' + t.path" lang="it" hreflang="it">{{ i18n.t('home.italy.' + t.id) }}</a
-      >{{ $last ? '' : ', ' }}
-    }
-  </p>
-}
-
 <p class="container italy-row suggest-row">
   <a [href]="suggest()" target="_blank" rel="noopener noreferrer" data-testid="home-suggest">{{ i18n.t('footer.suggest') }}</a
   ><span class="visually-hidden"> {{ i18n.t('feedback.newtab') }}</span>

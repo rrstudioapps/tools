@@ -160,7 +160,7 @@ export class SendTo {
 
   protected readonly targets = computed(() => {
     const ids = handoffTargets(this.kind(), this.from(), TOOL_ORDER);
-    return ids.map((id) => TOOLS.find((t) => t.id === id)!).filter((t) => !(this.i18n.lang() === 'en' && t.italyOnly));
+    return ids.map((id) => TOOLS.find((t) => t.id === id)!);
   });
 
   /** Passo successivo della catena in corso, se lo strumento di partenza è il passo corrente e ne accetta il contenuto. */

@@ -3,7 +3,7 @@
 // Genera le immagini Open Graph (1200×630, stile "Carta") di ogni strumento e lingua in
 // public/og/<lang>/<slug>.png: nome dello strumento, una riga di descrizione, logo e "tools.rrstudio.app".
 // Testi presi dai dizionari (it.ts, en.ts) e dal registro; font del progetto (Inter Tight, JetBrains Mono).
-// Idempotente: un file già uguale non viene riscritto. Gli strumenti italyOnly hanno solo la versione it.
+// Idempotente: un file già uguale non viene riscritto.
 // Uso: npm run og-images   (serve il Chromium di Playwright già installato; CHROMIUM_PATH se serve)
 import { chromium } from 'playwright-core';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -24,7 +24,6 @@ const tools = registry
   .map((block) => ({
     id: block.slice(0, block.indexOf("'")),
     path: /^\s{4}path: '([^']+)'/m.exec(block)?.[1],
-    italyOnly: /^\s{4}italyOnly: true/m.test(block),
     titleKey: /^\s{4}titleKey: '([^']+)'/m.exec(block)?.[1],
     descKey: /^\s{4}descriptionKey: '([^']+)'/m.exec(block)?.[1],
   }));
@@ -47,7 +46,6 @@ const firstSentence = (s) => {
 const jobs = [];
 for (const lang of ['it', 'en']) {
   for (const t of tools) {
-    if (lang === 'en' && t.italyOnly) continue;
     const d = dicts[lang];
     const title = d.get(t.titleKey);
     const desc = d.get(t.descKey);

@@ -96,7 +96,7 @@ export class ChainsService {
     this.dialogOpen.set(false);
     this.follow(); // già sul primo strumento: nessuna navigazione, il passo si segna subito
     const tool = TOOLS.find((t) => t.id === steps[0]);
-    if (tool) void this.router.navigateByUrl(tool.italyOnly ? '/' + tool.path : this.i18n.link(tool.path));
+    if (tool) void this.router.navigateByUrl(this.i18n.link(tool.path));
   }
 
   stop(): void {

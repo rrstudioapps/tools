@@ -120,15 +120,6 @@ export const en: Dict = {
   'cat.italy.title': 'Italy: tax & banking',
   'cat.italy.short': 'Italy',
   'cat.italy.desc': 'Codice fiscale, IBAN, VAT number, VAT calculator, working days and e-invoices: calculate, verify and read.',
-  'home.italy.lead': 'Tools for Italy (in Italian):',
-  'home.italy.codice-fiscale': 'codice fiscale',
-  'home.italy.iban-partita-iva': 'IBAN & partita IVA',
-  'home.italy.fattura-elettronica': 'fattura elettronica',
-  'home.italy.calcolo-iva': 'VAT & withholding calculator',
-  'home.italy.calcolo-giorni-lavorativi': 'working days calculator',
-  'home.italy.calcolo-ritenuta-acconto': 'withholding tax calculator',
-  'home.italy.calcolo-rata-mutuo': 'mortgage payment calculator',
-  'home.italy.numeri-in-lettere': 'numbers in words',
   'home.open': 'Open the tool',
   'home.soon.badge': 'Coming soon',
   'home.soon.title': 'More tools coming soon',
@@ -495,10 +486,10 @@ export const en: Dict = {
 
   'tool.wd.title': 'Working days calculator (Italy)',
   'tool.wd.desc':
-    'Count working days between two dates, or add and subtract working days from a date, with Italian public holidays, a patron saint day and Easter (in Italian).',
+    'Count working days between two dates, or add and subtract working days from a date, with Italian public holidays, a patron saint day and Easter.',
   'seo.wd.title': 'Italian working days calculator | rrstudio tools',
   'seo.wd.desc':
-    'Calculate working days between two dates or a deadline by adding working days: weekends, Italian national holidays, Easter and patron saint day. In Italian.',
+    'Calculate working days between two dates or a deadline by adding working days: weekends, Italian national holidays, Easter and patron saint day.',
 
   'tool.cj.title': 'CSV, JSON & Excel converter',
   'tool.cj.desc':
@@ -972,7 +963,6 @@ export const en: Dict = {
   'fav.page.title': 'Favorites and custom menus',
   'fav.page.lead': 'Save the tools you use most and group them into your own menus. The data stays in this browser and is never sent to anyone.',
   'fav.nostorage': 'This browser does not allow saving data: changes last only while the page stays open.',
-  'fav.hidden': 'Some Italian-only tools ({n}) are hidden in this version, but they stay saved.',
   'fav.loading': 'Loading…',
   'fav.list.title': 'Favorites',
   'fav.list.empty': 'No favorites. Use the star on a tool or add one below.',
@@ -1165,10 +1155,10 @@ export const en: Dict = {
   'seo.cph.title': 'Classic ciphers: ROT13, Caesar, Atbash, Vigenère | rrstudio tools',
   'seo.cph.desc': 'Encrypt and decrypt with ROT13, ROT47, Caesar (all 25 shifts by brute force), Atbash and Vigenère. Historical ciphers that are not secure, for fun and learning.',
 
-  'tool.lire.title': 'Convertitore lire euro',
-  'tool.lire.desc': 'Converti lire in euro e euro in lire con il cambio fisso 1 € = 1936,27 lire, con arrotondamento e tabella dei tagli storici.',
-  'seo.lire.title': 'Convertitore lire euro: cambio 1936,27 | rrstudio tools',
-  'seo.lire.desc': 'Converti lire in euro e euro in lire con il cambio irrevocabile 1 euro = 1936,27 lire (Reg. CE 2866/98), con la tabella dei tagli storici di banconote e monete.',
+  'tool.lire.title': 'Lire to euro converter',
+  'tool.lire.desc': 'Convert Italian lire to euro and euro to lire at the fixed rate of €1 = 1,936.27 lire, with rounding and a table of historical denominations.',
+  'seo.lire.title': 'Lire to euro converter: rate 1,936.27 | rrstudio tools',
+  'seo.lire.desc': 'Convert lire to euro and euro to lire at the irrevocable rate of 1 euro = 1,936.27 lire (Reg. EC 2866/98), with a table of historical banknote and coin denominations.',
 
   'tool.subnet.title': 'IP subnet calculator (CIDR)',
   'tool.subnet.desc': 'Work out network, broadcast, hosts, mask and wildcard for IPv4 and IPv6, split into subnets with VLSM and check whether an address belongs to a network.',
@@ -1190,12 +1180,12 @@ export const en: Dict = {
   'seo.time.title': 'Time calculator: add durations and timesheet | rrstudio tools',
   'seo.time.desc': 'Hours and minutes calculator: add and subtract durations, timesheet with breaks, night shifts and overtime, decimal hours and amount from an hourly rate.',
 
-  'tool.scad.title': 'Calcolo scadenze fatture',
-  'tool.scad.desc': 'Calcola le scadenze di pagamento: 30, 60, 90 o 120 giorni, data fattura o fine mese (D.F.F.M.), rate multiple, spostamento al giorno lavorativo ed esportazione CSV e .ics.',
-  'seo.scad.title': 'Scadenze fatture: D.F.F.M. e giorni lavorativi | rrstudio tools',
-  'seo.scad.desc': 'Calcola le scadenze di pagamento di una fattura: 30, 60, 90, 120 giorni o personalizzati, D.F.F.M., rate, primo giorno lavorativo ed esportazione in CSV e .ics.',
-  'tool.gcf.title': 'Generatore codice fiscale e partita IVA',
-  'tool.gcf.desc': 'Genera codici fiscali e partite IVA di prova, validi ma inventati: filtri per sesso, data e comune di nascita, omocodia, ufficio provinciale, seme ripetibile, copia singola, CSV e JSON.',
-  'seo.gcf.title': 'Codice fiscale e partita IVA casuali di prova | rrstudio tools',
-  'seo.gcf.desc': 'Genera codici fiscali casuali e partite IVA di prova, formalmente validi ma finti: sesso, data e comune di nascita, omocodia. Esporta in CSV e JSON. Solo per test.',
+  'tool.scad.title': 'Invoice due date calculator',
+  'tool.scad.desc': 'Work out payment due dates: 30, 60, 90 or 120 days, invoice date or end of month (D.F.F.M.), multiple instalments, shift to a working day, CSV and .ics export.',
+  'seo.scad.title': 'Invoice due dates: D.F.F.M. and working days | rrstudio tools',
+  'seo.scad.desc': 'Calculate the payment due dates of an invoice: 30, 60, 90, 120 days or custom, D.F.F.M., instalments, first working day and CSV and .ics export.',
+  'tool.gcf.title': 'Italian tax code and VAT number generator',
+  'tool.gcf.desc': 'Generate test Italian tax codes (codici fiscali) and VAT numbers (partite IVA), valid but made up: filters for sex, date and place of birth, homocode, provincial office, repeatable seed, single copy, CSV and JSON.',
+  'seo.gcf.title': 'Random test Italian tax code and VAT number generator | rrstudio tools',
+  'seo.gcf.desc': 'Generate random test codici fiscali and partite IVA, formally valid but fake: sex, date and municipality of birth, homocode. Export to CSV and JSON. For testing only.',
 };

@@ -3,14 +3,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tools.rrstudio.app/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/en/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/"/>
@@ -703,43 +703,115 @@
   </url>
   <url>
     <loc>https://tools.rrstudio.app/codice-fiscale</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/codice-fiscale"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/codice-fiscale</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/codice-fiscale"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/iban-partita-iva</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/iban-partita-iva"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/iban-partita-iva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/iban-partita-iva"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/iban-partita-iva</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/iban-partita-iva"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/iban-partita-iva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/iban-partita-iva"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/fattura-elettronica</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/fattura-elettronica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/fattura-elettronica"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/fattura-elettronica"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/fattura-elettronica</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/fattura-elettronica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/fattura-elettronica"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/fattura-elettronica"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/calcolo-iva</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-iva"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-iva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-iva"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/calcolo-iva</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-iva"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-iva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-iva"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/calcolo-giorni-lavorativi</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-giorni-lavorativi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-giorni-lavorativi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-giorni-lavorativi"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/calcolo-giorni-lavorativi</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-giorni-lavorativi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-giorni-lavorativi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-giorni-lavorativi"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/calcolo-ritenuta-acconto</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-ritenuta-acconto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-ritenuta-acconto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-ritenuta-acconto"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/calcolo-ritenuta-acconto</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-ritenuta-acconto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-ritenuta-acconto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-ritenuta-acconto"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/calcolo-rata-mutuo</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-rata-mutuo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-rata-mutuo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-rata-mutuo"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/calcolo-rata-mutuo</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-rata-mutuo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/calcolo-rata-mutuo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/calcolo-rata-mutuo"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/numeri-in-lettere</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/numeri-in-lettere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/numeri-in-lettere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/numeri-in-lettere"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/numeri-in-lettere</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/numeri-in-lettere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/numeri-in-lettere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/numeri-in-lettere"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/percentage-calculator</loc>
@@ -1359,8 +1431,17 @@
   </url>
   <url>
     <loc>https://tools.rrstudio.app/convertitore-lire-euro</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/convertitore-lire-euro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/convertitore-lire-euro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/convertitore-lire-euro"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/convertitore-lire-euro</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/convertitore-lire-euro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/convertitore-lire-euro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/convertitore-lire-euro"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/subnet-calculator</loc>
@@ -1420,13 +1501,31 @@
   </url>
   <url>
     <loc>https://tools.rrstudio.app/scadenze-fatture</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/scadenze-fatture"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/scadenze-fatture"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/scadenze-fatture"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/scadenze-fatture</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/scadenze-fatture"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/scadenze-fatture"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/scadenze-fatture"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/generatore-codice-fiscale</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/generatore-codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/generatore-codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/generatore-codice-fiscale"/>
+  </url>
+  <url>
+    <loc>https://tools.rrstudio.app/en/generatore-codice-fiscale</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/generatore-codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/generatore-codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/generatore-codice-fiscale"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/timer</loc>
@@ -1724,28 +1823,28 @@
   </url>
   <url>
     <loc>https://tools.rrstudio.app/tutorial</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/tutorial"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/tutorial"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/tutorial"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/en/tutorial</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/tutorial"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/tutorial"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/tutorial"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/novita</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/novita"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/changelog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/changelog"/>
   </url>
   <url>
     <loc>https://tools.rrstudio.app/en/changelog</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/novita"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/changelog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/changelog"/>

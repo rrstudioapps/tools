@@ -40,8 +40,6 @@ export interface ToolDefinition {
   /** Percorso della route (senza slash iniziale). */
   path: string;
   icon: IconName;
-  /** Solo per l'Italia: nessuna versione inglese (/en/…), resta solo la pagina italiana. */
-  italyOnly?: boolean;
   /** Un tool sta in una sola categoria. */
   category: ToolCategoryId;
   /** Giorno di uscita AAAA-MM-GG: per 30 giorni lo strumento mostra il badge «Nuovo» (vedi newToolIds). */
@@ -778,7 +776,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'codice-fiscale',
-    italyOnly: true,
     path: 'codice-fiscale',
     icon: 'idcard',
     category: 'italy',
@@ -791,7 +788,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'iban-partita-iva',
-    italyOnly: true,
     path: 'iban-partita-iva',
     icon: 'bank',
     category: 'italy',
@@ -804,7 +800,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'fattura-elettronica',
-    italyOnly: true,
     path: 'fattura-elettronica',
     icon: 'file',
     category: 'italy',
@@ -821,7 +816,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'calcolo-iva',
-    italyOnly: true,
     path: 'calcolo-iva',
     icon: 'calculator',
     category: 'italy',
@@ -837,7 +831,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'calcolo-giorni-lavorativi',
-    italyOnly: true,
     path: 'calcolo-giorni-lavorativi',
     icon: 'calendar',
     category: 'italy',
@@ -854,7 +847,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'calcolo-ritenuta-acconto',
-    italyOnly: true,
     path: 'calcolo-ritenuta-acconto',
     icon: 'calculator',
     category: 'italy',
@@ -871,7 +863,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'calcolo-rata-mutuo',
-    italyOnly: true,
     path: 'calcolo-rata-mutuo',
     icon: 'bank',
     category: 'italy',
@@ -887,7 +878,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'numeri-in-lettere',
-    italyOnly: true,
     path: 'numeri-in-lettere',
     icon: 'type',
     category: 'italy',
@@ -1565,7 +1555,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'convertitore-lire-euro',
-    italyOnly: true,
     path: 'convertitore-lire-euro',
     icon: 'bank',
     category: 'italy',
@@ -1641,7 +1630,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'scadenze-fatture',
-    italyOnly: true,
     path: 'scadenze-fatture',
     icon: 'calendar',
     category: 'italy',
@@ -1657,7 +1645,6 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     id: 'generatore-codice-fiscale',
-    italyOnly: true,
     path: 'generatore-codice-fiscale',
     icon: 'idcard',
     category: 'italy',

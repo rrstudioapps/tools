@@ -2,7 +2,6 @@
 // © 2026 rrstudio — rrstudio tools
 import type { ToolDictionaries } from '../../core/i18n/i18n.service';
 
-/** Strumento solo italiano: la versione inglese esiste per completezza del tipo, ma non viene mai mostrata. */
 /** Guida "come si usa" e domande frequenti (It): vedi shared/tool-guide.ts. */
 const guideIt = {
   'guide.calcolo-ritenuta-acconto.step.1': 'In «Tipo di prestazione» scegli «Prestazione occasionale» oppure «Professionista».',
@@ -82,9 +81,83 @@ const it = {
   'rit.empty': 'Scrivi un importo per vedere il prospetto.',
 };
 
-const en: Omit<typeof it, keyof typeof guideIt> = {
-  // Strumento solo italiano (italyOnly): nessuna pagina /en/. Le stesse stringhe, per completezza del tipo.
-  ...it,
+/** Guida "come si usa" e domande frequenti (En): vedi shared/tool-guide.ts. */
+const guideEn = {
+  'guide.calcolo-ritenuta-acconto.step.1': 'Under “Type of service” choose “Occasional service” or “Professional”.',
+  'guide.calcolo-ritenuta-acconto.step.2': 'Under “What you know” choose “Gross to net” if you have the gross fee, “Net to gross” if you start from what you want to receive.',
+  'guide.calcolo-ritenuta-acconto.step.3': 'Enter the amount (for example 1,000.00) and check the “Withholding tax (%)”, which can be changed.',
+  'guide.calcolo-ritenuta-acconto.step.4': 'Under “Document details” add, if needed, the 4% INPS surcharge, the pension fund contribution, the VAT rate and the €2 stamp duty.',
+  'guide.calcolo-ritenuta-acconto.step.5': 'The “Breakdown” shows every line, from the gross fee to the “Net payable”; “Good to know” has notes on the calculation.',
+  'guide.calcolo-ritenuta-acconto.q.1': 'What is withholding tax (ritenuta d\'acconto)?',
+  'guide.calcolo-ritenuta-acconto.a.1':
+    'It is a share of the fee that the payer (the withholding agent, or sostituto d\'imposta) keeps and pays to the tax authorities on behalf of the recipient. The recipient therefore receives the gross fee minus the withholding; the tool proposes 20%, but the percentage can be changed.',
+  'guide.calcolo-ritenuta-acconto.q.2': 'How do I calculate the net amount of an occasional service?',
+  'guide.calcolo-ritenuta-acconto.a.2':
+    'The net amount is the gross fee minus the withholding. With a fee of 1,000 euro and 20% withholding, the withholding is 200 euro and the net payable is 800 euro.',
+  'guide.calcolo-ritenuta-acconto.q.3': 'Is withholding also calculated on the INPS surcharge and the pension fund contribution?',
+  'guide.calcolo-ritenuta-acconto.a.3':
+    'For the INPS surcharge (rivalsa) it depends on the case: the tool lets you choose with “Withholding also applies to the INPS surcharge”. The pension fund contribution is not subject to withholding.',
+  'guide.calcolo-ritenuta-acconto.q.4': 'When and how is the withholding paid?',
+  'guide.calcolo-ritenuta-acconto.a.4':
+    'With form F24, by the 16th of the month after the payment: tax code 1040 for professionals and 1038 for occasional services. It must then be certified with the Certificazione Unica (CU).',
+  'guide.calcolo-ritenuta-acconto.q.5': 'What does “Net to gross” do?',
+  'guide.calcolo-ritenuta-acconto.a.5':
+    'It starts from the net amount you want to receive and works out the gross fee to invoice. Because of rounding to the cent the exact net amount may not be reachable: the tool shows the closest one and the difference.',
+  'guide.calcolo-ritenuta-acconto.q.6': 'Can I treat this calculation as final?',
+  'guide.calcolo-ritenuta-acconto.a.6':
+    'No, it is an indicative calculation and does not replace tax advice: if you have doubts about withholding, pension fund or tax regime, check with your accountant (commercialista).',
+  'guide.calcolo-ritenuta-acconto.privacy':
+    'Amounts stay in your browser and are not sent anywhere. If you use the share button, the data you entered ends up in the link address, after the # symbol: that part never reaches any server, but whoever receives the link can see it.',
+};
+
+const en: typeof it = {
+  ...guideEn,
+  'rit.lead':
+    'From gross to net (and from net to gross) for an occasional service or a professional fee: withholding tax (ritenuta d\'acconto), INPS surcharge (rivalsa), pension fund contribution, VAT and €2 stamp duty, with a line-by-line breakdown you can copy.',
+  'rit.disclaimer':
+    'Indicative calculation tool, not tax advice: always check your specific case with your accountant (commercialista). Rounded to the cent, line by line.',
+  'rit.kind': 'Type of service',
+  'rit.kind.occasionale': 'Occasional service',
+  'rit.kind.professionista': 'Professional',
+  'rit.dir': 'What you know',
+  'rit.dir.gross': 'Gross to net',
+  'rit.dir.net': 'Net to gross',
+  'rit.amount.gross': 'Gross fee (€)',
+  'rit.amount.net': 'Net amount you want to receive (€)',
+  'rit.amount.ph': 'For example 1,000.00',
+  'rit.amount.err': 'Enter a valid amount, for example 1,250.50.',
+  'rit.ritenuta': 'Withholding tax (%)',
+  'rit.ritenuta.err': 'Enter a valid percentage, for example 20 or 11,5.',
+  'rit.rivalsa': 'INPS surcharge 4%',
+  'rit.rivalsaBase': 'Withholding also applies to the INPS surcharge',
+  'rit.cassa': 'Pension fund contribution (%)',
+  'rit.cassa.ph': '0 = none',
+  'rit.cassa.err': 'Enter a valid percentage, for example 4 or 2,5.',
+  'rit.vat': 'VAT rate (%)',
+  'rit.vat.hint': '0 for flat-rate scheme (forfettari) and occasional services',
+  'rit.vat.err': 'Enter a valid percentage, for example 22.',
+  'rit.bollo': 'Charge the €2 stamp duty to the client',
+  'rit.opts': 'Document details',
+  'rit.result': 'Result',
+  'rit.summary': 'Breakdown',
+  'rit.row.compenso': 'Gross fee',
+  'rit.row.rivalsa': 'INPS surcharge 4%',
+  'rit.row.cassa': 'Pension fund contribution {rate}',
+  'rit.row.imponibile': 'Taxable amount',
+  'rit.row.vat': 'VAT {rate}',
+  'rit.row.bollo': 'Stamp duty (marca da bollo)',
+  'rit.row.total': 'Document total',
+  'rit.row.ritenuta': 'Withholding tax {rate} on {base}',
+  'rit.row.netto': 'Net payable',
+  'rit.headline.gross': 'Gross fee to invoice',
+  'rit.reverse.exact': 'With this fee the net amount is exactly {net}.',
+  'rit.reverse.diff': 'Because of rounding to the cent the exact net amount cannot be reached: the closest is {net} ({diff} from the desired amount).',
+  'rit.notes': 'Good to know',
+  'rit.note.bollo': '€2.00 stamp duty charged to the client: the amount excluding VAT exceeds €77.47.',
+  'rit.note.bolloNot': '€2.00 stamp duty is due but borne by the issuer: it is not added to the total.',
+  'rit.note.cassa': 'Withholding is not calculated on the pension fund contribution.',
+  'rit.note.cu': 'The withholding must be paid with form F24 by the 16th of the following month (tax code 1040 for professionals, 1038 for occasional services) and certified with the Certificazione Unica.',
+  'rit.empty': 'Enter an amount to see the breakdown.',
 };
 
 export const RITENUTA_DICTIONARIES: ToolDictionaries = { it, en };

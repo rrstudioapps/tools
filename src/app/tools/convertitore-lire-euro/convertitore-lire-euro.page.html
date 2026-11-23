@@ -63,7 +63,7 @@
           </tr>
         </thead>
         <tbody>
-          @for (d of banknotes; track d.lire) {
+          @for (d of banknotes(); track d.lire) {
             <tr>
               <td>{{ i18n.t('lire.lire', { v: d.label }) }}</td>
               <td>{{ d.subject }}</td>
@@ -82,7 +82,7 @@
           </tr>
         </thead>
         <tbody>
-          @for (d of coins; track d.lire) {
+          @for (d of coins(); track d.lire) {
             <tr>
               <td>{{ i18n.t('lire.lire', { v: d.label }) }}</td>
               <td class="num">{{ i18n.t('lire.euro', { v: d.euro }) }}</td>

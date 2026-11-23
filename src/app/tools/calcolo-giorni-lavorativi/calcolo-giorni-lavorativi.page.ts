@@ -116,7 +116,7 @@ export class CalcoloGiorniLavorativiPage {
   protected readonly rangeError = computed(() => (this.mode() === 'add' && this.addResult() !== null && this.addResult()!.res === null ? this.i18n.t('wd.err.range') : ''));
 
   private fmtNum(n: number): string {
-    return new Intl.NumberFormat('it-IT').format(n);
+    return new Intl.NumberFormat(this.i18n.lang() === 'en' ? 'en-GB' : 'it-IT').format(n);
   }
 
   /** Righe del risultato (etichetta/valore). */

@@ -2,7 +2,6 @@
 // © 2026 rrstudio — rrstudio tools
 import type { ToolDictionaries } from '../../core/i18n/i18n.service';
 
-/** Strumento solo italiano: la versione inglese esiste per completezza del tipo, ma non viene mai mostrata. */
 const it = {
   'mutuo.lead':
     'Calcola la rata di un mutuo o di un prestito con ammortamento alla francese (rata costante): rata, totale degli interessi e piano di ammortamento completo, da esportare in CSV.',
@@ -44,8 +43,43 @@ const it = {
 };
 
 const en: typeof it = {
-  // Strumento solo italiano (italyOnly): nessuna pagina /en/. Le stesse stringhe, per completezza del tipo.
-  ...it,
+  'mutuo.lead':
+    'Calculate the instalment of a mortgage or loan with French amortisation (constant instalment): payment, total interest and the full amortisation schedule, exportable to CSV.',
+  'mutuo.disclaimer':
+    'Indicative calculation: it only considers principal and nominal rate (TAN), without arrangement fees, insurance or taxes, and it is not the APR (TAEG). The periodic rate is proportional (TAN divided by the number of payments per year), as in Italian bank schedules.',
+  'mutuo.capital': 'Principal (€)',
+  'mutuo.capital.ph': 'For example 150,000',
+  'mutuo.capital.err': 'Enter a valid principal greater than zero.',
+  'mutuo.tan': 'TAN (nominal annual rate, %)',
+  'mutuo.tan.err': 'Enter a valid TAN between 0 and 100, for example 3.25.',
+  'mutuo.duration': 'Term',
+  'mutuo.years': 'Years',
+  'mutuo.months': 'Months',
+  'mutuo.duration.err': 'The term must be greater than zero and at most 50 years.',
+  'mutuo.multiple.err': 'The term must be a multiple of the period between payments: choose compatible years and months.',
+  'mutuo.period': 'Payment frequency',
+  'mutuo.period.monthly': 'Monthly',
+  'mutuo.period.quarterly': 'Quarterly',
+  'mutuo.period.semiannual': 'Half-yearly',
+  'mutuo.result': 'Result',
+  'mutuo.summary': 'Summary',
+  'mutuo.payment': 'Instalment',
+  'mutuo.interest': 'Total interest',
+  'mutuo.total': 'Total to repay',
+  'mutuo.count': 'Number of instalments',
+  'mutuo.rate': 'Rate per instalment',
+  'mutuo.empty': 'Enter principal, TAN and term to see the instalment.',
+  'mutuo.plan': 'Amortisation schedule',
+  'mutuo.csv': 'Download CSV',
+  'mutuo.col.n': 'No.',
+  'mutuo.col.payment': 'Instalment',
+  'mutuo.col.interest': 'Interest',
+  'mutuo.col.principal': 'Principal',
+  'mutuo.col.balance': 'Remaining balance',
+  'mutuo.page': 'Instalments {from}-{to} of {total}',
+  'mutuo.prev': 'Previous',
+  'mutuo.next': 'Next',
+  'mutuo.lastNote': 'The last instalment may differ by a few cents so that the debt closes at zero.',
 };
 
 export const MUTUO_DICTIONARIES: ToolDictionaries = { it, en };

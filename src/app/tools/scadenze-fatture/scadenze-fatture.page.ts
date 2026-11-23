@@ -55,7 +55,7 @@ export class ScadenzeFatturePage {
   private readonly totalCents = computed(() => {
     const t = this.total().trim();
     if (t === '') return { ok: true as const, cents: null };
-    const n = parseDecimal(t, 'it');
+    const n = parseDecimal(t, this.i18n.lang());
     const c = n === null ? null : toCents(n);
     return c === null ? { ok: false as const } : { ok: true as const, cents: c };
   });
@@ -97,7 +97,7 @@ export class ScadenzeFatturePage {
       due: formatDate(r.due),
       shifted: r.shifted,
       note: r.nonWorking ? (r.shifted ? this.i18n.t('scad.note.shifted', { r: this.reason(r.nonWorking) }) : this.i18n.t('scad.note.warn', { r: this.reason(r.nonWorking) })) : '',
-      amount: r.cents === null ? '' : formatCents(r.cents, ',', '.') + ' €',
+      amount: r.cents === null ? '' : this.money(r.cents) + ' €',
     }));
   });
 
@@ -105,7 +105,7 @@ export class ScadenzeFatturePage {
     const s = this.schedule();
     if (!s || 'error' in s) return '';
     const tc = this.totalCents();
-    const total = tc.ok && tc.cents !== null ? ` · ${formatCents(tc.cents, ',', '.')} €` : '';
+    const total = tc.ok && tc.cents !== null ? ` · ${this.money(tc.cents)} €` : '';
     return this.i18n.t('scad.summary', { n: s.length }) + total;
   });
 
@@ -130,11 +130,16 @@ export class ScadenzeFatturePage {
     const ics = toIcs(s, inv, {
       reference: this.reference().trim(),
       summary: (n, count, ref, amount) => this.i18n.t(amount ? 'scad.ics.summaryAmount' : 'scad.ics.summary', { n, count, ref: ref || this.i18n.t('scad.ics.noRef'), amount: amount ?? '' }),
-      amount: (c) => formatCents(c, ',', '.') + ' €',
+      amount: (c) => this.money(c) + ' €',
       description: this.i18n.t('scad.ics.desc'),
       stamp: icsStamp(new Date()),
     });
     saveBytes(new TextEncoder().encode(ics), 'scadenze-fattura.ics', 'text/calendar');
+  }
+
+  /** Importo nel formato della lingua dell'interfaccia (1.234,56 in italiano, 1,234.56 in inglese). */
+  private money(c: bigint): string {
+    return this.i18n.lang() === 'en' ? formatCents(c, '.', ',') : formatCents(c, ',', '.');
   }
 
   protected setPreset(p: string): void {

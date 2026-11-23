@@ -94,7 +94,7 @@ describe('sanitize / migrate', () => {
     const s = st(['a', 'b'], [{ id: 'g1', name: 'Uno', tools: ['c'] }]);
     expect(parseStored(serialize(s), known)).toEqual(s);
   });
-  it('gli id di tutti gli strumenti reali sono accettati (compresi gli italyOnly)', () => {
+  it('gli id di tutti gli strumenti reali sono accettati', () => {
     const real = new Set(TOOLS.map((t) => t.id));
     const s = st(TOOLS.map((t) => t.id));
     expect(sanitize(s, real)!.state.favorites).toEqual(TOOLS.map((t) => t.id));

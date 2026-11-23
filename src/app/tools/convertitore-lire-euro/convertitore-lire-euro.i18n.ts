@@ -2,7 +2,6 @@
 // © 2026 rrstudio — rrstudio tools
 import type { ToolDictionaries } from '../../core/i18n/i18n.service';
 
-/** Strumento solo italiano: la versione inglese esiste per completezza del tipo, ma non viene mai mostrata. */
 const it = {
   'lire.lead': 'Converti lire in euro e euro in lire con il cambio irrevocabile fissato nel 1998: 1 euro = 1936,27 lire. Arrotonda al centesimo o alla lira come previsto dai regolamenti europei e mostra i tagli storici di banconote e monete.',
   'lire.mode': 'Direzione',
@@ -52,8 +51,51 @@ const it = {
 };
 
 const en: typeof it = {
-  // Strumento solo italiano (italyOnly): nessuna pagina /en/. Le stesse stringhe, per completezza del tipo.
-  ...it,
+  'lire.lead': 'Convert Italian lire to euro and euro to lire at the irrevocable rate fixed in 1998: 1 euro = 1,936.27 lire. It rounds to the cent or to the lira as set out in the EU regulations and shows the historical banknote and coin denominations.',
+  'lire.mode': 'Direction',
+  'lire.mode.toEuro': 'Lire → euro',
+  'lire.mode.toLire': 'Euro → lire',
+  'lire.amount.lire': 'Amount in lire',
+  'lire.amount.euro': 'Amount in euro',
+  'lire.amount.ph.lire': 'For example 100.000',
+  'lire.amount.ph.euro': 'For example 51,65',
+  'lire.result': 'Result',
+  'lire.empty': 'Enter an amount to see the conversion.',
+  'lire.err.invalid': 'Not a valid amount. Use digits and a point for decimals, for example 1,936.27.',
+  'lire.err.range': 'Amount too large: the tool goes up to 1,000 billion.',
+  'lire.err.negative': 'Enter a positive amount.',
+  'lire.res.euro': '{v} euro',
+  'lire.res.lire': '{v} lire',
+  'lire.res.exactEuro': 'Exact value, unrounded: {v} euro',
+  'lire.res.exactLire': 'Exact value, unrounded: {v} lire',
+  'lire.note.euro': 'Rounded to the euro cent (halves are rounded up).',
+  'lire.note.lire': 'Rounded to the whole lira (halves are rounded up).',
+  'lire.rate': 'Fixed rate: 1 euro = 1,936.27 lire, Council Regulation (EC) No 2866/98, 31 December 1998. To convert, divide by the rate and round; intermediate results are not rounded.',
+  'lire.status': 'The lira was legal tender until 28 February 2002. Exchanging lire at the Bank of Italy was closed on 6 December 2011 by Decree-Law 201/2011, ahead of the 28 February 2012 deadline; with ruling 216/2015 the Constitutional Court recognised the right to exchange only for those who had applied by that date. Today they can no longer be converted.',
+  'lire.table.title': 'Historical lire denominations',
+  'lire.table.notes': 'Banknotes',
+  'lire.table.coins': 'Coins',
+  'lire.col.value': 'Denomination',
+  'lire.col.subject': 'Subject',
+  'lire.col.year': 'Series',
+  'lire.col.euro': 'In euro',
+  'lire.table.note': 'These are the banknotes of the last series in circulation and the coins of the final years of the lira; the euro value is rounded to the cent. The 1 and 2 lire coins were by then little used.',
+  'lire.lire': '{v} lire',
+  'lire.euro': '€{v}',
+  'guide.convertitore-lire-euro.step.1': 'Choose the direction: “Lire → euro” or “Euro → lire”.',
+  'guide.convertitore-lire-euro.step.2': 'Enter the amount, with a point for decimals (for example 1,936.27).',
+  'guide.convertitore-lire-euro.step.3': 'Read the rounded result (to the cent for euro, to the lira for lire) and the exact value.',
+  'guide.convertitore-lire-euro.step.4': 'Below you will find the table of historical banknote and coin denominations with their value in euro.',
+  'guide.convertitore-lire-euro.q.1': 'What is the lire to euro rate?',
+  'guide.convertitore-lire-euro.a.1': '1 euro = 1,936.27 lire, fixed irrevocably by Regulation (EC) No 2866/98 of 31 December 1998. It has never changed.',
+  'guide.convertitore-lire-euro.q.2': 'How is rounding done?',
+  'guide.convertitore-lire-euro.a.2': 'From lire to euro you divide by 1,936.27 and round to the nearest cent; from euro to lire you multiply and round to the whole lira. Halves are rounded up.',
+  'guide.convertitore-lire-euro.q.3': 'Can I still exchange old lire?',
+  'guide.convertitore-lire-euro.a.3': 'No: exchange at the Bank of Italy closed on 6 December 2011 (Decree-Law 201/2011) and, after ruling 216/2015 of the Constitutional Court, was granted only to those who had applied by 28 February 2012. To check the current situation, see the Bank of Italy website.',
+  'guide.convertitore-lire-euro.q.4': 'Does the tool take inflation into account?',
+  'guide.convertitore-lire-euro.a.4': 'No: it only converts at the fixed rate. The purchasing power of a sum from a given year is calculated with ISTAT indices, which change every month and are not included.',
+  'guide.convertitore-lire-euro.q.5': 'Is my data sent to a server?',
+  'guide.convertitore-lire-euro.a.5': 'No: the calculation happens in your browser.',
 };
 
 export const LIRE_DICTIONARIES: ToolDictionaries = { it, en };

@@ -24,12 +24,11 @@ const ALLOW = [
   { rule: 'label-content-name-mismatch', page: '/markdown-editor/', target: 'data-fmt' },
 ];
 
-// Elenco pagine dal registry degli strumenti: ogni voce ha `path` e, se solo italiana, `italyOnly: true`
+// Elenco pagine dal registry degli strumenti: ogni voce ha `path`, in italiano e sotto /en/
 const registry = readFileSync('src/app/tools/tools.registry.ts', 'utf8');
 const body = registry.slice(registry.indexOf('export const TOOLS'));
 const tools = [...body.matchAll(/\n {2}\{\n([\s\S]*?)\n {2}\},/g)].map((m) => ({
   path: /\n? {4}path: '([^']+)'/.exec(m[1])?.[1],
-  italyOnly: /\n {4}italyOnly: true/.test(m[1]),
 }));
 if (!tools.length || tools.some((t) => !t.path)) {
   console.error('Impossibile leggere il registry degli strumenti');
@@ -40,7 +39,7 @@ const pages = ['/', '/privacy/', '/preferiti/', '/condividi/', '/novita/'];
 const pagesEn = ['/en/', '/en/privacy/', '/en/favorites/', '/en/share/', '/en/changelog/'];
 for (const t of tools) {
   pages.push(`/${t.path}/`);
-  if (!t.italyOnly) pagesEn.push(`/en/${t.path}/`);
+  pagesEn.push(`/en/${t.path}/`);
 }
 // SMOKE_ONLY=csv-dashboard,markdown limita le pagine a quelle il cui indirizzo contiene uno dei frammenti;
 // con il prefisso = l'indirizzo deve coincidere (SMOKE_ONLY==/,=/en/ solo le due home)

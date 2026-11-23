@@ -93,7 +93,7 @@ export class ChainBar {
   }
   protected path(id: string): string {
     const t = BY_ID.get(id);
-    return !t ? '/' : t.italyOnly ? '/' + t.path : this.i18n.link(t.path);
+    return !t ? '/' : this.i18n.link(t.path);
   }
 }
 
@@ -265,9 +265,8 @@ export class ChainsDialog {
 
   /** Il primo passo può essere uno strumento qualunque, i successivi solo strumenti che ricevono contenuti. */
   protected readonly options = computed<ToolDefinition[]>(() => {
-    const en = this.i18n.lang() === 'en';
     const first = this.steps().length === 0;
-    return TOOLS.filter((t) => !(en && t.italyOnly) && (first || t.id in HANDOFF_ACCEPTS));
+    return TOOLS.filter((t) => first || t.id in HANDOFF_ACCEPTS);
   });
   protected readonly canSave = computed(() => this.name().trim().length > 0 && this.steps().length >= MIN_STEPS);
 

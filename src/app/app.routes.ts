@@ -63,7 +63,7 @@ const shareRoute = (lang: 'it' | 'en'): Route => ({
 
 /**
  * Route generate dal registry dei tool, più la home. La radice è italiana; la versione inglese
- * sta sotto /en/ con gli stessi slug, tranne gli strumenti `italyOnly` (solo in italiano).
+ * sta sotto /en/ con gli stessi slug (anche gli strumenti per l'Italia, che hanno slug italiani).
  */
 export const routes: Routes = [
   HOME,
@@ -77,7 +77,7 @@ export const routes: Routes = [
     path: 'en',
     children: [
       HOME,
-      ...TOOLS.filter((t) => !t.italyOnly).map(toRoute),
+      ...TOOLS.map(toRoute),
       PRIVACY,
   TUTORIAL,
       favoritesRoute('en'),

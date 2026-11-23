@@ -129,9 +129,9 @@ describe('contenuti delle guide', () => {
 
   for (const [id, dicts] of Object.entries(GUIDES)) {
     const tool = TOOLS.find((t) => t.id === id);
-    it(`${id}: passi e domande complete (${tool?.italyOnly ? 'solo italiano' : 'italiano e inglese'})`, () => {
+    it(`${id}: passi e domande complete (italiano e inglese)`, () => {
       expect(tool).toBeDefined();
-      for (const lang of tool?.italyOnly ? (['it'] as const) : (['it', 'en'] as const)) {
+      for (const lang of (['it', 'en'] as const)) {
         const d = dicts[lang];
         const steps = Object.keys(d).filter((k) => k.startsWith(`guide.${id}.step.`));
         const questions = Object.keys(d).filter((k) => k.startsWith(`guide.${id}.q.`));

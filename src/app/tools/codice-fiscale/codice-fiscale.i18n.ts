@@ -173,7 +173,38 @@ const it = {
   'cf.credits.link': 'Fonte e licenza',
 };
 
-const en: Omit<typeof it, keyof typeof guideIt> = {
+/** Guida "come si usa" e domande frequenti (En): vedi shared/tool-guide.ts. */
+const guideEn = {
+  'guide.codice-fiscale.step.1': 'Under “What do you want to do” leave “Calculate” selected.',
+  'guide.codice-fiscale.step.2': 'Enter “Surname” and “First name” as they appear on your documents: the tool handles spaces, apostrophes and accents; if you have several names or surnames, type them all.',
+  'guide.codice-fiscale.step.3': 'Choose the “Sex” and the “Date of birth”.',
+  'guide.codice-fiscale.step.4': 'Set the “Place of birth”: “Italian municipality” (type the name and pick from the list), “Foreign country” or “I will enter the code” if you already know the cadastral code.',
+  'guide.codice-fiscale.step.5': 'The result appears under “Calculated tax code”: use “Copy the tax code” to copy it, and below you can see where each part comes from.',
+  'guide.codice-fiscale.step.6': 'To check a code you already have, switch to “Check and decode” and paste it: the tool tells you whether it is formally valid and what it contains.',
+  'guide.codice-fiscale.q.1': 'Is the calculated code the official one?',
+  'guide.codice-fiscale.a.1':
+    'Not necessarily. It is the theoretical code obtained with the official rules. The real one is assigned by the Agenzia delle Entrate and, in case of homocode substitution (omocodia), it may be different: for official use refer to the code printed on your health card (tessera sanitaria).',
+  'guide.codice-fiscale.q.2': 'How is the codice fiscale built?',
+  'guide.codice-fiscale.a.2':
+    'It has 16 characters: 3 from the surname, 3 from the first name, 2 digits for the year of birth, one letter for the month, 2 digits for the day (plus 40 for women), 4 characters for the cadastral code of the place of birth and a check character calculated on the previous 15.',
+  'guide.codice-fiscale.q.3': 'Why are different consonants used for the first name than for the surname?',
+  'guide.codice-fiscale.a.3':
+    'For the surname the first three consonants are taken. For the first name, if there are four or more consonants, the first, third and fourth are taken. If there are not enough, it is completed with vowels and, finally, with the letter X.',
+  'guide.codice-fiscale.q.4': 'What is homocode substitution (omocodia)?',
+  'guide.codice-fiscale.a.4':
+    'If two people would end up with the same code, the Agenzia delle Entrate modifies one by replacing, starting from the right, some digits with the letters L M N P Q R S T U V. The tool shows the possible alternative codes, but it cannot know whether one has been assigned to you.',
+  'guide.codice-fiscale.q.5': 'What does “Check and decode” verify?',
+  'guide.codice-fiscale.a.5':
+    'Length, allowed characters, existing date of birth, place and check character, and it tells you where there is an error. It does not contact any service: it cannot say whether the code really exists or who it belongs to.',
+  'guide.codice-fiscale.q.6': 'I cannot find my municipality or country in the list: what do I do?',
+  'guide.codice-fiscale.a.6':
+    'The list includes current and abolished municipalities (ISTAT data) and foreign countries (ANPR table). If you cannot find it, choose “I will enter the code” and type the cadastral code: one letter and three digits, with an initial Z for foreign countries.',
+  'guide.codice-fiscale.privacy':
+    'Surname, first name and date of birth stay in your browser: no personal data is sent or stored. The list of places is a file on this site, loaded only when needed.',
+};
+
+const en: typeof it = {
+  ...guideEn,
   'cf.lead':
     'Calculate the codice fiscale (Italian tax code) of a person from their personal details, or paste a code to check whether it is formally valid and see what it contains. Everything happens in your browser.',
   'cf.privacy.personal': 'No personal data is sent or stored.',
@@ -282,7 +313,7 @@ const en: Omit<typeof it, keyof typeof guideIt> = {
   'cf.verify.suppressedYear': 'municipality abolished in {year}',
   'cf.verify.check': 'Check character',
   'cf.verify.checkExpected': '{got} (expected {expected})',
-  'cf.verify.homo': 'Omocodia',
+  'cf.verify.homo': 'Homocode (omocodia)',
   'cf.verify.homoYes': 'Omocodia: {n} characters are letters in place of digits.',
   'cf.verify.homoBase': 'Without omocodia the code would be {code}.',
   'cf.verify.homoNonStd':

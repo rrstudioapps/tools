@@ -95,7 +95,7 @@ for (const dir of readdirSync(join(src, 'tools'), { withFileTypes: true })) {
   for (const f of readdirSync(base).filter((n) => n.endsWith('.i18n.ts'))) {
     const file = join(base, f);
     const { it, en } = parseDicts(file);
-    // en dichiarato con Omit<typeof it, keyof typeof guideIt>: la guida esiste solo in italiano (strumenti italyOnly)
+    // en dichiarato con Omit<typeof it, keyof typeof guideIt>: guida solo in italiano (oggi nessuno strumento la usa)
     compare(`tools/${dir.name}`, it, en, /Omit<typeof it/.test(readFileSync(file, 'utf8')));
   }
 }

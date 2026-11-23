@@ -7,7 +7,6 @@ import { TOOLS } from '../../tools/tools.registry';
 /**
  * Lingua e indirizzi. La lingua di una pagina la decide l'URL: la radice è italiana,
  * le versioni inglesi stanno sotto `/en/` (stesso slug: `/pdf-tools` ↔ `/en/pdf-tools`).
- * Gli strumenti `italyOnly` non hanno la versione inglese.
  */
 export type Lang = 'it' | 'en';
 export const LANGS: readonly Lang[] = ['it', 'en'];
@@ -73,12 +72,12 @@ export function publicUrl(slug: string, lang: Lang): string {
   return `${SITE_URL}/${EN_PREFIX}/${slug}`;
 }
 
-/** Vero se la pagina esiste nella lingua data (la home sempre, uno strumento italyOnly solo in italiano). */
+/** Vero se la pagina esiste nella lingua data (la home, le pagine statiche e ogni strumento esistono in entrambe). */
 export function hasLang(slug: string, lang: Lang): boolean {
   if (slug === '' || STATIC_PAGES.includes(slug)) return true;
   const tool = TOOLS.find((t) => t.path === slug);
   if (!tool) return false;
-  return lang === 'it' || !tool.italyOnly;
+  return LANGS.includes(lang);
 }
 
 /** Vero se esiste un'immagine social dedicata (home e pagine statiche usano quella generica). */
@@ -139,8 +138,7 @@ export function lastModified(slug: string): string {
 export function buildSitemap(): string {
   const entries: string[] = [];
   for (const slug of allSlugs()) {
-    const langs: Lang[] = hasLang(slug, 'en') ? ['it', 'en'] : ['it'];
-    for (const lang of langs) {
+    for (const lang of LANGS) {
       const alts = hreflangLinks(slug)
         .map((a) => `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`)
         .join('\n');

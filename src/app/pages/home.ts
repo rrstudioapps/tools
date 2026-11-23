@@ -39,14 +39,10 @@ export class Home {
   /** ⌘K su Mac, Ctrl+K altrove: solo per il suggerimento mostrato accanto alla ricerca. */
   protected readonly modKey = signal('Ctrl');
 
-  /** In /en/ niente strumenti italyOnly né la loro categoria: restano in una riga discreta in fondo. */
   protected readonly suggest = computed(() => feedbackUrl('new-tool', { slug: '', lang: this.i18n.lang() }));
   protected readonly english = computed(() => this.i18n.lang() === 'en');
-  protected readonly italyTools: readonly ToolDefinition[] = TOOLS.filter((t) => t.italyOnly);
-  private readonly shownTools = computed(() => (this.english() ? TOOLS.filter((t) => !t.italyOnly) : TOOLS));
-  private readonly shownCategories = computed(() =>
-    this.english() ? CATEGORIES.filter((c) => TOOLS.some((t) => !t.italyOnly && t.category === c.id)) : CATEGORIES,
-  );
+  private readonly shownTools = computed(() => TOOLS);
+  private readonly shownCategories = computed(() => CATEGORIES);
 
   /** Ordine di visualizzazione = ordine delle categorie: dà anche la numerazione 01, 02… */
   protected readonly ordered = computed(() =>

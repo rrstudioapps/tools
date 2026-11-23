@@ -60,15 +60,14 @@ export class CommandPalette {
 
     injectCommands(
       computed<Command[]>(() => {
-        const en = this.i18n.lang() === 'en';
         const fav = this.favorites.favoriteSet();
-        return TOOLS.filter((t) => !(en && t.italyOnly)).map((tool) => ({
+        return TOOLS.map((tool) => ({
           id: tool.id,
           label: this.i18n.t(tool.titleKey),
           description: this.i18n.t(tool.descriptionKey),
           keywords: [tool.keywords?.it ?? '', tool.keywords?.en ?? ''],
           pinned: fav.has(tool.id),
-          route: tool.italyOnly ? '/' + tool.path : this.i18n.link(tool.path),
+          route: this.i18n.link(tool.path),
         }));
       }),
     );

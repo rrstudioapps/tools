@@ -37,22 +37,15 @@ export class FavoritesService {
 
   readonly known = KNOWN;
   readonly english = computed(() => this.i18n.lang() === 'en');
-  private readonly visible = (t: ToolDefinition | undefined): t is ToolDefinition => !!t && !(this.english() && t.italyOnly);
+  private readonly visible = (t: ToolDefinition | undefined): t is ToolDefinition => !!t;
 
-  /** Preferiti visibili nella lingua corrente (in /en/ gli strumenti solo italiani restano salvati ma nascosti). */
+  /** Preferiti come definizioni degli strumenti (gli id non più nel registry si scartano). */
   readonly favoriteTools = computed<ToolDefinition[]>(() =>
     this.state().favorites.map((id) => BY_ID.get(id)).filter(this.visible),
   );
   readonly groups = computed<GroupView[]>(() =>
     this.state().groups.map((g) => ({ id: g.id, name: g.name, tools: g.tools.map((id) => BY_ID.get(id)).filter(this.visible) })),
   );
-  /** Quanti elementi salvati sono nascosti perché solo italiani (nelle pagine inglesi). */
-  readonly hiddenCount = computed(() => {
-    if (!this.english()) return 0;
-    const s = this.state();
-    const hidden = (id: string) => BY_ID.get(id)?.italyOnly === true;
-    return new Set([...s.favorites.filter(hidden), ...s.groups.flatMap((g) => g.tools.filter(hidden))]).size;
-  });
   readonly favoriteSet = computed(() => new Set(this.state().favorites));
   readonly isEmpty = computed(() => L.isEmpty(this.state()));
 

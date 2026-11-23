@@ -45,12 +45,12 @@ describe('URL ↔ lingua', () => {
     expect(publicUrl('', 'en')).toBe('https://tools.rrstudio.app/en/');
     expect(publicUrl('pdf-tools', 'en')).toBe('https://tools.rrstudio.app/en/pdf-tools');
   });
-  it('alternatePath: stessa pagina nell\'altra lingua, null per gli strumenti solo italiani', () => {
+  it('alternatePath: stessa pagina nell\'altra lingua, anche per gli strumenti per l\'Italia', () => {
     expect(alternatePath('/pdf-tools', 'en')).toBe('/en/pdf-tools');
     expect(alternatePath('/en/pdf-tools', 'it')).toBe('/pdf-tools');
     expect(alternatePath('/', 'en')).toBe('/en');
     expect(alternatePath('/en', 'it')).toBe('/');
-    expect(alternatePath('/codice-fiscale', 'en')).toBeNull();
+    expect(alternatePath('/codice-fiscale', 'en')).toBe('/en/codice-fiscale');
     expect(alternatePath('/en/codice-fiscale', 'it')).toBe('/codice-fiscale');
   });
   it('la pagina di ricezione delle condivisioni: slug per lingua, cambio lingua, fuori da sitemap', () => {
@@ -62,18 +62,17 @@ describe('URL ↔ lingua', () => {
     expect(buildSitemap()).not.toContain('condividi');
     expect(buildSitemap()).not.toContain('/share');
   });
-  it('hasLang segue il flag italyOnly', () => {
+  it('hasLang: ogni strumento esiste in italiano e in inglese', () => {
     for (const t of TOOLS) {
       expect(hasLang(t.path, 'it'), t.id).toBe(true);
-      expect(hasLang(t.path, 'en'), t.id).toBe(!t.italyOnly);
+      expect(hasLang(t.path, 'en'), t.id).toBe(true);
     }
     expect(hasLang('', 'en')).toBe(true);
     expect(hasLang('inesistente', 'en')).toBe(false);
     expect(hasLang('privacy', 'en')).toBe(true);
   });
-  it('gli strumenti italyOnly sono esattamente quelli della categoria Italia', () => {
+  it('la categoria Italia ha gli strumenti attesi, tutti con slug italiano', () => {
     const italy = TOOLS.filter((t) => t.category === 'italy').map((t) => t.id).sort();
-    expect(TOOLS.filter((t) => t.italyOnly).map((t) => t.id).sort()).toEqual(italy);
     expect(italy).toEqual([
       'calcolo-giorni-lavorativi',
       'calcolo-iva',
@@ -104,26 +103,27 @@ describe('hreflang', () => {
       'https://tools.rrstudio.app/en/',
     ]);
   });
-  it('pagina solo italiana: solo it', () => {
+  it('strumento per l\'Italia: slug italiano anche sotto /en/', () => {
     expect(hreflangLinks('codice-fiscale')).toEqual([
       { hreflang: 'it', href: 'https://tools.rrstudio.app/codice-fiscale' },
+      { hreflang: 'en', href: 'https://tools.rrstudio.app/en/codice-fiscale' },
+      { hreflang: 'x-default', href: 'https://tools.rrstudio.app/en/codice-fiscale' },
     ]);
   });
 });
 
 describe('sitemap', () => {
   const xml = buildSitemap();
-  it('ha tutte le URL italiane e quelle inglesi dei soli strumenti generici', () => {
+  it('ha tutte le URL italiane e quelle inglesi di ogni strumento', () => {
     const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    const generic = TOOLS.filter((t) => !t.italyOnly).length;
-    expect(locs.length).toBe(allSlugs().length + 1 + generic + STATIC_PAGES.length + 2);
+    expect(locs.length).toBe(allSlugs().length + 1 + TOOLS.length + STATIC_PAGES.length + 2);
     expect(new Set(locs).size).toBe(locs.length);
     expect(locs).toContain('https://tools.rrstudio.app/en/');
     expect(locs).toContain('https://tools.rrstudio.app/en/pdf-tools');
     expect(locs).toContain('https://tools.rrstudio.app/codice-fiscale');
     expect(locs).toContain('https://tools.rrstudio.app/privacy');
     expect(locs).toContain('https://tools.rrstudio.app/en/privacy');
-    expect(locs).not.toContain('https://tools.rrstudio.app/en/codice-fiscale');
+    expect(locs).toContain('https://tools.rrstudio.app/en/codice-fiscale');
     expect(locs).toContain('https://tools.rrstudio.app/novita');
     expect(locs).toContain('https://tools.rrstudio.app/en/changelog');
   });
@@ -133,7 +133,7 @@ describe('sitemap', () => {
     expect(block.match(/<xhtml:link /g)?.length).toBe(3);
     expect(block).toContain('hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-tools"');
     const cf = xml.split('<url>').find((b) => b.includes('<loc>https://tools.rrstudio.app/codice-fiscale</loc>'))!;
-    expect(cf.match(/<xhtml:link /g)?.length).toBe(1);
+    expect(cf.match(/<xhtml:link /g)?.length).toBe(3);
   });
   it('ogni URL ha lastmod nel formato AAAA-MM-GG, senza date nel futuro e senza ore', () => {
     const urls = xml.split('<url>').slice(1);

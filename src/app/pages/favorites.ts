@@ -73,7 +73,7 @@ export class FavoritesPage {
     if (!key) return [];
     const s = this.fav.state();
     const have = new Set(key === FAV ? s.favorites : (s.groups.find((g) => g.id === key)?.tools ?? []));
-    const pool = TOOLS.filter((t) => !have.has(t.id) && !(this.fav.english() && t.italyOnly));
+    const pool = TOOLS.filter((t) => !have.has(t.id));
     return filterTools(pool, null, this.pickerQuery(), (t) => ({
       title: this.i18n.t(t.titleKey),
       description: this.i18n.t(t.descriptionKey),

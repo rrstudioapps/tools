@@ -64,6 +64,6 @@ export class RelatedTools {
   readonly toolId = input.required<string>();
   protected readonly items = computed(() => {
     const current = TOOLS.find((t) => t.id === this.toolId());
-    return current ? relatedTools(current, TOOLS, this.i18n.lang()) : [];
+    return current ? relatedTools(current, TOOLS) : [];
   });
 }

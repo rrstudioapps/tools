@@ -43,7 +43,7 @@ export class ConvertitoreLireEuroPage {
   protected readonly outcome = computed<Outcome | null>(() => {
     const raw = this.amount().trim();
     if (raw === '') return null;
-    const n = parseDecimal(raw, 'it');
+    const n = parseDecimal(raw, this.i18n.lang());
     if (n === null) return { error: 'invalid' };
     if (n < 0) return { error: 'negative' };
     const h = toHundredths(n);
@@ -51,17 +51,17 @@ export class ConvertitoreLireEuroPage {
     if (this.mode() === 'toEuro') {
       const c = lireToEuro(h);
       return {
-        main: this.i18n.t('lire.res.euro', { v: formatScaled(c.rounded, 2) }),
-        copy: formatScaled(c.rounded, 2),
-        exact: this.i18n.t('lire.res.exactEuro', { v: formatScaled(c.exact, 4) }),
+        main: this.i18n.t('lire.res.euro', { v: formatScaled(c.rounded, 2, this.i18n.lang()) }),
+        copy: formatScaled(c.rounded, 2, this.i18n.lang()),
+        exact: this.i18n.t('lire.res.exactEuro', { v: formatScaled(c.exact, 4, this.i18n.lang()) }),
         note: this.i18n.t('lire.note.euro'),
       };
     }
     const c = euroToLire(h);
     return {
-      main: this.i18n.t('lire.res.lire', { v: formatScaled(c.rounded, 0) }),
-      copy: formatScaled(c.rounded, 0),
-      exact: this.i18n.t('lire.res.exactLire', { v: formatScaled(c.exact, 2) }),
+      main: this.i18n.t('lire.res.lire', { v: formatScaled(c.rounded, 0, this.i18n.lang()) }),
+      copy: formatScaled(c.rounded, 0, this.i18n.lang()),
+      exact: this.i18n.t('lire.res.exactLire', { v: formatScaled(c.exact, 2, this.i18n.lang()) }),
       note: this.i18n.t('lire.note.lire'),
     };
   });
@@ -75,8 +75,8 @@ export class ConvertitoreLireEuroPage {
     return o && 'error' in o ? this.i18n.t('lire.err.' + o.error) : '';
   });
 
-  protected readonly banknotes = BANKNOTES.map((d) => ({ ...d, euro: formatScaled(denominationEuro(d.lire), 2), label: formatScaled(BigInt(d.lire), 0) }));
-  protected readonly coins = COINS.map((d) => ({ ...d, euro: formatScaled(denominationEuro(d.lire), 2), label: formatScaled(BigInt(d.lire), 0) }));
+  protected readonly banknotes = computed(() => BANKNOTES.map((d) => ({ ...d, euro: formatScaled(denominationEuro(d.lire), 2, this.i18n.lang()), label: formatScaled(BigInt(d.lire), 0, this.i18n.lang()) })));
+  protected readonly coins = computed(() => COINS.map((d) => ({ ...d, euro: formatScaled(denominationEuro(d.lire), 2, this.i18n.lang()), label: formatScaled(BigInt(d.lire), 0, this.i18n.lang()) })));
 
   // Link di condivisione: lo stato sta nell'hash dell'URL (vedi shared/share-link.ts)
   protected readonly shareSchema = SHARE_SCHEMA;

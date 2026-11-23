@@ -84,7 +84,7 @@ export class ChangelogPage {
           id: t.id,
           name: this.i18n.t(t.titleKey),
           // gli strumenti solo italiani non hanno la pagina inglese: niente link
-          path: lang === 'en' && t.italyOnly ? null : this.i18n.link(t.path),
+          path: this.i18n.link(t.path),
         })),
       issues: (e.issues ?? []).map((n) => ({ n, url: `${REPO_URL}/issues/${n}` })),
     };

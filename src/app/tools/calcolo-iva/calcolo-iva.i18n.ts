@@ -2,7 +2,6 @@
 // © 2026 rrstudio — rrstudio tools
 import type { ToolDictionaries } from '../../core/i18n/i18n.service';
 
-/** Strumento solo italiano: la versione inglese esiste per completezza del tipo, ma non viene mai mostrata. */
 /** Guida "come si usa" e domande frequenti (It): vedi shared/tool-guide.ts. */
 const guideIt = {
   'guide.calcolo-iva.step.1': 'In «Che cosa vuoi calcolare» scegli «Aggiungi IVA» se hai l\'imponibile, «Scorpora IVA» se hai il totale con IVA, «Notula / fattura» per una parcella con rivalsa, cassa, ritenuta e bollo, oppure «Dal netto al compenso» se parti dal netto che vuoi incassare.',
@@ -108,9 +107,110 @@ const it = {
   'iva.empty': 'Scrivi un importo per vedere il calcolo.',
 };
 
-const en: Omit<typeof it, keyof typeof guideIt> = {
-  // Strumento solo italiano (italyOnly): nessuna pagina /en/. Le stesse stringhe, per completezza del tipo.
-  ...it,
+/** Guida "come si usa" e domande frequenti (En): vedi shared/tool-guide.ts. */
+const guideEn = {
+  'guide.calcolo-iva.step.1': 'Under “What do you want to calculate” choose “Add VAT” if you have the net amount, “Extract VAT” if you have the total including VAT, “Fee note / invoice” for a professional fee with INPS surcharge, pension fund, withholding and stamp duty, or “Net to fee” if you start from the net amount you want to receive.',
+  'guide.calcolo-iva.step.2': 'Enter the amount in the field (for example 1,000.00): the label changes with the chosen mode.',
+  'guide.calcolo-iva.step.3': 'Choose the “VAT rate”. With “0% (no VAT)” also pick the “Nature of the transaction without VAT”.',
+  'guide.calcolo-iva.step.4': 'For a fee note, under “Fee note details” turn on what you need: flat-rate scheme (regime forfettario), 4% INPS surcharge, pension fund, withholding tax and €2 stamp duty.',
+  'guide.calcolo-iva.step.5': 'Read the “Result” line by line; under “To state on the invoice” you will find the wordings required in special cases.',
+  'guide.calcolo-iva.q.1': 'What is the difference between adding and extracting VAT?',
+  'guide.calcolo-iva.a.1':
+    'When adding, you start from the net amount and add VAT to get the total. When extracting, you start from the total including VAT and work out the net amount and the VAT: at a 22% rate, for example, 122 euro gross is 100 euro net plus 22 of VAT.',
+  'guide.calcolo-iva.q.2': 'What is the 4% INPS surcharge (rivalsa INPS)?',
+  'guide.calcolo-iva.a.2':
+    'It is a surcharge that a professional can add to the invoice for the client. In “Fee note / invoice” mode the tool adds it to the fee and lets you choose whether withholding tax also applies to it.',
+  'guide.calcolo-iva.q.3': 'When is the €2 stamp duty (marca da bollo) needed?',
+  'guide.calcolo-iva.a.3':
+    'On invoices without VAT for more than 77.47 euro, as the wording the tool proposes reminds you. You can choose whether to charge it to the client or bear it yourself: in the latter case it is not added to the total.',
+  'guide.calcolo-iva.q.4': 'How does it handle the flat-rate scheme (regime forfettario)?',
+  'guide.calcolo-iva.a.4':
+    'With “Flat-rate scheme” on, the calculation removes VAT and withholding tax and proposes the wordings to state on the invoice, with the legal references.',
+  'guide.calcolo-iva.q.5': 'What is “Net to fee” for?',
+  'guide.calcolo-iva.a.5':
+    'It is the reverse calculation: you enter how much you want to receive and get the fee to invoice. Because of rounding to the cent the exact net amount may not be reachable: in that case the tool shows the closest value and the difference.',
+  'guide.calcolo-iva.q.6': 'Can I use it as tax advice?',
+  'guide.calcolo-iva.a.6':
+    'No: it is an indicative calculation, with rates and rules up to date for 2026. For your specific case, in particular for the nature of the transaction, exemptions and tax regime, check with your accountant (commercialista).',
+  'guide.calcolo-iva.privacy':
+    'Amounts stay in your browser and are not sent anywhere. If you use the share button, the data you entered ends up in the link address, after the # symbol: that part never reaches any server, but whoever receives the link can see it.',
+};
+
+const en: typeof it = {
+  ...guideEn,
+  'iva.lead':
+    'Add VAT to a net amount, extract it from a gross amount or prepare a professional fee note with INPS surcharge (rivalsa), pension fund contribution, withholding tax and stamp duty. Rounded to the cent.',
+  'iva.disclaimer':
+    'Indicative calculation tool, not tax advice: always check your specific case with your accountant (commercialista). Rates and rules up to date for 2026.',
+  'iva.mode': 'What do you want to calculate',
+  'iva.mode.add': 'Add VAT',
+  'iva.mode.extract': 'Extract VAT',
+  'iva.mode.invoice': 'Fee note / invoice',
+  'iva.mode.reverse': 'Net to fee',
+  'iva.amount.add': 'Net amount (€)',
+  'iva.amount.extract': 'Gross amount, VAT included (€)',
+  'iva.amount.invoice': 'Fee, net amount (€)',
+  'iva.amount.reverse': 'Desired net amount to receive (€)',
+  'iva.amount.ph': 'For example 1,000.00',
+  'iva.amount.err': 'Enter a valid amount, for example 1,250.50.',
+  'iva.vat': 'VAT rate',
+  'iva.vat.rate': '{rate}%',
+  'iva.vat.zero': '0% (no VAT)',
+  'iva.nature': 'Nature of the transaction without VAT',
+  'iva.nat.N2.2': 'N2.2 · not subject, other cases',
+  'iva.nat.N4': 'N4 · exempt',
+  'iva.nat.N2.1': 'N2.1 · not subject (arts. 7-7 septies)',
+  'iva.nat.N1': 'N1 · excluded (art. 15)',
+  'iva.nat.N3.1': 'N3.1 · non-taxable, exports',
+  'iva.nat.N6.9': 'N6.9 · reverse charge',
+  'iva.opts': 'Fee note details',
+  'iva.forfettario': 'Flat-rate scheme (no VAT, no withholding)',
+  'iva.rivalsa': 'INPS surcharge 4%',
+  'iva.cassa': 'Pension fund contribution',
+  'iva.cassa.none': 'None',
+  'iva.cassa.custom': 'Other percentage',
+  'iva.cassa.pct': 'Pension fund percentage (%)',
+  'iva.cassa.err': 'Enter a valid percentage, for example 4 or 2,5.',
+  'iva.cassa.vat': 'The pension fund contribution is subject to VAT',
+  'iva.ritenuta': 'Withholding tax 20%',
+  'iva.ritenuta.none': 'No withholding',
+  'iva.ritenuta.compenso': 'On fee and INPS surcharge',
+  'iva.ritenuta.cassa': 'On fee, INPS surcharge and pension fund',
+  'iva.bollo': 'Charge the €2 stamp duty to the client',
+  'iva.result': 'Result',
+  'iva.row.net': 'Net amount',
+  'iva.row.vat': 'VAT {rate}',
+  'iva.row.gross': 'Total (VAT included)',
+  'iva.row.compenso': 'Fee',
+  'iva.row.rivalsa': 'INPS surcharge 4%',
+  'iva.row.cassa': 'Pension fund contribution {rate}',
+  'iva.row.vatBase': 'VAT base',
+  'iva.row.bollo': 'Stamp duty (marca da bollo)',
+  'iva.row.total': 'Document total',
+  'iva.row.ritenuta': 'Withholding tax {rate}',
+  'iva.row.netToPay': 'Net payable',
+  'iva.row.neededCompenso': 'Fee to invoice',
+  'iva.reverse.diff': 'Because of rounding to the cent the exact net amount cannot be reached: the closest is {net} ({diff} from the desired amount).',
+  'iva.reverse.exact': 'With this fee the net payable is exactly {net}.',
+  'iva.notes': 'To state on the invoice (wording in Italian)',
+  // Diciture di legge: restano in italiano perché vanno riportate così nella fattura italiana.
+  'iva.note.forfettario':
+    'Operazione effettuata ai sensi dell\'articolo 1, commi da 54 a 89, della legge n. 190/2014 (regime forfettario).',
+  'iva.note.ritenutaForfettario':
+    'Compenso non soggetto a ritenuta d\'acconto ai sensi dell\'articolo 1, comma 67, della legge n. 190/2014.',
+  'iva.note.bollo':
+    'Imposta di bollo di 2,00 € assolta ai sensi del DPR n. 642/1972 (operazione senza IVA di importo superiore a 77,47 €).',
+  'iva.note.bolloNotCharged': '€2.00 stamp duty is due but borne by the professional: it is not added to the total.',
+  'iva.note.natura': 'Transaction without VAT, nature {code}: {text}.',
+  'iva.natdesc.N2.2': 'not subject, other cases',
+  'iva.natdesc.N4': 'exempt (art. 10 DPR 633/1972)',
+  'iva.natdesc.N2.1': 'not subject to VAT (arts. 7 to 7-septies DPR 633/1972)',
+  'iva.natdesc.N1': 'excluded (art. 15 DPR 633/1972)',
+  'iva.natdesc.N3.1': 'non-taxable, exports',
+  'iva.natdesc.N6.9': 'reverse charge, other cases',
+  'iva.note.cassaFuoriIva': 'The pension fund contribution is shown outside the scope of VAT and does not form part of the taxable base.',
+  'iva.summary': 'Summary',
+  'iva.empty': 'Enter an amount to see the calculation.',
 };
 
 export const IVA_DICTIONARIES: ToolDictionaries = { it, en };

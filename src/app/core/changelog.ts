@@ -24,6 +24,30 @@ export interface ChangelogVersion {
 /** Novità del sito, dalla più recente. Testi per gli utenti, non per gli sviluppatori. */
 export const CHANGELOG: readonly ChangelogVersion[] = [
   {
+    date: '2026-11-23',
+    title: { it: 'Strumenti per l\'Italia anche in inglese', en: 'Tools for Italy, now in English' },
+    entries: [
+      {
+        kind: 'feature',
+        it: 'Gli strumenti per l\'Italia (codice fiscale, IBAN e partita IVA, fattura elettronica, calcoli di IVA, ritenuta, mutuo e giorni lavorativi, numeri in lettere, lire-euro e scadenze delle fatture) hanno ora anche la versione inglese, per chi vive o lavora in Italia senza parlare italiano.',
+        en: 'The tools for Italy (tax code, IBAN and VAT number, e-invoice viewer, VAT, withholding tax, mortgage and working days calculators, numbers in words, lire to euro and invoice due dates) are now available in English too, for anyone living or working in Italy without speaking Italian.',
+        toolIds: [
+          'codice-fiscale',
+          'generatore-codice-fiscale',
+          'iban-partita-iva',
+          'fattura-elettronica',
+          'calcolo-iva',
+          'calcolo-ritenuta-acconto',
+          'calcolo-rata-mutuo',
+          'calcolo-giorni-lavorativi',
+          'numeri-in-lettere',
+          'convertitore-lire-euro',
+          'scadenze-fatture',
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-11-22',
     title: { it: 'Nuovi strumenti PDF e tutorial', en: 'New PDF tools and tutorial' },
     entries: [

@@ -297,7 +297,6 @@ export class SmartIntake {
   protected readonly suggestions = computed(() =>
     this.analysis()
       .suggestions.map((s) => ({ ...s, tool: TOOLS.find((t) => t.id === s.toolId)! }))
-      .filter((s) => !(this.i18n.lang() === 'en' && s.tool.italyOnly))
       .map((s) => ({ ...s, icon: s.tool.icon, title: this.i18n.t(s.tool.titleKey) })),
   );
 
