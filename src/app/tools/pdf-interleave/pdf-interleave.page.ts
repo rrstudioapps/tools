@@ -99,19 +99,32 @@ export class PdfInterleavePage {
     for (const k of [...this.pending]) if (k.startsWith(side)) this.pending.delete(k);
   }
 
+  /** Contatore per lato: un caricamento superato da uno più recente (o da «rimuovi») non deve più toccare lo stato. */
+  private readonly seq: Record<Side, number> = { front: 0, back: 0 };
+
   protected async onLoaded(side: Side, p: LoadedPdf): Promise<void> {
+    const n = ++this.seq[side];
     this.dropSide(side);
-    (side === 'front' ? this.front : this.back).set(p);
     this.error.set('');
     this.done.set('');
+    // il documento si apre PRIMA di mostrare le schede: la miniatura parte quando la scheda diventa visibile e,
+    // se il documento non c'è ancora, non verrebbe più ritentata
+    let doc: PDFDocumentProxy | null = null;
     try {
-      this.docs[side] = await openPdf(p.bytes.slice());
+      doc = await openPdf(p.bytes.slice());
     } catch {
       /* le miniature sono facoltative */
     }
+    if (n !== this.seq[side]) {
+      void doc?.loadingTask.destroy();
+      return;
+    }
+    this.docs[side] = doc;
+    (side === 'front' ? this.front : this.back).set(p);
   }
 
   protected onCleared(side: Side): void {
+    this.seq[side]++;
     this.dropSide(side);
     (side === 'front' ? this.front : this.back).set(null);
     this.done.set('');

@@ -65,14 +65,25 @@ describe('conformità: pdf.js apre il file con la password giusta', () => {
     const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
     const r = await protectPdf(await sample(), { userPassword: 'segreta', ownerPassword: 'capo', allow: ALL_ALLOWED });
     if (!r.ok) throw new Error('no');
-    const open = (password: string) => pdfjs.getDocument({ data: r.bytes.slice(), password, useWorkerFetch: false, verbosity: 0, disableFontFace: true }).promise;
-    const doc = await open('segreta');
-    expect(doc.numPages).toBe(1);
-    const text = await (await doc.getPage(1)).getTextContent();
-    expect(text.items.map((i) => ('str' in i ? i.str : '')).join('')).toBe('riservato');
-    await expect(open('sbagliata')).rejects.toMatchObject({ name: 'PasswordException' });
-    // anche la password del proprietario apre il file
-    expect((await open('capo')).numPages).toBe(1);
+    // ogni caricamento si chiude a fine uso: un tentativo con la password sbagliata lasciato aperto può far
+    // uscire un rifiuto non gestito dal worker di pdf.js a test già concluso (intermittente)
+    const tasks: { destroy: () => Promise<void> }[] = [];
+    const open = (password: string) => {
+      const task = pdfjs.getDocument({ data: r.bytes.slice(), password, useWorkerFetch: false, verbosity: 0, disableFontFace: true });
+      tasks.push(task);
+      return task.promise;
+    };
+    try {
+      const doc = await open('segreta');
+      expect(doc.numPages).toBe(1);
+      const text = await (await doc.getPage(1)).getTextContent();
+      expect(text.items.map((i) => ('str' in i ? i.str : '')).join('')).toBe('riservato');
+      await expect(open('sbagliata')).rejects.toMatchObject({ name: 'PasswordException' });
+      // anche la password del proprietario apre il file
+      expect((await open('capo')).numPages).toBe(1);
+    } finally {
+      await Promise.allSettled(tasks.map((t) => t.destroy()));
+    }
   }, 30000);
 
   it('i limiti scelti risultano nei permessi letti da pdf.js', async () => {
