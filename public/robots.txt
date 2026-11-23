@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tools.rr-dev.eu/sitemap.xml
+Sitemap: https://tools.rrstudio.app/sitemap.xml

@@ -238,7 +238,7 @@ export const en: Dict = {
   'shortcuts.send': 'Send to another tool',
   'print.btn': 'Print or save PDF',
   'print.btn.aria': 'Print or save PDF of the results',
-  'print.note': 'Indicative calculation, generated in the browser by tools.rr-dev.eu',
+  'print.note': 'Indicative calculation, generated in the browser by tools.rrstudio.app',
   'print.yes': 'Yes',
   'print.no': 'No',
   'shortcuts.print': 'Print or save as PDF',
@@ -954,7 +954,7 @@ export const en: Dict = {
 
   'seo.privacy.title': 'Privacy notice | rrstudio tools',
   'seo.privacy.desc':
-    'How rrstudio tools handles data: the tools run in your browser, no cookies or tracking, only technical server logs with automatic rotation.',
+    'How rrstudio tools handles data: the tools run in your browser, no cookies or tracking, hosted on Cloudflare.',
   'seo.tutorial.title': 'Tutorial: things worth knowing | rrstudio tools',
   'seo.tutorial.desc':
     'What to know before using the site: data that can\'t be recovered, Ctrl+K search, favorites, tool chains, offline use and special cases in the PDF tools.',

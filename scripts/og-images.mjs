@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 // © 2026 rrstudio — rrstudio tools
 // Genera le immagini Open Graph (1200×630, stile "Carta") di ogni strumento e lingua in
-// public/og/<lang>/<slug>.png: nome dello strumento, una riga di descrizione, logo e "tools.rr-dev.eu".
+// public/og/<lang>/<slug>.png: nome dello strumento, una riga di descrizione, logo e "tools.rrstudio.app".
 // Testi presi dai dizionari (it.ts, en.ts) e dal registro; font del progetto (Inter Tight, JetBrains Mono).
 // Idempotente: un file già uguale non viene riscritto. Gli strumenti italyOnly hanno solo la versione it.
 // Uso: npm run og-images   (serve il Chromium di Playwright già installato; CHROMIUM_PATH se serve)
@@ -74,7 +74,7 @@ p{margin:0;font-size:34px;line-height:1.3;color:#55555a;letter-spacing:-.01em;ma
 </style></head><body>
 <div class="top"><img src="${logo}" alt="">rrstudio <span>tools</span></div>
 <div class="mid"><h1 id="t">${esc(j.title)}</h1><p id="d">${esc(j.desc)}</p></div>
-<div class="bot"><span><i class="dot"></i>${esc(j.privacy)}</span><span>tools.rr-dev.eu</span></div>
+<div class="bot"><span><i class="dot"></i>${esc(j.privacy)}</span><span>tools.rrstudio.app</span></div>
 </body></html>`;
 
 // Rimpicciolisce titolo e descrizione finché stanno nello spazio (titolo max 3 righe, descrizione max 2)

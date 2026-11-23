@@ -38,7 +38,7 @@ test('esclusioni', () => {
 
 test('riferimenti locali di una pagina', () => {
   const html = `<link rel="stylesheet" href="styles-AAAAAAAA.css"><link rel="icon" href="favicon.ico">
-    <link rel="canonical" href="https://tools.rr-dev.eu/"><link rel="modulepreload" href="chunk-AbCdEfGh.js">
+    <link rel="canonical" href="https://tools.rrstudio.app/"><link rel="modulepreload" href="chunk-AbCdEfGh.js">
     <link rel="preload" href="/fonts/a.woff2" as="font"><script src="main-BBBBBBBB.js" type="module"></script>
     <script src="https://esterno.example/x.js"></script>`;
   assert.deepEqual(htmlRefs(html).sort(), [

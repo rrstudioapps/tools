@@ -237,7 +237,7 @@ export const it = {
   'shortcuts.send': 'Invia ad un altro strumento',
   'print.btn': 'Stampa o salva PDF',
   'print.btn.aria': 'Stampa o salva PDF dei risultati',
-  'print.note': 'Calcolo indicativo, generato nel browser da tools.rr-dev.eu',
+  'print.note': 'Calcolo indicativo, generato nel browser da tools.rrstudio.app',
   'print.yes': 'Sì',
   'print.no': 'No',
   'shortcuts.print': 'Stampa o salva come PDF',
@@ -953,7 +953,7 @@ export const it = {
 
   'seo.privacy.title': 'Informativa sulla privacy | rrstudio tools',
   'seo.privacy.desc':
-    'Come rrstudio tools tratta i dati: gli strumenti lavorano nel browser, nessun cookie né tracciamento, solo log tecnici del server con rotazione automatica.',
+    'Come rrstudio tools tratta i dati: gli strumenti lavorano nel browser, nessun cookie né tracciamento, hosting su Cloudflare.',
   'seo.tutorial.title': 'Tutorial: cose da sapere | rrstudio tools',
   'seo.tutorial.desc':
     'Cosa sapere prima di usare il sito: dati che non si recuperano, ricerca Ctrl+K, preferiti, catene di strumenti, uso offline e casi particolari dei PDF.',

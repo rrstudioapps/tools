@@ -110,9 +110,9 @@ describe('slug della pagina Novità', () => {
     expect(alternatePath('/novita', 'en')).toBe('/en/changelog');
     expect(alternatePath('/en/changelog', 'it')).toBe('/novita');
     expect(hreflangLinks('novita').map((a) => a.href)).toEqual([
-      'https://tools.rr-dev.eu/novita',
-      'https://tools.rr-dev.eu/en/changelog',
-      'https://tools.rr-dev.eu/en/changelog',
+      'https://tools.rrstudio.app/novita',
+      'https://tools.rrstudio.app/en/changelog',
+      'https://tools.rrstudio.app/en/changelog',
     ]);
     expect(hasOgImage(CHANGELOG_SLUG.it, 'it')).toBe(false);
   });
@@ -139,7 +139,7 @@ describe('feed Atom', () => {
       expect(xml).toContain('<feed xmlns="http://www.w3.org/2005/Atom"');
       expect(xml.match(/<entry>/g)?.length).toBe(Math.min(CHANGELOG.length, FEED_VERSIONS));
       expect(xml).toContain(`<updated>${CHANGELOG[0].date}T00:00:00Z</updated>`);
-      expect(xml).toContain(`href="https://tools.rr-dev.eu/${FEED_PATH[lang]}"`);
+      expect(xml).toContain(`href="https://tools.rrstudio.app/${FEED_PATH[lang]}"`);
       expect(xml).not.toMatch(/<script|tracking|utm_/i);
     });
     it(`${lang}: public/${FEED_PATH[lang]} è aggiornato (UPDATE_SITEMAP=1 npm test lo riscrive)`, () => {

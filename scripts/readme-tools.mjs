@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const WRITE = process.argv.includes('--write');
-const BASE = 'https://tools.rr-dev.eu/';
+const BASE = 'https://tools.rrstudio.app/';
 const SECTION = { text: 'Text', data: 'Data', media: 'Images, PDF & codes', calc: 'Calculators', dev: 'Developers', web: 'Web & design', security: 'Security', italy: 'Italy: tax & banking' };
 
 const registry = readFileSync('src/app/tools/tools.registry.ts', 'utf8');

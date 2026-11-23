@@ -8,9 +8,9 @@ import { PrintButton, printAddress, printDate } from './print-button';
 
 describe('stampa: intestazione', () => {
   it("l'indirizzo è canonico, senza hash né query", () => {
-    expect(printAddress('compound-interest', 'it')).toBe('https://tools.rr-dev.eu/compound-interest');
-    expect(printAddress('compound-interest', 'en')).toBe('https://tools.rr-dev.eu/en/compound-interest');
-    expect(printAddress('/compound-interest/?a=1#s=dati', 'it')).toBe('https://tools.rr-dev.eu/compound-interest');
+    expect(printAddress('compound-interest', 'it')).toBe('https://tools.rrstudio.app/compound-interest');
+    expect(printAddress('compound-interest', 'en')).toBe('https://tools.rrstudio.app/en/compound-interest');
+    expect(printAddress('/compound-interest/?a=1#s=dati', 'it')).toBe('https://tools.rrstudio.app/compound-interest');
   });
 
   it('la data è solo la data, nella lingua', () => {
@@ -35,7 +35,7 @@ describe('PrintButton', () => {
     await fixture.whenStable();
     const el: HTMLElement = fixture.nativeElement;
     const shown = el.querySelector('[data-testid="print-url"]')!.textContent!;
-    expect(shown).toBe('https://tools.rr-dev.eu/compound-interest');
+    expect(shown).toBe('https://tools.rrstudio.app/compound-interest');
     expect(shown).not.toMatch(/[#?]/);
     expect(el.textContent).not.toContain('segreto');
     expect(el.querySelector('[data-testid="print-summary"]')!.textContent).toContain('10.000 €');

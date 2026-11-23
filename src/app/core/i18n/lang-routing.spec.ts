@@ -41,9 +41,9 @@ describe('URL ↔ lingua', () => {
     expect(routePath('', 'en')).toBe('/en');
     expect(routePath('pdf-tools', 'it')).toBe('/pdf-tools');
     expect(routePath('pdf-tools', 'en')).toBe('/en/pdf-tools');
-    expect(publicUrl('', 'it')).toBe('https://tools.rr-dev.eu/');
-    expect(publicUrl('', 'en')).toBe('https://tools.rr-dev.eu/en/');
-    expect(publicUrl('pdf-tools', 'en')).toBe('https://tools.rr-dev.eu/en/pdf-tools');
+    expect(publicUrl('', 'it')).toBe('https://tools.rrstudio.app/');
+    expect(publicUrl('', 'en')).toBe('https://tools.rrstudio.app/en/');
+    expect(publicUrl('pdf-tools', 'en')).toBe('https://tools.rrstudio.app/en/pdf-tools');
   });
   it('alternatePath: stessa pagina nell\'altra lingua, null per gli strumenti solo italiani', () => {
     expect(alternatePath('/pdf-tools', 'en')).toBe('/en/pdf-tools');
@@ -94,19 +94,19 @@ describe('URL ↔ lingua', () => {
 describe('hreflang', () => {
   it('pagina con due versioni: it, en e x-default (inglese)', () => {
     expect(hreflangLinks('pdf-tools')).toEqual([
-      { hreflang: 'it', href: 'https://tools.rr-dev.eu/pdf-tools' },
-      { hreflang: 'en', href: 'https://tools.rr-dev.eu/en/pdf-tools' },
-      { hreflang: 'x-default', href: 'https://tools.rr-dev.eu/en/pdf-tools' },
+      { hreflang: 'it', href: 'https://tools.rrstudio.app/pdf-tools' },
+      { hreflang: 'en', href: 'https://tools.rrstudio.app/en/pdf-tools' },
+      { hreflang: 'x-default', href: 'https://tools.rrstudio.app/en/pdf-tools' },
     ]);
     expect(hreflangLinks('').map((a) => a.href)).toEqual([
-      'https://tools.rr-dev.eu/',
-      'https://tools.rr-dev.eu/en/',
-      'https://tools.rr-dev.eu/en/',
+      'https://tools.rrstudio.app/',
+      'https://tools.rrstudio.app/en/',
+      'https://tools.rrstudio.app/en/',
     ]);
   });
   it('pagina solo italiana: solo it', () => {
     expect(hreflangLinks('codice-fiscale')).toEqual([
-      { hreflang: 'it', href: 'https://tools.rr-dev.eu/codice-fiscale' },
+      { hreflang: 'it', href: 'https://tools.rrstudio.app/codice-fiscale' },
     ]);
   });
 });
@@ -118,21 +118,21 @@ describe('sitemap', () => {
     const generic = TOOLS.filter((t) => !t.italyOnly).length;
     expect(locs.length).toBe(allSlugs().length + 1 + generic + STATIC_PAGES.length + 2);
     expect(new Set(locs).size).toBe(locs.length);
-    expect(locs).toContain('https://tools.rr-dev.eu/en/');
-    expect(locs).toContain('https://tools.rr-dev.eu/en/pdf-tools');
-    expect(locs).toContain('https://tools.rr-dev.eu/codice-fiscale');
-    expect(locs).toContain('https://tools.rr-dev.eu/privacy');
-    expect(locs).toContain('https://tools.rr-dev.eu/en/privacy');
-    expect(locs).not.toContain('https://tools.rr-dev.eu/en/codice-fiscale');
-    expect(locs).toContain('https://tools.rr-dev.eu/novita');
-    expect(locs).toContain('https://tools.rr-dev.eu/en/changelog');
+    expect(locs).toContain('https://tools.rrstudio.app/en/');
+    expect(locs).toContain('https://tools.rrstudio.app/en/pdf-tools');
+    expect(locs).toContain('https://tools.rrstudio.app/codice-fiscale');
+    expect(locs).toContain('https://tools.rrstudio.app/privacy');
+    expect(locs).toContain('https://tools.rrstudio.app/en/privacy');
+    expect(locs).not.toContain('https://tools.rrstudio.app/en/codice-fiscale');
+    expect(locs).toContain('https://tools.rrstudio.app/novita');
+    expect(locs).toContain('https://tools.rrstudio.app/en/changelog');
   });
   it('dichiara il namespace xhtml e ogni url ha i suoi link alternate', () => {
     expect(xml).toContain('xmlns:xhtml="http://www.w3.org/1999/xhtml"');
-    const block = xml.split('<url>').find((b) => b.includes('<loc>https://tools.rr-dev.eu/en/pdf-tools</loc>'))!;
+    const block = xml.split('<url>').find((b) => b.includes('<loc>https://tools.rrstudio.app/en/pdf-tools</loc>'))!;
     expect(block.match(/<xhtml:link /g)?.length).toBe(3);
-    expect(block).toContain('hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-tools"');
-    const cf = xml.split('<url>').find((b) => b.includes('<loc>https://tools.rr-dev.eu/codice-fiscale</loc>'))!;
+    expect(block).toContain('hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-tools"');
+    const cf = xml.split('<url>').find((b) => b.includes('<loc>https://tools.rrstudio.app/codice-fiscale</loc>'))!;
     expect(cf.match(/<xhtml:link /g)?.length).toBe(1);
   });
   it('ogni URL ha lastmod nel formato AAAA-MM-GG, senza date nel futuro e senza ore', () => {

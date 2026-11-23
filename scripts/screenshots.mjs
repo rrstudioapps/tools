@@ -2918,7 +2918,7 @@ try {
       await page.waitForSelector('[data-testid=changelog-version]');
       must((await page.title()).includes('Novità'), 'titolo della pagina Novità');
       const feed = await page.locator('head link[rel=alternate][type="application/atom+xml"]').getAttribute('href');
-      must(feed === 'https://tools.rr-dev.eu/changelog.xml', 'link al feed nella head: ' + feed);
+      must(feed === 'https://tools.rrstudio.app/changelog.xml', 'link al feed nella head: ' + feed);
       const all = await page.locator('[data-testid=changelog-entry]').count();
       await page.getByRole('button', { name: 'Nuovi strumenti', exact: true }).click();
       await page.waitForFunction((n) => document.querySelectorAll('[data-testid=changelog-entry]').length < n, all, { timeout: 3000 }).catch(() => {});
@@ -3439,10 +3439,10 @@ try {
     must(await page.locator('[data-testid=ci-table]').isVisible(), 'la tabella non è visibile in stampa');
     must(await page.locator('[data-testid=ci-chart]').isVisible(), 'il grafico non è visibile in stampa');
     const addr = await page.getByTestId('print-url').innerText();
-    must(addr === 'https://tools.rr-dev.eu/compound-interest', "indirizzo stampato inatteso: " + addr);
+    must(addr === 'https://tools.rrstudio.app/compound-interest', "indirizzo stampato inatteso: " + addr);
     must(!/[#?]/.test(addr) && !(await head.innerText()).includes('SEGRETO123'), "l'intestazione di stampa contiene hash o dati");
     const txt = await head.innerText();
-    must(txt.includes('Calcolo interesse composto') && txt.includes('Calcolo indicativo, generato nel browser da tools.rr-dev.eu'), 'titolo o nota mancanti in stampa: ' + txt);
+    must(txt.includes('Calcolo interesse composto') && txt.includes('Calcolo indicativo, generato nel browser da tools.rrstudio.app'), 'titolo o nota mancanti in stampa: ' + txt);
     must(txt.includes('10.000'), 'il riepilogo dei parametri non contiene il capitale');
     must(/\d{4}/.test(await page.getByTestId('print-date').innerText()), 'data di stampa mancante');
   });

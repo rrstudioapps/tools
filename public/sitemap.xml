@@ -2,1752 +2,1752 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-or-later · © 2026 rrstudio — rrstudio tools -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tools.rr-dev.eu/</loc>
+    <loc>https://tools.rrstudio.app/</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/</loc>
+    <loc>https://tools.rrstudio.app/en/</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/csv-dashboard</loc>
+    <loc>https://tools.rrstudio.app/csv-dashboard</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csv-dashboard"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csv-dashboard"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csv-dashboard"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/csv-dashboard</loc>
+    <loc>https://tools.rrstudio.app/en/csv-dashboard</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csv-dashboard"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csv-dashboard"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csv-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csv-dashboard"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/qr-code-generator</loc>
+    <loc>https://tools.rrstudio.app/qr-code-generator</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/qr-code-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/qr-code-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/qr-code-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/qr-code-generator</loc>
+    <loc>https://tools.rrstudio.app/en/qr-code-generator</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/qr-code-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/qr-code-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/qr-code-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/qr-code-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/text-diff</loc>
+    <loc>https://tools.rrstudio.app/text-diff</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/text-diff</loc>
+    <loc>https://tools.rrstudio.app/en/text-diff</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/markdown-editor</loc>
+    <loc>https://tools.rrstudio.app/markdown-editor</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/markdown-editor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/markdown-editor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/markdown-editor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/markdown-editor</loc>
+    <loc>https://tools.rrstudio.app/en/markdown-editor</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/markdown-editor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/markdown-editor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/markdown-editor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/markdown-editor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/word-counter</loc>
+    <loc>https://tools.rrstudio.app/word-counter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/word-counter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/word-counter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/word-counter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/word-counter</loc>
+    <loc>https://tools.rrstudio.app/en/word-counter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/word-counter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/word-counter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/word-counter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/regex-tester</loc>
+    <loc>https://tools.rrstudio.app/regex-tester</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/regex-tester"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/regex-tester"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/regex-tester"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/regex-tester</loc>
+    <loc>https://tools.rrstudio.app/en/regex-tester</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/regex-tester"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/regex-tester"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/regex-tester"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/csv-json-converter</loc>
+    <loc>https://tools.rrstudio.app/csv-json-converter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csv-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csv-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csv-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/csv-json-converter</loc>
+    <loc>https://tools.rrstudio.app/en/csv-json-converter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csv-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csv-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csv-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csv-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/base64</loc>
+    <loc>https://tools.rrstudio.app/base64</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/base64"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/base64"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/base64"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/base64"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/base64"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/base64"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/base64</loc>
+    <loc>https://tools.rrstudio.app/en/base64</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/base64"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/base64"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/base64"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/base64"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/base64"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/base64"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/url-encode</loc>
+    <loc>https://tools.rrstudio.app/url-encode</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/url-encode"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/url-encode"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/url-encode"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/url-encode</loc>
+    <loc>https://tools.rrstudio.app/en/url-encode</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/url-encode"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/url-encode"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/url-encode"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/url-encode"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/json-formatter</loc>
+    <loc>https://tools.rrstudio.app/json-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/json-formatter</loc>
+    <loc>https://tools.rrstudio.app/en/json-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/json-diff</loc>
+    <loc>https://tools.rrstudio.app/json-diff</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/json-diff</loc>
+    <loc>https://tools.rrstudio.app/en/json-diff</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/json-viewer</loc>
+    <loc>https://tools.rrstudio.app/json-viewer</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/json-viewer</loc>
+    <loc>https://tools.rrstudio.app/en/json-viewer</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-compressor</loc>
+    <loc>https://tools.rrstudio.app/image-compressor</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-compressor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-compressor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-compressor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-compressor</loc>
+    <loc>https://tools.rrstudio.app/en/image-compressor</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-compressor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-compressor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-compressor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-compressor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-tools</loc>
+    <loc>https://tools.rrstudio.app/pdf-tools</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-tools"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-tools"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-tools"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-tools</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-tools</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-tools"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-tools"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-tools"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/images-to-pdf</loc>
+    <loc>https://tools.rrstudio.app/images-to-pdf</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/images-to-pdf"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/images-to-pdf"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/images-to-pdf"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/images-to-pdf</loc>
+    <loc>https://tools.rrstudio.app/en/images-to-pdf</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/images-to-pdf"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/images-to-pdf"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/images-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/images-to-pdf"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-to-images</loc>
+    <loc>https://tools.rrstudio.app/pdf-to-images</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-to-images"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-to-images"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-to-images"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-to-images</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-to-images</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-to-images"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-to-images"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-to-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-to-images"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-to-text</loc>
+    <loc>https://tools.rrstudio.app/pdf-to-text</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-to-text"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-to-text"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-to-text"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-to-text</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-to-text</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-to-text"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-to-text"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-to-text"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-to-text"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/exif-viewer</loc>
+    <loc>https://tools.rrstudio.app/exif-viewer</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/exif-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/exif-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/exif-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/exif-viewer</loc>
+    <loc>https://tools.rrstudio.app/en/exif-viewer</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/exif-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/exif-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/exif-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/exif-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/password-generator</loc>
+    <loc>https://tools.rrstudio.app/password-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/password-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/password-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/password-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/password-generator</loc>
+    <loc>https://tools.rrstudio.app/en/password-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/password-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/password-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/password-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/password-strength-checker</loc>
+    <loc>https://tools.rrstudio.app/password-strength-checker</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/password-strength-checker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/password-strength-checker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/password-strength-checker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/password-strength-checker</loc>
+    <loc>https://tools.rrstudio.app/en/password-strength-checker</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/password-strength-checker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/password-strength-checker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/password-strength-checker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/password-strength-checker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/totp-generator</loc>
+    <loc>https://tools.rrstudio.app/totp-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/totp-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/totp-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/totp-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/totp-generator</loc>
+    <loc>https://tools.rrstudio.app/en/totp-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/totp-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/totp-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/totp-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/totp-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/hmac-generator</loc>
+    <loc>https://tools.rrstudio.app/hmac-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/hmac-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/hmac-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/hmac-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/hmac-generator</loc>
+    <loc>https://tools.rrstudio.app/en/hmac-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/hmac-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/hmac-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/hmac-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/hmac-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/ssh-key-generator</loc>
+    <loc>https://tools.rrstudio.app/ssh-key-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/ssh-key-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/ssh-key-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/ssh-key-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/ssh-key-generator</loc>
+    <loc>https://tools.rrstudio.app/en/ssh-key-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/ssh-key-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/ssh-key-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/ssh-key-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/ssh-key-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/csr-generator</loc>
+    <loc>https://tools.rrstudio.app/csr-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csr-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csr-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csr-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/csr-generator</loc>
+    <loc>https://tools.rrstudio.app/en/csr-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/csr-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/csr-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/csr-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/csr-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/shamir-secret-sharing</loc>
+    <loc>https://tools.rrstudio.app/shamir-secret-sharing</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/shamir-secret-sharing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/shamir-secret-sharing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/shamir-secret-sharing"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/shamir-secret-sharing</loc>
+    <loc>https://tools.rrstudio.app/en/shamir-secret-sharing</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/shamir-secret-sharing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/shamir-secret-sharing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/shamir-secret-sharing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/shamir-secret-sharing"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/file-encrypt</loc>
+    <loc>https://tools.rrstudio.app/file-encrypt</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/file-encrypt"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/file-encrypt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/file-encrypt"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/file-encrypt</loc>
+    <loc>https://tools.rrstudio.app/en/file-encrypt</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/file-encrypt"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/file-encrypt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/file-encrypt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/file-encrypt"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/hash-generator</loc>
+    <loc>https://tools.rrstudio.app/hash-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/hash-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/hash-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/hash-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/hash-generator</loc>
+    <loc>https://tools.rrstudio.app/en/hash-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/hash-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/hash-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/hash-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/jwt-decoder</loc>
+    <loc>https://tools.rrstudio.app/jwt-decoder</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/jwt-decoder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/jwt-decoder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/jwt-decoder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/jwt-decoder</loc>
+    <loc>https://tools.rrstudio.app/en/jwt-decoder</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/jwt-decoder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/jwt-decoder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/jwt-decoder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/uuid-generator</loc>
+    <loc>https://tools.rrstudio.app/uuid-generator</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/uuid-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/uuid-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/uuid-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/uuid-generator</loc>
+    <loc>https://tools.rrstudio.app/en/uuid-generator</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/uuid-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/uuid-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/uuid-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/yaml-json-converter</loc>
+    <loc>https://tools.rrstudio.app/yaml-json-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/yaml-json-converter</loc>
+    <loc>https://tools.rrstudio.app/en/yaml-json-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xml-formatter</loc>
+    <loc>https://tools.rrstudio.app/xml-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xml-formatter</loc>
+    <loc>https://tools.rrstudio.app/en/xml-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xml-viewer</loc>
+    <loc>https://tools.rrstudio.app/xml-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xml-viewer</loc>
+    <loc>https://tools.rrstudio.app/en/xml-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xml-diff</loc>
+    <loc>https://tools.rrstudio.app/xml-diff</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xml-diff</loc>
+    <loc>https://tools.rrstudio.app/en/xml-diff</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xml-to-csv</loc>
+    <loc>https://tools.rrstudio.app/xml-to-csv</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-to-csv"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-to-csv"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-to-csv"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xml-to-csv</loc>
+    <loc>https://tools.rrstudio.app/en/xml-to-csv</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-to-csv"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-to-csv"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-to-csv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-to-csv"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xml-json-converter</loc>
+    <loc>https://tools.rrstudio.app/xml-json-converter</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xml-json-converter</loc>
+    <loc>https://tools.rrstudio.app/en/xml-json-converter</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xml-json-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xml-json-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xml-json-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/html-dom-viewer</loc>
+    <loc>https://tools.rrstudio.app/html-dom-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/html-dom-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/html-dom-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/html-dom-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/html-dom-viewer</loc>
+    <loc>https://tools.rrstudio.app/en/html-dom-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/html-dom-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/html-dom-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/html-dom-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/html-dom-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/yaml-viewer</loc>
+    <loc>https://tools.rrstudio.app/yaml-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/yaml-viewer</loc>
+    <loc>https://tools.rrstudio.app/en/yaml-viewer</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-viewer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-viewer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-viewer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/yaml-csv-diff</loc>
+    <loc>https://tools.rrstudio.app/yaml-csv-diff</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-csv-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-csv-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-csv-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/yaml-csv-diff</loc>
+    <loc>https://tools.rrstudio.app/en/yaml-csv-diff</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/yaml-csv-diff"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/yaml-csv-diff"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/yaml-csv-diff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/yaml-csv-diff"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/json-schema-xsd</loc>
+    <loc>https://tools.rrstudio.app/json-schema-xsd</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-schema-xsd"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-schema-xsd"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-schema-xsd"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/json-schema-xsd</loc>
+    <loc>https://tools.rrstudio.app/en/json-schema-xsd</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-schema-xsd"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-schema-xsd"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-schema-xsd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-schema-xsd"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/schema-test-data</loc>
+    <loc>https://tools.rrstudio.app/schema-test-data</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/schema-test-data"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/schema-test-data"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/schema-test-data"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/schema-test-data</loc>
+    <loc>https://tools.rrstudio.app/en/schema-test-data</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/schema-test-data"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/schema-test-data"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/schema-test-data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/schema-test-data"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/xsd-validator</loc>
+    <loc>https://tools.rrstudio.app/xsd-validator</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xsd-validator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xsd-validator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xsd-validator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/xsd-validator</loc>
+    <loc>https://tools.rrstudio.app/en/xsd-validator</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/xsd-validator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/xsd-validator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/xsd-validator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/xsd-validator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/sql-formatter</loc>
+    <loc>https://tools.rrstudio.app/sql-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/sql-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/sql-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/sql-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/sql-formatter</loc>
+    <loc>https://tools.rrstudio.app/en/sql-formatter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/sql-formatter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/sql-formatter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/sql-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/sql-formatter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/html-entities</loc>
+    <loc>https://tools.rrstudio.app/html-entities</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/html-entities"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/html-entities"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/html-entities"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/html-entities</loc>
+    <loc>https://tools.rrstudio.app/en/html-entities</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/html-entities"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/html-entities"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/html-entities"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/html-entities"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/case-converter</loc>
+    <loc>https://tools.rrstudio.app/case-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/case-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/case-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/case-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/case-converter</loc>
+    <loc>https://tools.rrstudio.app/en/case-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/case-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/case-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/case-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/slug-generator</loc>
+    <loc>https://tools.rrstudio.app/slug-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/slug-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/slug-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/slug-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/slug-generator</loc>
+    <loc>https://tools.rrstudio.app/en/slug-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/slug-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/slug-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/slug-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/lorem-ipsum-generator</loc>
+    <loc>https://tools.rrstudio.app/lorem-ipsum-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/lorem-ipsum-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/lorem-ipsum-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/lorem-ipsum-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/lorem-ipsum-generator</loc>
+    <loc>https://tools.rrstudio.app/en/lorem-ipsum-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/lorem-ipsum-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/lorem-ipsum-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/lorem-ipsum-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/lorem-ipsum-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/cron-expression</loc>
+    <loc>https://tools.rrstudio.app/cron-expression</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/cron-expression"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/cron-expression"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/cron-expression"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/cron-expression</loc>
+    <loc>https://tools.rrstudio.app/en/cron-expression</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/cron-expression"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/cron-expression"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/cron-expression"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/cron-expression"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/timestamp-converter</loc>
+    <loc>https://tools.rrstudio.app/timestamp-converter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timestamp-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timestamp-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timestamp-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/timestamp-converter</loc>
+    <loc>https://tools.rrstudio.app/en/timestamp-converter</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timestamp-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timestamp-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timestamp-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timestamp-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/color-contrast-checker</loc>
+    <loc>https://tools.rrstudio.app/color-contrast-checker</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/color-contrast-checker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/color-contrast-checker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/color-contrast-checker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/color-contrast-checker</loc>
+    <loc>https://tools.rrstudio.app/en/color-contrast-checker</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/color-contrast-checker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/color-contrast-checker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/color-contrast-checker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/color-contrast-checker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/codice-fiscale</loc>
+    <loc>https://tools.rrstudio.app/codice-fiscale</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/codice-fiscale"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/iban-partita-iva</loc>
+    <loc>https://tools.rrstudio.app/iban-partita-iva</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/iban-partita-iva"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/iban-partita-iva"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/fattura-elettronica</loc>
+    <loc>https://tools.rrstudio.app/fattura-elettronica</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/fattura-elettronica"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/fattura-elettronica"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/calcolo-iva</loc>
+    <loc>https://tools.rrstudio.app/calcolo-iva</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/calcolo-iva"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-iva"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/calcolo-giorni-lavorativi</loc>
+    <loc>https://tools.rrstudio.app/calcolo-giorni-lavorativi</loc>
     <lastmod>2026-11-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/calcolo-giorni-lavorativi"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-giorni-lavorativi"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/calcolo-ritenuta-acconto</loc>
+    <loc>https://tools.rrstudio.app/calcolo-ritenuta-acconto</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/calcolo-ritenuta-acconto"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-ritenuta-acconto"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/calcolo-rata-mutuo</loc>
+    <loc>https://tools.rrstudio.app/calcolo-rata-mutuo</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/calcolo-rata-mutuo"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/calcolo-rata-mutuo"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/numeri-in-lettere</loc>
+    <loc>https://tools.rrstudio.app/numeri-in-lettere</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/numeri-in-lettere"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/numeri-in-lettere"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/percentage-calculator</loc>
+    <loc>https://tools.rrstudio.app/percentage-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/percentage-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/percentage-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/percentage-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/percentage-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/percentage-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/percentage-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/percentage-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/percentage-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/percentage-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/unit-converter</loc>
+    <loc>https://tools.rrstudio.app/unit-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/unit-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/unit-converter</loc>
+    <loc>https://tools.rrstudio.app/en/unit-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/unit-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/date-calculator</loc>
+    <loc>https://tools.rrstudio.app/date-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/date-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/date-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/date-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/date-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/date-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/date-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/date-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/date-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/date-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/timezone-converter</loc>
+    <loc>https://tools.rrstudio.app/timezone-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timezone-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timezone-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timezone-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/timezone-converter</loc>
+    <loc>https://tools.rrstudio.app/en/timezone-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timezone-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timezone-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timezone-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timezone-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/number-base-converter</loc>
+    <loc>https://tools.rrstudio.app/number-base-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/number-base-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/number-base-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/number-base-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/number-base-converter</loc>
+    <loc>https://tools.rrstudio.app/en/number-base-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/number-base-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/number-base-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/number-base-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/number-base-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/barcode-generator</loc>
+    <loc>https://tools.rrstudio.app/barcode-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/barcode-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/barcode-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/barcode-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/barcode-generator</loc>
+    <loc>https://tools.rrstudio.app/en/barcode-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/barcode-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/barcode-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/barcode-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/barcode-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/qr-code-reader</loc>
+    <loc>https://tools.rrstudio.app/qr-code-reader</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/qr-code-reader"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/qr-code-reader"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/qr-code-reader"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/qr-code-reader</loc>
+    <loc>https://tools.rrstudio.app/en/qr-code-reader</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/qr-code-reader"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/qr-code-reader"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/qr-code-reader"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/qr-code-reader"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/sort-lines</loc>
+    <loc>https://tools.rrstudio.app/sort-lines</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/sort-lines"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/sort-lines"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/sort-lines"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/sort-lines</loc>
+    <loc>https://tools.rrstudio.app/en/sort-lines</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/sort-lines"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/sort-lines"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/sort-lines"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/find-replace</loc>
+    <loc>https://tools.rrstudio.app/find-replace</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/find-replace"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/find-replace"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/find-replace"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/find-replace</loc>
+    <loc>https://tools.rrstudio.app/en/find-replace</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/find-replace"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/find-replace"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/find-replace"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/find-replace"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/text-to-speech</loc>
+    <loc>https://tools.rrstudio.app/text-to-speech</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-to-speech"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-to-speech"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-to-speech"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/text-to-speech</loc>
+    <loc>https://tools.rrstudio.app/en/text-to-speech</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-to-speech"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-to-speech"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-to-speech"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-to-speech"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/chmod-calculator</loc>
+    <loc>https://tools.rrstudio.app/chmod-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/chmod-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/chmod-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/chmod-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/chmod-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/chmod-calculator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/chmod-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/chmod-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/chmod-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/chmod-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/css-unit-converter</loc>
+    <loc>https://tools.rrstudio.app/css-unit-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-unit-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/css-unit-converter</loc>
+    <loc>https://tools.rrstudio.app/en/css-unit-converter</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-unit-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-unit-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-unit-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/css-generator</loc>
+    <loc>https://tools.rrstudio.app/css-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/css-generator</loc>
+    <loc>https://tools.rrstudio.app/en/css-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/svg-optimizer</loc>
+    <loc>https://tools.rrstudio.app/svg-optimizer</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/svg-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/svg-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/svg-optimizer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/svg-optimizer</loc>
+    <loc>https://tools.rrstudio.app/en/svg-optimizer</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/svg-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/svg-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/svg-optimizer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/svg-optimizer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/favicon-generator</loc>
+    <loc>https://tools.rrstudio.app/favicon-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/favicon-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/favicon-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/favicon-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/favicon-generator</loc>
+    <loc>https://tools.rrstudio.app/en/favicon-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/favicon-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/favicon-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/favicon-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/favicon-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/htpasswd-generator</loc>
+    <loc>https://tools.rrstudio.app/htpasswd-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/htpasswd-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/htpasswd-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/htpasswd-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/htpasswd-generator</loc>
+    <loc>https://tools.rrstudio.app/en/htpasswd-generator</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/htpasswd-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/htpasswd-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/htpasswd-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/htpasswd-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/fake-data-generator</loc>
+    <loc>https://tools.rrstudio.app/fake-data-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/fake-data-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/fake-data-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/fake-data-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/fake-data-generator</loc>
+    <loc>https://tools.rrstudio.app/en/fake-data-generator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/fake-data-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/fake-data-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/fake-data-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/fake-data-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/json-query</loc>
+    <loc>https://tools.rrstudio.app/json-query</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-query"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-query"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-query"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-query"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-query"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-query"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/json-query</loc>
+    <loc>https://tools.rrstudio.app/en/json-query</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/json-query"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/json-query"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/json-query"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/json-query"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/json-query"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/json-query"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/certificate-decoder</loc>
+    <loc>https://tools.rrstudio.app/certificate-decoder</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/certificate-decoder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/certificate-decoder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/certificate-decoder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/certificate-decoder</loc>
+    <loc>https://tools.rrstudio.app/en/certificate-decoder</loc>
     <lastmod>2026-11-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/certificate-decoder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/certificate-decoder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/certificate-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/certificate-decoder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-sign</loc>
+    <loc>https://tools.rrstudio.app/pdf-sign</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-sign"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-sign"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-sign"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-sign</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-sign</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-sign"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-sign"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-sign"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-sign"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-metadata</loc>
+    <loc>https://tools.rrstudio.app/pdf-metadata</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-metadata"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-metadata"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-metadata"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-metadata</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-metadata</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-metadata"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-metadata"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-metadata"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-metadata"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-page-text</loc>
+    <loc>https://tools.rrstudio.app/pdf-page-text</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-page-text"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-page-text"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-page-text"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-page-text</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-page-text</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-page-text"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-page-text"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-page-text"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-page-text"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-compress</loc>
+    <loc>https://tools.rrstudio.app/pdf-compress</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-compress"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-compress"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-compress"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-compress</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-compress</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-compress"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-compress"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-compress"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-compress"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-crop</loc>
+    <loc>https://tools.rrstudio.app/pdf-crop</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-crop"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-crop"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-crop"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-crop</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-crop</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-crop"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-crop"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-crop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-crop"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-images</loc>
+    <loc>https://tools.rrstudio.app/pdf-images</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-images"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-images"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-images"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-images</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-images</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-images"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-images"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-images"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-form</loc>
+    <loc>https://tools.rrstudio.app/pdf-form</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-form"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-form"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-form"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-form</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-form</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-form"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-form"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-form"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-form"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-redact</loc>
+    <loc>https://tools.rrstudio.app/pdf-redact</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-redact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-redact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-redact"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-redact</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-redact</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-redact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-redact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-redact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-redact"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-protect</loc>
+    <loc>https://tools.rrstudio.app/pdf-protect</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-protect"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-protect"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-protect"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-protect</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-protect</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-protect"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-protect"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-protect"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-protect"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-crop</loc>
+    <loc>https://tools.rrstudio.app/image-crop</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-crop"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-crop"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-crop"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-crop</loc>
+    <loc>https://tools.rrstudio.app/en/image-crop</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-crop"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-crop"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-crop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-crop"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/meta-tag-preview</loc>
+    <loc>https://tools.rrstudio.app/meta-tag-preview</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/meta-tag-preview"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/meta-tag-preview"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/meta-tag-preview"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/meta-tag-preview</loc>
+    <loc>https://tools.rrstudio.app/en/meta-tag-preview</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/meta-tag-preview"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/meta-tag-preview"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/meta-tag-preview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/meta-tag-preview"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-watermark</loc>
+    <loc>https://tools.rrstudio.app/image-watermark</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-watermark"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-watermark"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-watermark"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-watermark</loc>
+    <loc>https://tools.rrstudio.app/en/image-watermark</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-watermark"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-watermark"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-watermark"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-watermark"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-color-picker</loc>
+    <loc>https://tools.rrstudio.app/image-color-picker</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-color-picker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-color-picker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-color-picker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-color-picker</loc>
+    <loc>https://tools.rrstudio.app/en/image-color-picker</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-color-picker"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-color-picker"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-color-picker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-color-picker"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/svg-to-png</loc>
+    <loc>https://tools.rrstudio.app/svg-to-png</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/svg-to-png"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/svg-to-png"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/svg-to-png"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/svg-to-png</loc>
+    <loc>https://tools.rrstudio.app/en/svg-to-png</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/svg-to-png"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/svg-to-png"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/svg-to-png"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/svg-to-png"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-converter</loc>
+    <loc>https://tools.rrstudio.app/image-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-converter</loc>
+    <loc>https://tools.rrstudio.app/en/image-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/color-converter</loc>
+    <loc>https://tools.rrstudio.app/color-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/color-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/color-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/color-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/color-converter</loc>
+    <loc>https://tools.rrstudio.app/en/color-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/color-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/color-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/color-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/color-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/curl-converter</loc>
+    <loc>https://tools.rrstudio.app/curl-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/curl-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/curl-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/curl-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/curl-converter</loc>
+    <loc>https://tools.rrstudio.app/en/curl-converter</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/curl-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/curl-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/curl-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/curl-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/url-parser</loc>
+    <loc>https://tools.rrstudio.app/url-parser</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/url-parser"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/url-parser"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/url-parser"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/url-parser</loc>
+    <loc>https://tools.rrstudio.app/en/url-parser</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/url-parser"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/url-parser"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/url-parser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/url-parser"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/compound-interest</loc>
+    <loc>https://tools.rrstudio.app/compound-interest</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/compound-interest"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/compound-interest"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/compound-interest"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/compound-interest</loc>
+    <loc>https://tools.rrstudio.app/en/compound-interest</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/compound-interest"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/compound-interest"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/compound-interest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/compound-interest"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/statistics-calculator</loc>
+    <loc>https://tools.rrstudio.app/statistics-calculator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/statistics-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/statistics-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/statistics-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/statistics-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/statistics-calculator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/statistics-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/statistics-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/statistics-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/statistics-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/aspect-ratio-calculator</loc>
+    <loc>https://tools.rrstudio.app/aspect-ratio-calculator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/aspect-ratio-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/aspect-ratio-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/aspect-ratio-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/aspect-ratio-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/aspect-ratio-calculator</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/aspect-ratio-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/aspect-ratio-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/aspect-ratio-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/aspect-ratio-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/roman-numerals</loc>
+    <loc>https://tools.rrstudio.app/roman-numerals</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/roman-numerals"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/roman-numerals"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/roman-numerals"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/roman-numerals</loc>
+    <loc>https://tools.rrstudio.app/en/roman-numerals</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/roman-numerals"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/roman-numerals"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/roman-numerals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/roman-numerals"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/unicode-inspector</loc>
+    <loc>https://tools.rrstudio.app/unicode-inspector</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/unicode-inspector"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/unicode-inspector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/unicode-inspector"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/unicode-inspector</loc>
+    <loc>https://tools.rrstudio.app/en/unicode-inspector</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/unicode-inspector"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/unicode-inspector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/unicode-inspector"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/unicode-inspector"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/morse-code</loc>
+    <loc>https://tools.rrstudio.app/morse-code</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/morse-code"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/morse-code"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/morse-code"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/morse-code</loc>
+    <loc>https://tools.rrstudio.app/en/morse-code</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/morse-code"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/morse-code"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/morse-code"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/morse-code"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/classic-ciphers</loc>
+    <loc>https://tools.rrstudio.app/classic-ciphers</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/classic-ciphers"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/classic-ciphers"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/classic-ciphers"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/classic-ciphers</loc>
+    <loc>https://tools.rrstudio.app/en/classic-ciphers</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/classic-ciphers"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/classic-ciphers"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/classic-ciphers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/classic-ciphers"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/convertitore-lire-euro</loc>
+    <loc>https://tools.rrstudio.app/convertitore-lire-euro</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/convertitore-lire-euro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/convertitore-lire-euro"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/subnet-calculator</loc>
+    <loc>https://tools.rrstudio.app/subnet-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/subnet-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/subnet-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/subnet-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/subnet-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/subnet-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/subnet-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/subnet-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/subnet-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/subnet-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/docker-run-to-compose</loc>
+    <loc>https://tools.rrstudio.app/docker-run-to-compose</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/docker-run-to-compose"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/docker-run-to-compose"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/docker-run-to-compose"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/docker-run-to-compose</loc>
+    <loc>https://tools.rrstudio.app/en/docker-run-to-compose</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/docker-run-to-compose"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/docker-run-to-compose"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/docker-run-to-compose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/docker-run-to-compose"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/css-clamp-calculator</loc>
+    <loc>https://tools.rrstudio.app/css-clamp-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-clamp-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-clamp-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-clamp-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/css-clamp-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/css-clamp-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/css-clamp-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/css-clamp-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/css-clamp-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/css-clamp-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/time-calculator</loc>
+    <loc>https://tools.rrstudio.app/time-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/time-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/time-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/time-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/time-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/time-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/time-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/time-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/time-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/time-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/scadenze-fatture</loc>
+    <loc>https://tools.rrstudio.app/scadenze-fatture</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/scadenze-fatture"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/scadenze-fatture"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/generatore-codice-fiscale</loc>
+    <loc>https://tools.rrstudio.app/generatore-codice-fiscale</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/generatore-codice-fiscale"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/generatore-codice-fiscale"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/timer</loc>
+    <loc>https://tools.rrstudio.app/timer</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/timer</loc>
+    <loc>https://tools.rrstudio.app/en/timer</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/timer"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/timer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/timer"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/timer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/timer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/timer"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/scientific-calculator</loc>
+    <loc>https://tools.rrstudio.app/scientific-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/scientific-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/scientific-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/scientific-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/scientific-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/scientific-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/scientific-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/scientific-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/scientific-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/scientific-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/random-number-generator</loc>
+    <loc>https://tools.rrstudio.app/random-number-generator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/random-number-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/random-number-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/random-number-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/random-number-generator</loc>
+    <loc>https://tools.rrstudio.app/en/random-number-generator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/random-number-generator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/random-number-generator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/random-number-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/random-number-generator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/text-cleaner</loc>
+    <loc>https://tools.rrstudio.app/text-cleaner</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-cleaner"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-cleaner"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-cleaner"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/text-cleaner</loc>
+    <loc>https://tools.rrstudio.app/en/text-cleaner</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-cleaner"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-cleaner"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-cleaner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-cleaner"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/list-compare</loc>
+    <loc>https://tools.rrstudio.app/list-compare</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/list-compare"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/list-compare"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/list-compare"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/list-compare</loc>
+    <loc>https://tools.rrstudio.app/en/list-compare</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/list-compare"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/list-compare"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/list-compare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/list-compare"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/countdown</loc>
+    <loc>https://tools.rrstudio.app/countdown</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/countdown"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/countdown"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/countdown"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/countdown"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/countdown"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/countdown"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/countdown</loc>
+    <loc>https://tools.rrstudio.app/en/countdown</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/countdown"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/countdown"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/countdown"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/countdown"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/countdown"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/countdown"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/split-bill</loc>
+    <loc>https://tools.rrstudio.app/split-bill</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/split-bill"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/split-bill"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/split-bill"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/split-bill</loc>
+    <loc>https://tools.rrstudio.app/en/split-bill</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/split-bill"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/split-bill"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/split-bill"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/split-bill"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/image-redact</loc>
+    <loc>https://tools.rrstudio.app/image-redact</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-redact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-redact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-redact"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/image-redact</loc>
+    <loc>https://tools.rrstudio.app/en/image-redact</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/image-redact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/image-redact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/image-redact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/image-redact"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/zip-tool</loc>
+    <loc>https://tools.rrstudio.app/zip-tool</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/zip-tool"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/zip-tool"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/zip-tool"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/zip-tool</loc>
+    <loc>https://tools.rrstudio.app/en/zip-tool</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/zip-tool"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/zip-tool"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/zip-tool"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/zip-tool"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/string-escape</loc>
+    <loc>https://tools.rrstudio.app/string-escape</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/string-escape"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/string-escape"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/string-escape"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/string-escape</loc>
+    <loc>https://tools.rrstudio.app/en/string-escape</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/string-escape"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/string-escape"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/string-escape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/string-escape"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/text-binary-converter</loc>
+    <loc>https://tools.rrstudio.app/text-binary-converter</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-binary-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-binary-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-binary-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/text-binary-converter</loc>
+    <loc>https://tools.rrstudio.app/en/text-binary-converter</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-binary-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-binary-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-binary-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-binary-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/text-extractor</loc>
+    <loc>https://tools.rrstudio.app/text-extractor</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-extractor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-extractor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-extractor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/text-extractor</loc>
+    <loc>https://tools.rrstudio.app/en/text-extractor</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/text-extractor"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/text-extractor"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/text-extractor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/text-extractor"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/list-converter</loc>
+    <loc>https://tools.rrstudio.app/list-converter</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/list-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/list-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/list-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/list-converter</loc>
+    <loc>https://tools.rrstudio.app/en/list-converter</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/list-converter"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/list-converter"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/list-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/list-converter"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/trip-cost-calculator</loc>
+    <loc>https://tools.rrstudio.app/trip-cost-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/trip-cost-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/trip-cost-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/trip-cost-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/trip-cost-calculator</loc>
+    <loc>https://tools.rrstudio.app/en/trip-cost-calculator</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/trip-cost-calculator"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/trip-cost-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/trip-cost-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/trip-cost-calculator"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/utm-link-builder</loc>
+    <loc>https://tools.rrstudio.app/utm-link-builder</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/utm-link-builder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/utm-link-builder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/utm-link-builder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/utm-link-builder</loc>
+    <loc>https://tools.rrstudio.app/en/utm-link-builder</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/utm-link-builder"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/utm-link-builder"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/utm-link-builder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/utm-link-builder"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-interleave</loc>
+    <loc>https://tools.rrstudio.app/pdf-interleave</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-interleave"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-interleave"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-interleave"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-interleave</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-interleave</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-interleave"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-interleave"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-interleave"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-interleave"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-split-spreads</loc>
+    <loc>https://tools.rrstudio.app/pdf-split-spreads</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-split-spreads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-split-spreads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-split-spreads"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-split-spreads</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-split-spreads</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-split-spreads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-split-spreads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-split-spreads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-split-spreads"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-nup</loc>
+    <loc>https://tools.rrstudio.app/pdf-nup</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-nup"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-nup"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-nup"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-nup</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-nup</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-nup"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-nup"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-nup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-nup"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-inspector</loc>
+    <loc>https://tools.rrstudio.app/pdf-inspector</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-inspector"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-inspector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-inspector"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-inspector</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-inspector</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-inspector"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-inspector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-inspector"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-inspector"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/pdf-blank-pages</loc>
+    <loc>https://tools.rrstudio.app/pdf-blank-pages</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-blank-pages"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-blank-pages"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-blank-pages"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/pdf-blank-pages</loc>
+    <loc>https://tools.rrstudio.app/en/pdf-blank-pages</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/pdf-blank-pages"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/pdf-blank-pages"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/pdf-blank-pages"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/pdf-blank-pages"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/privacy</loc>
+    <loc>https://tools.rrstudio.app/privacy</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/privacy"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/privacy</loc>
+    <loc>https://tools.rrstudio.app/en/privacy</loc>
     <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/privacy"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/tutorial</loc>
+    <loc>https://tools.rrstudio.app/tutorial</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/tutorial"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/tutorial"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/tutorial"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/tutorial</loc>
+    <loc>https://tools.rrstudio.app/en/tutorial</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/tutorial"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/tutorial"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/tutorial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/tutorial"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/novita</loc>
+    <loc>https://tools.rrstudio.app/novita</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/novita"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/changelog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/changelog"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/novita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/changelog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/changelog"/>
   </url>
   <url>
-    <loc>https://tools.rr-dev.eu/en/changelog</loc>
+    <loc>https://tools.rrstudio.app/en/changelog</loc>
     <lastmod>2026-11-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rr-dev.eu/novita"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rr-dev.eu/en/changelog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rr-dev.eu/en/changelog"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tools.rrstudio.app/novita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.rrstudio.app/en/changelog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tools.rrstudio.app/en/changelog"/>
   </url>
 </urlset>
