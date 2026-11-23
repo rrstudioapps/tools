@@ -15,6 +15,7 @@
 //    ignorando `<base href="/">`: i link relativi diventano assoluti (`/chunk-….js`).
 // 3. Intestazioni di sicurezza e cache lunga per i file con hash: file `_headers`.
 // 4. Un indirizzo `/en/…` sconosciuto ripiega sulla home inglese: file `_redirects`.
+// 5. Indirizzi sconosciuti: `404.html` (status 404), così non c'è una home duplicata a ogni indirizzo.
 // 5. Un POST su `/condividi/` (condivisione arrivata senza service worker) riceve un 303: Pages Function.
 
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, rmdirSync, statSync, writeFileSync } from 'node:fs';
@@ -102,6 +103,11 @@ writeFileSync(join(SITE, '_headers'), intestazioni);
 
 // 4. /en/ sconosciuto -> home inglese
 writeFileSync(join(SITE, '_redirects'), '/en/* /en/index.html 200\n');
+
+// 5. 404 vero: un indirizzo sconosciuto risponde 404 (senza 404.html Pages risponde 200 con la home a qualunque indirizzo).
+// Il contenuto è la home: nel browser Angular rimanda comunque alla pagina giusta con la route "**"; i motori di ricerca vedono un 404.
+const home = readFileSync(join(SITE, 'index.html'), 'utf8');
+writeFileSync(join(SITE, '404.html'), home.replace('</head>', '<meta name="robots" content="noindex"></head>'));
 
 // 5. condivisione file senza service worker
 const funzione = `// SPDX-License-Identifier: AGPL-3.0-or-later
