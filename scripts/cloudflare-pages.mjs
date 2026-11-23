@@ -2,7 +2,7 @@
 // © 2026 rrstudio — rrstudio Tools
 //
 // Prepara la build statica (dist/rrstudio-tools/browser) per Cloudflare Pages: scrive in dist/cloudflare/
-//   site/       i file da pubblicare (pagine piatte, link assoluti, _headers, _redirects)
+//   site/       i file da pubblicare (pagine piatte, link assoluti, _headers, 404.html)
 //   functions/  la Pages Function per la condivisione file senza service worker
 //
 // Uso: node scripts/cloudflare-pages.mjs [--src <cartella>] [--out <cartella>] [--noindex]
@@ -13,9 +13,10 @@
 //    `/en/` (canonical con barra) e le pagine di ricezione `/condividi/` e `/en/share/`.
 // 2. Cloudflare ricava gli Early Hints dai link `modulepreload` e li risolve rispetto all'indirizzo della pagina,
 //    ignorando `<base href="/">`: i link relativi diventano assoluti (`/chunk-….js`).
-// 3. Intestazioni di sicurezza e cache lunga per i file con hash: file `_headers`.
-// 4. Un indirizzo `/en/…` sconosciuto ripiega sulla home inglese: file `_redirects`.
-// 5. Indirizzi sconosciuti: `404.html` (status 404), così non c'è una home duplicata a ogni indirizzo.
+// 3. Intestazioni di sicurezza e cache lunga per i file con hash: file `_headers`. Gli indirizzi `*.pages.dev`
+//    (copie del sito e anteprime) hanno `noindex`.
+// 4. Indirizzi sconosciuti: `404.html` (status 404), così non c'è una home duplicata a ogni indirizzo; nel browser
+//    Angular porta alla home della lingua giusta. Nessun `_redirects`: le sue regole hanno la precedenza sui file veri.
 // 5. Un POST su `/condividi/` (condivisione arrivata senza service worker) riceve un 303: Pages Function.
 
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, rmdirSync, statSync, writeFileSync } from 'node:fs';
@@ -96,15 +97,15 @@ const intestazioni = [
   '  Referrer-Policy: no-referrer',
   ...(NOINDEX ? ['  X-Robots-Tag: noindex'] : []),
   '',
+  'https://:project.pages.dev/*',
+  '  X-Robots-Tag: noindex',
+  '',
   ...['/chunk-*', '/main-*', '/styles-*', '/worker-*'].flatMap((p) => [p, '  Cache-Control: public, max-age=31536000, immutable']),
   '',
 ].join('\n');
 writeFileSync(join(SITE, '_headers'), intestazioni);
 
-// 4. /en/ sconosciuto -> home inglese
-writeFileSync(join(SITE, '_redirects'), '/en/* /en/index.html 200\n');
-
-// 5. 404 vero: un indirizzo sconosciuto risponde 404 (senza 404.html Pages risponde 200 con la home a qualunque indirizzo).
+// 4. 404 vero: un indirizzo sconosciuto risponde 404 (senza 404.html Pages risponde 200 con la home a qualunque indirizzo).
 // Il contenuto è la home: nel browser Angular rimanda comunque alla pagina giusta con la route "**"; i motori di ricerca vedono un 404.
 const home = readFileSync(join(SITE, 'index.html'), 'utf8');
 writeFileSync(join(SITE, '404.html'), home.replace('</head>', '<meta name="robots" content="noindex"></head>'));
