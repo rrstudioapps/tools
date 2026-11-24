@@ -146,7 +146,7 @@ describe('sitemap', () => {
     const withEntry = CHANGELOG[0].entries.find((e) => e.toolIds?.length)!;
     const tool = TOOLS.find((t) => t.id === withEntry.toolIds![0])!;
     expect(lastModified(tool.path)).toBe(CHANGELOG[0].date);
-    expect(lastModified('privacy')).toBe('2026-11-17');
+    expect(lastModified('privacy')).toBe('2026-11-24');
   });
   it('public/sitemap.xml è aggiornato (UPDATE_SITEMAP=1 npm test lo riscrive)', () => {
     const file = 'public/sitemap.xml';

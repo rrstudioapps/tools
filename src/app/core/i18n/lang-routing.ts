@@ -118,7 +118,7 @@ export function allSlugs(): string[] {
 /** Giorno della prima uscita: ultima data nota di una pagina che le Novità non nominano mai. */
 const FIRST_RELEASE = '2026-11-15';
 /** Ultimo aggiornamento dell'informativa sulla privacy (stesso giorno scritto nella pagina). */
-const PRIVACY_UPDATED = '2026-11-17';
+const PRIVACY_UPDATED = '2026-11-24';
 
 /**
  * Data (AAAA-MM-GG) dell'ultima modifica nota di una pagina, ricavata dalle Novità: per uno strumento l'ultima voce che lo

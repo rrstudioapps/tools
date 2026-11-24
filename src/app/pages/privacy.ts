@@ -22,5 +22,5 @@ export class Privacy {
   protected readonly demo = PREMIUM_URL;
   protected readonly apps = APPS_URL;
   protected readonly garante = 'https://www.garanteprivacy.it';
-  protected readonly email = 'rrstudio.apps@gmail.com';
+  protected readonly email = 'info@rrstudio.app';
 }
